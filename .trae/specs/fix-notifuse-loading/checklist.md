@@ -1,0 +1,7 @@
+- [x] 所有 Notifuse 相关旧进程已完全终止（ps aux 无残留）
+- [x] Notifuse 后端服务正常运行，API 返回 `{"status":"api running"}`
+- [x] Vite 前端服务正常运行，进程状态为 S/R（非 T stopped）
+- [x] 本地 curl http://localhost:8088/console/ 返回 HTML 内容
+- [x] HTTPS 代理访问 curl -sk https://mail.omnicore.xin/console/ 返回 HTML 内容
+- [x] API 代理访问 curl -sk https://mail.omnicore.xin/api/ 返回 JSON 响应
+- [x] Nginx 错误日志无新的 upstream timed out 或 connect failed 错误

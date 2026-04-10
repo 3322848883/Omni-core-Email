@@ -1,0 +1,27 @@
+[Unit]
+Description=Notifuse Backend Service
+After=network.target postgresql.service redis.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/notifuse-main/notifuse-main
+Environment=SERVER_HOST=127.0.0.1
+Environment=SERVER_PORT=8080
+ExecStart=/root/notifuse-main/notifuse-main/notifuse
+Restart=always
+RestartSec=5
+StartLimitInterval=60s
+StartLimitBurst=10
+
+# Resource limits
+MemoryLimit=256M
+CPUQuota=50%
+TasksMax=50
+
+# Logging
+StandardOutput=append:/var/log/notifuse/notifuse.log
+StandardError=append:/var/log/notifuse/notifuse.log
+
+[Install]
+WantedBy=multi-user.target
