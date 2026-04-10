@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faImage } from '@fortawesome/free-solid-svg-icons'
 import { Switch } from 'antd'
@@ -192,44 +193,11 @@ export class MjImageBlock extends BaseEmailBlock {
   }
 
   getLabel(): string {
-    return 'Image'
+    return i18n.locale === 'zh' ? '图片' : 'Image'
   }
 
   getDescription(): React.ReactNode {
-    return (
-      <div>
-        <div style={{ marginBottom: 8 }}>Display images, logos, and visual content</div>
-        <div style={{ opacity: 0.7 }}>
-          <div
-            style={{
-              width: 60,
-              height: 30,
-              border: '2px solid #13c2c2',
-              borderRadius: 4,
-              backgroundColor: '#e6fffb',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              position: 'relative'
-            }}
-          >
-            <div
-              style={{
-                width: 40,
-                height: 20,
-                backgroundColor: '#87e8de',
-                borderRadius: 2,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}
-            >
-              <FontAwesomeIcon icon={faImage} style={{ fontSize: 10, color: '#13c2c2' }} />
-            </div>
-          </div>
-        </div>
-      </div>
-    )
+    return i18n.locale === 'zh' ? '显示图片、标志和视觉内容' : 'Display images, logos, and visual content'
   }
 
   getCategory(): 'content' | 'layout' {

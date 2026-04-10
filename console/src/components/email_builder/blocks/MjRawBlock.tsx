@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import type { MJMLComponentType, EmailBlock, MJRawAttributes } from '../types'
 import {
   BaseEmailBlock,

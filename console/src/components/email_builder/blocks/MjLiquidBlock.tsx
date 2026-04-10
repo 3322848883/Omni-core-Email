@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import type { MJMLComponentType } from '../types'
 import {
   BaseEmailBlock,
@@ -86,11 +87,11 @@ export class MjLiquidBlock extends BaseEmailBlock {
   }
 
   getLabel(): string {
-    return 'Liquid'
+    return i18n.locale === 'zh' ? 'Liquid模板' : 'Liquid'
   }
 
   getDescription(): React.ReactNode {
-    return 'Embeds raw MJML + Liquid template code. Use for dynamic structural content like for-loops generating columns or conditional sections.'
+    return i18n.locale === 'zh' ? '嵌入原始 MJML + Liquid 模板代码。用于动态结构内容，如生成列的 for 循环或条件区块。' : 'Embeds raw MJML + Liquid template code. Use for dynamic structural content like for-loops generating columns or conditional sections.'
   }
 
   getCategory(): 'content' | 'layout' {

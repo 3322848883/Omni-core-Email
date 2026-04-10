@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { Switch, Radio, Tooltip, Select, Alert } from 'antd'
 import type { MJMLComponentType, EmailBlock, MJSectionAttributes, MergedBlockAttributes } from '../types'
 import {
@@ -73,8 +74,10 @@ const MjSectionSettingsPanel: React.FC<MjSectionSettingsPanelProps> = ({
     onUpdate(backgroundValues)
   }
 
+  const isZh = i18n.locale === 'zh'
+
   return (
-    <PanelLayout title={t`Section Attributes`}>
+    <PanelLayout title={isZh ? '区块属性' : t`Section Attributes`}>
       <div className="space-y-4">
         {/* Background Settings */}
         <BackgroundInput
@@ -91,7 +94,7 @@ const MjSectionSettingsPanel: React.FC<MjSectionSettingsPanelProps> = ({
         />
 
         {/* Border Settings */}
-        <InputLayout label={t`Border`} layout="vertical">
+        <InputLayout label={isZh ? '边框' : t`Border`} layout="vertical">
           <BorderInput
             className="-mt-6"
             value={{
@@ -112,7 +115,7 @@ const MjSectionSettingsPanel: React.FC<MjSectionSettingsPanelProps> = ({
         </InputLayout>
 
         {/* Border Radius */}
-        <InputLayout label={t`Border radius`}>
+        <InputLayout label={isZh ? '边框半径' : t`Border radius`}>
           <BorderRadiusInput
             value={currentAttributes.borderRadius}
             onChange={(value) => onUpdate({ borderRadius: value })}
@@ -122,7 +125,7 @@ const MjSectionSettingsPanel: React.FC<MjSectionSettingsPanelProps> = ({
 
         {/* Padding Settings */}
 
-        <InputLayout label={t`Padding`} layout="vertical">
+        <InputLayout label={isZh ? '内边距' : t`Padding`} layout="vertical">
           <PaddingInput
             value={{
               top: currentAttributes.paddingTop,
@@ -153,31 +156,31 @@ const MjSectionSettingsPanel: React.FC<MjSectionSettingsPanelProps> = ({
         </InputLayout>
 
         {/* Layout Settings */}
-        <InputLayout label={t`Text Alignment`}>
+        <InputLayout label={isZh ? '文本对齐' : t`Text Alignment`}>
           <AlignSelector
             value={currentAttributes.textAlign || blockDefaults.textAlign || 'left'}
             onChange={(value) => handleAttributeChange('textAlign', value)}
           />
         </InputLayout>
 
-        <InputLayout label={t`Text Direction`}>
+        <InputLayout label={isZh ? '文本方向' : t`Text Direction`}>
           <Radio.Group
             size="small"
             value={currentAttributes.direction || blockDefaults.direction || 'ltr'}
             onChange={(e) => handleAttributeChange('direction', e.target.value)}
           >
             <Radio.Button value="ltr">
-              <Tooltip title={t`Left to Right`}>LTR</Tooltip>
+              <Tooltip title={isZh ? '从左到右' : t`Left to Right`}>LTR</Tooltip>
             </Radio.Button>
             <Radio.Button value="rtl">
-              <Tooltip title={t`Right to Left`}>RTL</Tooltip>
+              <Tooltip title={isZh ? '从右到左' : t`Right to Left`}>RTL</Tooltip>
             </Radio.Button>
           </Radio.Group>
         </InputLayout>
 
         <InputLayout
-          label={t`Full Width`}
-          help={t`Makes the section span the entire email viewport width, ignoring container constraints (typically 600px). Useful for full-bleed backgrounds and hero sections.`}
+          label={isZh ? '全宽' : t`Full Width`}
+          help={isZh ? '使区块跨越整个邮件视口宽度，忽略容器约束（通常为600px）。适用于全出血背景和英雄区块。' : t`Makes the section span the entire email viewport width, ignoring container constraints (typically 600px). Useful for full-bleed backgrounds and hero sections.`}
         >
           <Switch
             size="small"
@@ -190,8 +193,8 @@ const MjSectionSettingsPanel: React.FC<MjSectionSettingsPanelProps> = ({
 
         {/* Visibility / Channel Selector */}
         <InputLayout
-          label={t`Visibility`}
-          help={t`Control which channels can see this section`}
+          label={isZh ? '可见性' : t`Visibility`}
+          help={isZh ? '控制哪些渠道可以看到此区块' : t`Control which channels can see this section`}
         >
           <Select
             size="small"
@@ -202,9 +205,9 @@ const MjSectionSettingsPanel: React.FC<MjSectionSettingsPanelProps> = ({
             onChange={(value) => handleAttributeChange('visibility', value)}
             style={{ width: '100%' }}
             options={[
-              { value: 'all', label: t`All Channels` },
-              { value: 'email_only', label: t`Email Only` },
-              { value: 'web_only', label: t`Web Only` }
+              { value: 'all', label: isZh ? '所有渠道' : t`All Channels` },
+              { value: 'email_only', label: isZh ? '仅邮件' : t`Email Only` },
+              { value: 'web_only', label: isZh ? '仅网页' : t`Web Only` }
             ]}
           />
         </InputLayout>
@@ -214,20 +217,20 @@ const MjSectionSettingsPanel: React.FC<MjSectionSettingsPanelProps> = ({
          (currentAttributes as Record<string, unknown>).visibility !== 'email_only' && (
           <Alert
             type="warning"
-            message={t`Personalization Not Available for Web`}
-            description={t`This section contains Liquid template tags for personalization. Web publications don't have access to contact data, so these tags will not render properly. Consider marking this section as 'Email Only' or remove personalization tags.`}
+            message={isZh ? '网页端不支持个性化' : t`Personalization Not Available for Web`}
+            description={isZh ? '此区块包含用于个性化的Liquid模板标签。网页出版物无法访问联系人数据，因此这些标签将无法正确渲染。请考虑将此区块标记为"仅邮件"或移除个性化标签。' : t`This section contains Liquid template tags for personalization. Web publications don't have access to contact data, so these tags will not render properly. Consider marking this section as 'Email Only' or remove personalization tags.`}
             showIcon
             closable
           />
         )}
 
         {/* Advanced Settings */}
-        <InputLayout label={t`CSS Class`} help={t`Custom CSS class for styling`}>
+        <InputLayout label={isZh ? 'CSS类' : t`CSS Class`} help={isZh ? '用于样式的自定义CSS类' : t`Custom CSS class for styling`}>
           <StringPopoverInput
             value={currentAttributes.cssClass}
             onChange={(value) => handleAttributeChange('cssClass', value)}
-            placeholder={t`my-custom-class`}
-            buttonText={t`Set Value`}
+            placeholder={isZh ? 'my-custom-class' : t`my-custom-class`}
+            buttonText={isZh ? '设置值' : t`Set Value`}
           />
         </InputLayout>
       </div>
@@ -288,7 +291,7 @@ export class MjSectionBlock extends BaseEmailBlock {
   }
 
   getDescription(): React.ReactNode {
-    return 'Container for columns that organizes email layout horizontally'
+    return i18n.locale === 'zh' ? '用于列的容器，水平组织邮件布局' : 'Container for columns that organizes email layout horizontally'
   }
 
   getCategory(): 'content' | 'layout' {

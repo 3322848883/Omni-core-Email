@@ -195,11 +195,15 @@ msgstr "{0}-{1} / 共 {total} 条群发邮件"
 msgid "{clicks} clicks out of {recipients} recipients"
 msgstr "{clicks} 次点击，共 {recipients} 个收件人"
 
+#: src/components/email_builder/panels/TreePanel.tsx:264
+#~ msgid "{label}"
+#~ msgstr "{标签}"
+
 #: src/components/settings/WebhookCard.tsx:143
 msgid "{label} copied to clipboard"
 msgstr "{label} 已复制到剪贴板"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:571
+#: src/components/templates/CreateTemplateDrawer.tsx:585
 msgid "{langName} translation is missing required fields (subject and preview)"
 msgstr "{langName} 翻译缺少必填字段（主题和预览）"
 
@@ -210,6 +214,17 @@ msgstr "{language} 代码已复制到剪贴板！"
 #: src/components/contacts/ExportContactsModal.tsx:119
 msgid "{minutes}m {remainingSeconds}s"
 msgstr "{minutes}分 {remainingSeconds}秒"
+
+#: src/components/templates/CreateTemplateDrawer.tsx:740
+#: src/components/templates/CreateTemplateDrawer.tsx:744
+#: src/components/templates/CreateTemplateDrawer.tsx:748
+#: src/components/templates/CreateTemplateDrawer.tsx:752
+#: src/components/templates/CreateTemplateDrawer.tsx:756
+#: src/components/templates/CreateTemplateDrawer.tsx:760
+#: src/components/templates/CreateTemplateDrawer.tsx:764
+#: src/pages/TemplatesPage.tsx:178
+msgid "{msg}"
+msgstr "{消息}"
 
 #: src/pages/BroadcastsPage.tsx:759
 msgid "{opens} opens out of {recipients} recipients"
@@ -247,6 +262,10 @@ msgstr "• 确保所有XML标签正确关闭"
 msgid "• Verify that component attributes are valid"
 msgstr "• 验证组件属性是否有效"
 
+#: src/pages/SetupWizard.tsx:472
+msgid "••••••••"
+msgstr "••••••••"
+
 #: src/components/segment/input_dimension_filters.tsx:153
 msgid "+ Add filter"
 msgstr "+ 添加筛选器"
@@ -275,7 +294,7 @@ msgstr "0次打开，0个收件人"
 msgid "1. Audience"
 msgstr "1. 受众"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:643
+#: src/components/templates/CreateTemplateDrawer.tsx:657
 msgid "1. Settings"
 msgstr "1. 设置"
 
@@ -283,12 +302,12 @@ msgstr "1. 设置"
 msgid "100 - Thin"
 msgstr "100 - 细体"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:649
+#: src/components/templates/CreateTemplateDrawer.tsx:663
 msgid "2. Template"
 msgstr "2. 模板"
 
 #. placeholder {0}: workspace.settings.default_language
-#: src/components/templates/CreateTemplateDrawer.tsx:648
+#: src/components/templates/CreateTemplateDrawer.tsx:662
 msgid "2. Template ({0})"
 msgstr "2. 模板（{0}）"
 
@@ -308,7 +327,7 @@ msgstr "200 - 特细体"
 msgid "3. Data Feeds"
 msgstr "3. 数据源"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:655
+#: src/components/templates/CreateTemplateDrawer.tsx:669
 msgid "3. Translations"
 msgstr "3. 翻译"
 
@@ -327,6 +346,10 @@ msgstr "400 - 常规"
 #: src/components/email_builder/ui/FontStyleInput.tsx:115
 msgid "500 - Medium"
 msgstr "500 - 中等"
+
+#: src/pages/SetupWizard.tsx:447
+msgid "587"
+msgstr "587"
 
 #: src/components/email_builder/ui/FontStyleInput.tsx:116
 msgid "600 - Semi Bold"
@@ -503,11 +526,11 @@ msgstr "在部分中添加区块"
 msgid "Add block in wrapper"
 msgstr "在包装器中添加区块"
 
-#: src/components/email_builder/blocks/MjAttributesBlock.tsx:17
+#: src/components/email_builder/blocks/MjAttributesBlock.tsx:18
 msgid "Add child elements for specific components (mj-text, mj-button, etc.) to set their default values."
 msgstr "为特定组件（mj-text、mj-button等）添加子元素以设置其默认值。"
 
-#: src/components/email_builder/blocks/MjHeadBlock.tsx:19
+#: src/components/email_builder/blocks/MjHeadBlock.tsx:20
 msgid "Add child elements like mj-font, mj-style, or mj-preview to configure email metadata."
 msgstr "添加子元素如mj-font、mj-style或mj-preview来配置邮件元数据。"
 
@@ -524,7 +547,7 @@ msgstr "添加条件来定义您的联系人细分"
 msgid "Add Contact"
 msgstr "添加联系人"
 
-#: src/components/email_builder/blocks/MjStyleBlock.tsx:139
+#: src/components/email_builder/blocks/MjStyleBlock.tsx:140
 msgid "Add CSS"
 msgstr "添加CSS"
 
@@ -583,7 +606,7 @@ msgstr "添加发件人"
 msgid "Add social element"
 msgstr "添加社交元素"
 
-#: src/components/email_builder/blocks/MjSocialBlock.tsx:112
+#: src/components/email_builder/blocks/MjSocialBlock.tsx:113
 msgid "Add social elements to this social block"
 msgstr "为此社交区块添加社交元素"
 
@@ -622,9 +645,17 @@ msgstr "地址行1"
 msgid "Address Line 2"
 msgstr "地址行2"
 
+#: src/components/settings/WorkspaceMembers.tsx:101
+msgid "Admin"
+msgstr "管理员"
+
 #: src/pages/SetupWizard.tsx:345
 msgid "Admin email is required"
 msgstr "管理员邮箱为必填项"
+
+#: src/pages/SetupWizard.tsx:350
+msgid "admin@example.com"
+msgstr "admin@example.com"
 
 #: src/pages/SetupWizard.tsx:524
 msgid "Advanced Settings"
@@ -635,7 +666,7 @@ msgstr "高级设置"
 #~ msgid "Advanced SMTP Settings"
 #~ msgstr "Advanced SMTP Settings"
 
-#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:48
+#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:49
 msgid "Affects how columns stack on mobile devices"
 msgstr "影响列在移动设备上的堆叠方式"
 
@@ -667,7 +698,7 @@ msgstr "AI助手未配置"
 msgid "AI Blog Assistant"
 msgstr "AI博客助手"
 
-#: src/components/email_builder/blocks/MjImageBlock.tsx:74
+#: src/components/email_builder/blocks/MjImageBlock.tsx:75
 msgid "Align"
 msgstr "对齐"
 
@@ -686,19 +717,19 @@ msgstr "左对齐"
 msgid "Align right"
 msgstr "右对齐"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:64
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:65
 msgid "Align to bottom"
 msgstr "底部对齐"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:61
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:62
 msgid "Align to middle"
 msgstr "居中对齐"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:58
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:59
 msgid "Align to top"
 msgstr "顶部对齐"
 
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:137
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:138
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:113
 msgid "Alignment"
 msgstr "对齐"
@@ -712,7 +743,7 @@ msgstr "全部"
 msgid "ALL"
 msgstr "全部"
 
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:205
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:208
 msgid "All Channels"
 msgstr "所有频道"
 
@@ -746,7 +777,7 @@ msgstr "允许接收邮件以触发事务性通知。需要TLS证书。"
 msgid "already set"
 msgstr "已设置"
 
-#: src/components/email_builder/blocks/MjImageBlock.tsx:66
+#: src/components/email_builder/blocks/MjImageBlock.tsx:67
 msgid "Alt text"
 msgstr "替代文本"
 
@@ -755,7 +786,7 @@ msgstr "替代文本"
 msgid "Alt Text"
 msgstr "替代文本"
 
-#: src/components/email_builder/blocks/MjImageBlock.tsx:70
+#: src/components/email_builder/blocks/MjImageBlock.tsx:71
 msgid "Alternative text"
 msgstr "替代文本"
 
@@ -763,7 +794,7 @@ msgstr "替代文本"
 msgid "Alternative text (for accessibility)"
 msgstr "替代文本（无障碍访问）"
 
-#: src/components/email_builder/blocks/MjFontBlock.tsx:48
+#: src/components/email_builder/blocks/MjFontBlock.tsx:49
 msgid "Always provide fallback fonts for better compatibility"
 msgstr "始终提供备用字体以获得更好的兼容性"
 
@@ -841,21 +872,26 @@ msgstr "API标识符"
 msgid "API Key"
 msgstr "API密钥"
 
-#: src/components/settings/WorkspaceMembers.tsx:294
+#: src/components/settings/WorkspaceMembers.tsx:300
 msgid "API key created successfully"
 msgstr "API密钥创建成功"
 
-#: src/components/settings/WorkspaceMembers.tsx:632
+#: src/components/settings/WorkspaceMembers.tsx:638
 msgid "API Key Created Successfully"
 msgstr "API密钥创建成功"
 
-#: src/components/settings/WorkspaceMembers.tsx:606
+#: src/components/settings/WorkspaceMembers.tsx:612
 msgid "API Key Name"
 msgstr "API密钥名称"
 
-#: src/components/settings/WorkspaceMembers.tsx:639
+#: src/components/settings/WorkspaceMembers.tsx:645
 msgid "API Token"
 msgstr "API令牌"
+
+#: src/components/settings/Integrations.tsx:1625
+#: src/components/settings/Integrations.tsx:1630
+msgid "Application (Client) ID"
+msgstr "应用程序（客户端）ID"
 
 #: src/components/messages/MessageHistoryTab.tsx:548
 #: src/components/webhooks/InboundWebhookEventsTab.tsx:307
@@ -894,7 +930,7 @@ msgid "Are you sure you want to delete the category"
 msgstr "确定要删除该分类吗"
 
 #. placeholder {0}: record.email
-#: src/components/settings/WorkspaceMembers.tsx:210
+#: src/components/settings/WorkspaceMembers.tsx:216
 msgid "Are you sure you want to delete the invitation for {0}?"
 msgstr "确定要删除对 {0} 的邀请吗？"
 
@@ -940,7 +976,7 @@ msgstr "确定要重建 \"{0}\" 吗？这将重新计算细分成员资格。"
 
 #. placeholder {0}: record.email
 #. placeholder {1}: record.type === 'api_key' ? ' This API key will be permanently deleted.' : ''
-#: src/components/settings/WorkspaceMembers.tsx:190
+#: src/components/settings/WorkspaceMembers.tsx:196
 msgid "Are you sure you want to remove {0}?{1}"
 msgstr "确定要移除 {0} 吗？{1}"
 
@@ -999,6 +1035,10 @@ msgstr "附件"
 msgid "Attempts"
 msgstr "尝试次数"
 
+#: src/components/email_builder/panels/TreePanel.tsx:284
+#~ msgid "Attributes"
+#~ msgstr "属性"
+
 #: src/pages/BroadcastsPage.tsx:903
 msgid "Audience"
 msgstr "受众"
@@ -1041,15 +1081,15 @@ msgstr "授权密钥"
 msgid "Authors"
 msgstr "作者"
 
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:72
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:74
 msgid "auto"
 msgstr "自动"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:350
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:369
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:95
-#: src/components/email_builder/blocks/MjImageBlock.tsx:85
-#: src/components/email_builder/blocks/MjImageBlock.tsx:104
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:351
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:370
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:96
+#: src/components/email_builder/blocks/MjImageBlock.tsx:86
+#: src/components/email_builder/blocks/MjImageBlock.tsx:105
 #: src/components/email_builder/ui/BackgroundInput.tsx:85
 msgid "Auto"
 msgstr "自动"
@@ -1115,7 +1155,7 @@ msgstr "可用工具"
 msgid "Avatar URL"
 msgstr "头像URL"
 
-#: src/components/email_builder/blocks/MjTitleBlock.tsx:54
+#: src/components/email_builder/blocks/MjTitleBlock.tsx:55
 msgid "Avoid special characters that might not display properly"
 msgstr "避免使用可能无法正确显示的特殊字符"
 
@@ -1137,18 +1177,18 @@ msgstr "AWS密钥"
 msgid "background"
 msgstr "背景"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:187
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:188
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:165
 msgid "Background"
 msgstr "背景"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:69
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:70
 msgid "Background color"
 msgstr "背景颜色"
 
 #: src/components/blog_editor/components/colors/ColorGrid.tsx:150
 #: src/components/blog_editor/toolbars/components/ColorPicker.tsx:223
-#: src/components/email_builder/blocks/MjBodyBlock.tsx:60
+#: src/components/email_builder/blocks/MjBodyBlock.tsx:61
 #: src/components/email_builder/ui/BackgroundInput.tsx:264
 #: src/components/email_builder/ui/tiptap/components/TiptapToolbar.tsx:585
 msgid "Background Color"
@@ -1220,7 +1260,7 @@ msgstr "用户创建前Hook"
 msgid "Belonging to at least one of the following segments"
 msgstr "属于以下至少一个细分"
 
-#: src/components/email_builder/blocks/MjTitleBlock.tsx:48
+#: src/components/email_builder/blocks/MjTitleBlock.tsx:49
 msgid "Best practices:"
 msgstr "最佳实践："
 
@@ -1238,6 +1278,14 @@ msgstr "介于"
 msgid "Block \"{0}\" updated"
 msgstr "区块 \"{0}\" 已更新"
 
+#: src/components/email_builder/EmailAIAssistant.tsx:110
+msgid "Block deleted"
+msgstr "区块已删除"
+
+#: src/components/email_builder/EmailAIAssistant.tsx:124
+msgid "Block moved"
+msgstr "区块已移动"
+
 #: src/components/email_builder/ui/BlockToolbar.tsx:234
 msgid "Block Name"
 msgstr "区块名称"
@@ -1247,13 +1295,17 @@ msgstr "区块名称"
 msgid "Block saved as \"{0}\""
 msgstr "区块已保存为 \"{0}\""
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1098
+#: src/components/templates/CreateTemplateDrawer.tsx:1112
 msgid "Block Settings Panel"
 msgstr "区块设置面板"
 
 #: src/components/email_builder/ui/BlockToolbar.tsx:218
 msgid "Block type:"
 msgstr "区块类型："
+
+#: src/components/email_builder/EmailAIAssistant.tsx:78
+msgid "Block updated"
+msgstr "区块已更新"
 
 #: src/pages/TemplatesPage.tsx:84
 msgid "Blocklist"
@@ -1291,7 +1343,11 @@ msgstr "博客样式和SEO设置"
 msgid "Blog Title"
 msgstr "博客标题"
 
-#: src/components/email_builder/blocks/MjBodyBlock.tsx:43
+#: src/components/email_builder/panels/TreePanel.tsx:267
+#~ msgid "Body"
+#~ msgstr "正文"
+
+#: src/components/email_builder/blocks/MjBodyBlock.tsx:44
 msgid "Body Attributes"
 msgstr "正文属性"
 
@@ -1309,27 +1365,27 @@ msgstr "粗体"
 msgid "Booking"
 msgstr "预订"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:320
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:84
-#: src/components/email_builder/blocks/MjImageBlock.tsx:155
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:94
-#: src/components/email_builder/blocks/MjWrapperBlock.tsx:59
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:321
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:85
+#: src/components/email_builder/blocks/MjImageBlock.tsx:156
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:97
+#: src/components/email_builder/blocks/MjWrapperBlock.tsx:61
 msgid "Border"
 msgstr "边框"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:222
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:105
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:115
-#: src/components/email_builder/blocks/MjWrapperBlock.tsx:80
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:223
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:106
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:118
+#: src/components/email_builder/blocks/MjWrapperBlock.tsx:82
 msgid "Border radius"
 msgstr "边框半径"
 
-#: src/components/email_builder/blocks/MjImageBlock.tsx:147
+#: src/components/email_builder/blocks/MjImageBlock.tsx:148
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:176
 msgid "Border Radius"
 msgstr "边框半径"
 
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:38
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:39
 msgid "Border Style"
 msgstr "边框样式"
 
@@ -1337,8 +1393,8 @@ msgstr "边框样式"
 msgid "Both the category and all its associated posts will be unpublished from the web."
 msgstr "该分类及其所有相关文章都将从网站取消发布。"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:64
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:62
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:65
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:64
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:317
 #: src/components/email_builder/ui/BorderInput.tsx:375
 #: src/components/email_builder/ui/PaddingInput.tsx:184
@@ -1407,11 +1463,15 @@ msgstr "分支"
 msgid "Branch Logic"
 msgstr "分支逻辑"
 
-#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:27
+#: src/components/email_builder/panels/TreePanel.tsx:286
+#~ msgid "Breakpoint"
+#~ msgstr "断点"
+
+#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:28
 msgid "Breakpoint Attributes"
 msgstr "断点属性"
 
-#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:54
+#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:55
 msgid "Breakpoint Width"
 msgstr "断点宽度"
 
@@ -1503,7 +1563,7 @@ msgstr "群发邮件"
 msgid "Browse Files"
 msgstr "浏览文件"
 
-#: src/components/email_builder/blocks/MjImageBlock.tsx:52
+#: src/components/email_builder/blocks/MjImageBlock.tsx:53
 #: src/components/email_builder/ui/BackgroundInput.tsx:284
 msgid "Browse Images"
 msgstr "浏览图片"
@@ -1528,19 +1588,23 @@ msgstr "批量更新"
 msgid "Bulk Update Contacts"
 msgstr "批量更新联系人"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:230
+#: src/components/email_builder/panels/TreePanel.tsx:277
+#~ msgid "Button"
+#~ msgstr "按钮"
+
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:231
 msgid "Button Align"
 msgstr "按钮对齐"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:172
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:173
 msgid "Button Attributes"
 msgstr "按钮属性"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:278
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:279
 msgid "Button Padding"
 msgstr "按钮内边距"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:340
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:341
 msgid "Button Size"
 msgstr "按钮大小"
 
@@ -1570,7 +1634,7 @@ msgstr "按钮大小"
 #: src/components/contacts/ExportContactsModal.tsx:314
 #: src/components/contacts/InlineEditableField.tsx:291
 #: src/components/contacts/InlineEditableField.tsx:299
-#: src/components/email_builder/blocks/MjStyleBlock.tsx:155
+#: src/components/email_builder/blocks/MjStyleBlock.tsx:156
 #: src/components/email_builder/panels/Preview.tsx:182
 #: src/components/email_builder/ui/BlockToolbar.tsx:210
 #: src/components/email_builder/ui/CodeDrawerInput.tsx:139
@@ -1599,9 +1663,9 @@ msgstr "按钮大小"
 #: src/components/settings/Integrations.tsx:2358
 #: src/components/settings/WebhookCard.tsx:348
 #: src/components/settings/WebhooksSettings.tsx:213
-#: src/components/settings/WorkspaceMembers.tsx:545
-#: src/components/settings/WorkspaceMembers.tsx:590
-#: src/components/templates/CreateTemplateDrawer.tsx:500
+#: src/components/settings/WorkspaceMembers.tsx:551
+#: src/components/settings/WorkspaceMembers.tsx:596
+#: src/components/templates/CreateTemplateDrawer.tsx:514
 #: src/components/templates/SendTemplateModal.tsx:268
 #: src/components/templates/TemplateTranslationsTab.tsx:254
 #: src/components/transactional/UpsertTransactionalNotificationDrawer.tsx:173
@@ -1661,7 +1725,7 @@ msgstr "分类"
 #: src/components/blog/PostsTable.tsx:236
 #: src/components/blog/ThemeEditorDrawer.tsx:428
 #: src/components/blog/ThemePresetPreviewDrawer.tsx:75
-#: src/components/templates/CreateTemplateDrawer.tsx:717
+#: src/components/templates/CreateTemplateDrawer.tsx:731
 #: src/pages/TemplatesPage.tsx:175
 msgid "Category"
 msgstr "分类"
@@ -1812,6 +1876,30 @@ msgstr "点击"
 msgid "Clicks"
 msgstr "点击"
 
+#: src/components/settings/Integrations.tsx:1658
+msgid "Client ID"
+msgstr "客户端ID"
+
+#: src/components/settings/Integrations.tsx:1626
+#: src/components/settings/Integrations.tsx:1655
+msgid "Client ID is required"
+msgstr "客户端ID为必填项"
+
+#: src/components/settings/Integrations.tsx:1636
+#: src/components/settings/Integrations.tsx:1662
+#: src/components/settings/Integrations.tsx:1666
+msgid "Client Secret"
+msgstr "客户端密钥"
+
+#: src/components/settings/Integrations.tsx:1637
+#: src/components/settings/Integrations.tsx:1663
+msgid "Client Secret is required"
+msgstr "客户端密钥为必填项"
+
+#: src/components/settings/Integrations.tsx:1641
+msgid "Client Secret Value"
+msgstr "客户端密钥值"
+
 #: src/components/templates/TemplateSelectorInput.tsx:217
 #: src/components/templates/TemplateSelectorInput.tsx:219
 msgid "Clone"
@@ -1821,11 +1909,11 @@ msgstr "克隆"
 msgid "Clone Block"
 msgstr "克隆区块"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:485
+#: src/components/templates/CreateTemplateDrawer.tsx:499
 msgid "Clone email template"
 msgstr "克隆邮件模板"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:476
+#: src/components/templates/CreateTemplateDrawer.tsx:490
 #: src/pages/TemplatesPage.tsx:266
 msgid "Clone Template"
 msgstr "克隆模板"
@@ -1835,7 +1923,7 @@ msgstr "克隆模板"
 #: src/components/broadcasts/GlobalFeedSettings.tsx:137
 #: src/components/contacts/ContactsCsvUploadDrawer.tsx:825
 #: src/components/settings/WebhookCard.tsx:345
-#: src/components/settings/WorkspaceMembers.tsx:585
+#: src/components/settings/WorkspaceMembers.tsx:591
 #: src/components/transactional/ApiCommandModal.tsx:986
 msgid "Close"
 msgstr "关闭"
@@ -1853,7 +1941,7 @@ msgstr "闭路字幕 (CC)"
 msgid "Code"
 msgstr "代码"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:765
+#: src/components/templates/CreateTemplateDrawer.tsx:779
 msgid "Code (MJML)"
 msgstr "代码 (MJML)"
 
@@ -1867,22 +1955,26 @@ msgid "Collapse"
 msgstr "折叠"
 
 #: src/components/blog_editor/menus/block-actions/BlockColorPopover.tsx:97
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:42
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:43
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:193
 #: src/components/email_builder/ui/BackgroundInput.tsx:257
 msgid "Color"
 msgstr "颜色"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:183
-#: src/components/email_builder/blocks/MjTextBlock.tsx:41
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:184
+#: src/components/email_builder/blocks/MjTextBlock.tsx:42
 msgid "Colors"
 msgstr "颜色"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:39
+#: src/components/email_builder/panels/TreePanel.tsx:269
+#~ msgid "Column"
+#~ msgstr "列"
+
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:40
 msgid "Column Attributes"
 msgstr "列属性"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:42
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:43
 msgid "Column width (e.g., '50%', '300px', 'auto')"
 msgstr "列宽（例如 '50%'、'300px'、'auto'）"
 
@@ -1937,7 +2029,7 @@ msgstr "投诉"
 msgid "Complaints"
 msgstr "投诉"
 
-#: src/components/email_builder/blocks/MjPreviewBlock.tsx:53
+#: src/components/email_builder/blocks/MjPreviewBlock.tsx:54
 msgid "Complement, don't repeat the subject line"
 msgstr "补充，不要重复主题行"
 
@@ -1994,7 +2086,7 @@ msgstr "配置"
 msgid "Configure a custom domain for email links, notification center, and web publications. DNS verification will be performed before saving to ensure you control this domain."
 msgstr "为邮件链接、通知中心和网站发布配置自定义域名。保存前将进行DNS验证以确保您控制此域名。"
 
-#: src/components/email_builder/blocks/MjFontBlock.tsx:58
+#: src/components/email_builder/blocks/MjFontBlock.tsx:59
 msgid "Configure both the font name and CSS file URL together"
 msgstr "同时配置字体名称和CSS文件URL"
 
@@ -2062,7 +2154,7 @@ msgstr "考虑连接营销邮件提供商以发送通讯、促销活动和公告
 msgid "Consider connecting a transactional email provider to be able to use transactional emails for account notifications, password resets, and other important system messages."
 msgstr "考虑连接事务性邮件提供商以使用事务性邮件发送账户通知、密码重置和其他重要系统消息。"
 
-#: src/components/email_builder/blocks/MjTitleBlock.tsx:53
+#: src/components/email_builder/blocks/MjTitleBlock.tsx:54
 msgid "Consider using the same text as your subject line"
 msgstr "考虑使用与主题行相同的文本"
 
@@ -2145,26 +2237,30 @@ msgstr "导入时联系人将被添加到这些列表（可选）"
 msgid "Contain"
 msgstr "包含"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:209
-#: src/components/email_builder/blocks/MjTextBlock.tsx:56
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:210
+#: src/components/email_builder/blocks/MjTextBlock.tsx:57
 msgid "Container"
 msgstr "容器"
 
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:99
-#: src/components/email_builder/blocks/MjImageBlock.tsx:138
-#: src/components/email_builder/blocks/MjSpacerBlock.tsx:50
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:100
+#: src/components/email_builder/blocks/MjImageBlock.tsx:139
+#: src/components/email_builder/blocks/MjSpacerBlock.tsx:51
 msgid "Container Background"
 msgstr "容器背景"
 
-#: src/components/email_builder/blocks/MjSocialBlock.tsx:33
+#: src/components/email_builder/blocks/MjSocialBlock.tsx:34
 msgid "Container color"
 msgstr "容器颜色"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:290
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:291
 msgid "Container Padding"
 msgstr "容器内边距"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1084
+#: src/components/email_builder/EmailBuilder.tsx:870
+msgid "Content structure"
+msgstr "内容结构"
+
+#: src/components/templates/CreateTemplateDrawer.tsx:1098
 msgid "Content Structure Tree"
 msgstr "内容结构树"
 
@@ -2177,7 +2273,7 @@ msgstr "内容结构树"
 msgid "Control how search engines index and follow links on your blog"
 msgstr "控制搜索引擎如何索引和跟踪您博客上的链接"
 
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:194
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:197
 msgid "Control which channels can see this section"
 msgstr "控制哪些频道可以看到此部分"
 
@@ -2244,7 +2340,7 @@ msgstr "创建群发邮件"
 msgid "Create a notification"
 msgstr "创建通知"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:486
+#: src/components/templates/CreateTemplateDrawer.tsx:500
 msgid "Create an email template"
 msgstr "创建邮件模板"
 
@@ -2252,9 +2348,9 @@ msgstr "创建邮件模板"
 msgid "Create and manage your blog content"
 msgstr "创建和管理您的博客内容"
 
-#: src/components/settings/WorkspaceMembers.tsx:514
-#: src/components/settings/WorkspaceMembers.tsx:578
-#: src/components/settings/WorkspaceMembers.tsx:598
+#: src/components/settings/WorkspaceMembers.tsx:520
+#: src/components/settings/WorkspaceMembers.tsx:584
+#: src/components/settings/WorkspaceMembers.tsx:604
 msgid "Create API Key"
 msgstr "创建API密钥"
 
@@ -2319,7 +2415,7 @@ msgstr "创建新主题 - {0}"
 msgid "Create Notification"
 msgstr "创建通知"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:476
+#: src/components/templates/CreateTemplateDrawer.tsx:490
 msgid "Create Template"
 msgstr "创建模板"
 
@@ -2327,7 +2423,7 @@ msgstr "创建模板"
 msgid "Create this in Azure Portal > App registrations > Your App > Certificates & secrets"
 msgstr "请在Azure门户 > 应用注册 > 您的应用 > 证书和密钥中创建"
 
-#: src/components/email_builder/blocks/MjPreviewBlock.tsx:54
+#: src/components/email_builder/blocks/MjPreviewBlock.tsx:55
 msgid "Create urgency or curiosity"
 msgstr "创造紧迫感或好奇心"
 
@@ -2395,23 +2491,23 @@ msgstr "创建于"
 msgid "Created new version v{0}"
 msgstr "已创建新版本 v{0}"
 
-#: src/components/email_builder/blocks/MjBodyBlock.tsx:70
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:383
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:175
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:144
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:114
-#: src/components/email_builder/blocks/MjImageBlock.tsx:175
-#: src/components/email_builder/blocks/MjRawBlock.tsx:272
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:225
-#: src/components/email_builder/blocks/MjSocialBlock.tsx:87
+#: src/components/email_builder/blocks/MjBodyBlock.tsx:71
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:384
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:176
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:145
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:116
+#: src/components/email_builder/blocks/MjImageBlock.tsx:176
+#: src/components/email_builder/blocks/MjRawBlock.tsx:273
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:228
+#: src/components/email_builder/blocks/MjSocialBlock.tsx:88
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:429
-#: src/components/email_builder/blocks/MjSpacerBlock.tsx:88
-#: src/components/email_builder/blocks/MjTextBlock.tsx:147
-#: src/components/email_builder/blocks/MjWrapperBlock.tsx:143
+#: src/components/email_builder/blocks/MjSpacerBlock.tsx:89
+#: src/components/email_builder/blocks/MjTextBlock.tsx:148
+#: src/components/email_builder/blocks/MjWrapperBlock.tsx:145
 msgid "CSS Class"
 msgstr "CSS类"
 
-#: src/components/email_builder/blocks/MjStyleBlock.tsx:120
+#: src/components/email_builder/blocks/MjStyleBlock.tsx:121
 msgid "CSS Content"
 msgstr "CSS内容"
 
@@ -2419,7 +2515,7 @@ msgstr "CSS内容"
 msgid "CSS File URL"
 msgstr "CSS文件URL"
 
-#: src/components/email_builder/blocks/MjStyleBlock.tsx:144
+#: src/components/email_builder/blocks/MjStyleBlock.tsx:145
 msgid "CSS Style Editor"
 msgstr "CSS样式编辑器"
 
@@ -2444,11 +2540,15 @@ msgstr "自定义 (%)"
 msgid "Custom (px)"
 msgstr "自定义 (px)"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:175
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:114
-#: src/components/email_builder/blocks/MjRawBlock.tsx:272
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:225
-#: src/components/email_builder/blocks/MjWrapperBlock.tsx:143
+#: src/components/email_builder/blocks/MjStyleBlock.tsx:187
+#~ msgid "Custom CSS"
+#~ msgstr "自定义CSS"
+
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:176
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:116
+#: src/components/email_builder/blocks/MjRawBlock.tsx:273
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:228
+#: src/components/email_builder/blocks/MjWrapperBlock.tsx:145
 msgid "Custom CSS class for styling"
 msgstr "用于样式的自定义CSS类"
 
@@ -2593,11 +2693,11 @@ msgstr "自定义数字5"
 msgid "Custom Number Fields"
 msgstr "自定义数字字段"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:825
+#: src/components/templates/CreateTemplateDrawer.tsx:839
 msgid "Custom sender (marketing email provider)"
 msgstr "自定义发件人（营销邮件提供商）"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:825
+#: src/components/templates/CreateTemplateDrawer.tsx:839
 msgid "Custom sender (transactional email provider)"
 msgstr "自定义发件人（事务性邮件提供商）"
 
@@ -2641,7 +2741,7 @@ msgstr "危险区域"
 msgid "Dashboard"
 msgstr "仪表盘"
 
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:62
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:63
 #: src/components/email_builder/ui/BorderInput.tsx:57
 msgid "Dashed"
 msgstr "虚线"
@@ -2692,7 +2792,11 @@ msgstr "默认"
 msgid "Default (API endpoint)"
 msgstr "默认（API端点）"
 
-#: src/components/email_builder/blocks/MjAttributesBlock.tsx:13
+#: src/components/email_builder/blocks/MjAttributesBlock.tsx:32
+#~ msgid "Default attributes"
+#~ msgstr "默认属性"
+
+#: src/components/email_builder/blocks/MjAttributesBlock.tsx:14
 msgid "Default Attributes"
 msgstr "默认属性"
 
@@ -2816,8 +2920,8 @@ msgstr "删除文件夹（只读模式）"
 msgid "Delete header"
 msgstr "删除头部"
 
-#: src/components/settings/WorkspaceMembers.tsx:209
-#: src/components/settings/WorkspaceMembers.tsx:216
+#: src/components/settings/WorkspaceMembers.tsx:215
+#: src/components/settings/WorkspaceMembers.tsx:222
 msgid "Delete invitation"
 msgstr "删除邀请"
 
@@ -2982,11 +3086,15 @@ msgstr "显示视频播放器控件"
 msgid "Distribute evenly"
 msgstr "均匀分布"
 
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:37
+#: src/components/email_builder/panels/TreePanel.tsx:273
+#~ msgid "Divider"
+#~ msgstr "分隔线"
+
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:38
 msgid "Divider Attributes"
 msgstr "分割线属性"
 
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:91
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:92
 msgid "Divider Width"
 msgstr "分割线宽度"
 
@@ -3051,7 +3159,7 @@ msgstr "不索引，但跟踪链接"
 msgid "Done"
 msgstr "完成"
 
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:63
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:64
 #: src/components/email_builder/ui/BorderInput.tsx:58
 msgid "Dotted"
 msgstr "点状"
@@ -3169,6 +3277,7 @@ msgstr "编辑"
 
 #: src/components/automations/UpsertAutomationDrawer.tsx:250
 #: src/components/blog/PostsTable.tsx:349
+#: src/components/email_builder/EmailBuilder.tsx:822
 #: src/components/email_builder/ui/ImportFontInput.tsx:209
 #: src/components/settings/Integrations.tsx:296
 #: src/components/settings/Integrations.tsx:1172
@@ -3215,7 +3324,7 @@ msgstr "编辑分类"
 msgid "Edit Content"
 msgstr "编辑内容"
 
-#: src/components/email_builder/blocks/MjStyleBlock.tsx:139
+#: src/components/email_builder/blocks/MjStyleBlock.tsx:140
 msgid "Edit CSS"
 msgstr "编辑CSS"
 
@@ -3223,7 +3332,7 @@ msgstr "编辑CSS"
 msgid "Edit Custom Field Label"
 msgstr "编辑自定义字段标签"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:483
+#: src/components/templates/CreateTemplateDrawer.tsx:497
 msgid "Edit email template"
 msgstr "编辑邮件模板"
 
@@ -3231,11 +3340,11 @@ msgstr "编辑邮件模板"
 msgid "Edit Font Import"
 msgstr "编辑字体导入"
 
-#: src/components/email_builder/blocks/MjRawBlock.tsx:264
+#: src/components/email_builder/blocks/MjRawBlock.tsx:265
 msgid "Edit HTML Content"
 msgstr "编辑HTML内容"
 
-#: src/components/email_builder/blocks/MjLiquidBlock.tsx:49
+#: src/components/email_builder/blocks/MjLiquidBlock.tsx:50
 msgid "Edit Liquid Content"
 msgstr "编辑Liquid内容"
 
@@ -3253,7 +3362,7 @@ msgstr "编辑通知"
 msgid "Edit Notification"
 msgstr "编辑通知"
 
-#: src/components/settings/WorkspaceMembers.tsx:178
+#: src/components/settings/WorkspaceMembers.tsx:184
 msgid "Edit permissions"
 msgstr "编辑权限"
 
@@ -3274,7 +3383,7 @@ msgstr "编辑细分"
 msgid "Edit Sender"
 msgstr "编辑发件人"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:476
+#: src/components/templates/CreateTemplateDrawer.tsx:490
 #: src/pages/TemplatesPage.tsx:244
 msgid "Edit Template"
 msgstr "编辑模板"
@@ -3309,7 +3418,7 @@ msgstr "编辑Webhook"
 msgid "Editable markup"
 msgstr "可编辑标记"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:757
+#: src/components/templates/CreateTemplateDrawer.tsx:771
 msgid "Editor mode"
 msgstr "编辑器模式"
 
@@ -3352,7 +3461,7 @@ msgstr "邮件"
 #: src/pages/SignInPage.tsx:142
 #: src/pages/SignInPage.tsx:149
 msgid "Email"
-msgstr "邮箱"
+msgstr "邮件"
 
 #: src/components/contacts/ContactsCsvUploadDrawer.tsx:1079
 msgid "Email (Required)"
@@ -3360,7 +3469,7 @@ msgstr "邮箱（必填）"
 
 #: src/components/email_builder/ui/tiptap/components/TiptapToolbar.tsx:383
 #: src/components/settings/Integrations.tsx:1586
-#: src/components/settings/WorkspaceMembers.tsx:554
+#: src/components/settings/WorkspaceMembers.tsx:560
 msgid "Email Address"
 msgstr "邮箱地址"
 
@@ -3368,7 +3477,7 @@ msgstr "邮箱地址"
 msgid "Email address is required for OAuth2"
 msgstr "OAuth2需要邮箱地址"
 
-#: src/components/email_builder/blocks/MjmlBlock.tsx:15
+#: src/components/email_builder/blocks/MjmlBlock.tsx:16
 msgid "Email Attributes"
 msgstr "邮件属性"
 
@@ -3410,7 +3519,7 @@ msgstr "需要邮箱映射"
 msgid "Email Metrics"
 msgstr "邮件指标"
 
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:206
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:209
 msgid "Email Only"
 msgstr "仅邮件"
 
@@ -3436,18 +3545,18 @@ msgstr "需要配置邮件提供商"
 msgid "Email Provider Required"
 msgstr "需要邮件提供商"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:777
+#: src/components/templates/CreateTemplateDrawer.tsx:791
 #: src/components/templates/TemplateTranslationsTab.tsx:216
 msgid "Email subject"
 msgstr "邮箱主题"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:843
+#: src/components/templates/CreateTemplateDrawer.tsx:857
 #: src/components/templates/TemplateTranslationsTab.tsx:272
 msgid "Email Subject"
 msgstr "邮件主题"
 
 #. placeholder {0}: workspace.settings.default_language
-#: src/components/templates/CreateTemplateDrawer.tsx:777
+#: src/components/templates/CreateTemplateDrawer.tsx:791
 msgid "Email subject ({0})"
 msgstr "邮件主题（{0}）"
 
@@ -3456,11 +3565,19 @@ msgstr "邮件主题（{0}）"
 msgid "Email Template"
 msgstr "邮件模板"
 
-#: src/components/email_builder/blocks/MjTitleBlock.tsx:32
+#: src/components/email_builder/EmailAIAssistant.tsx:152
+msgid "Email template updated"
+msgstr "邮件模板已更新"
+
+#: src/components/email_builder/blocks/MjTitleBlock.tsx:70
+#~ msgid "Email Title"
+#~ msgstr "邮件标题"
+
+#: src/components/email_builder/blocks/MjTitleBlock.tsx:33
 msgid "Email Title Settings"
 msgstr "邮件标题设置"
 
-#: src/components/email_builder/blocks/MjBodyBlock.tsx:55
+#: src/components/email_builder/blocks/MjBodyBlock.tsx:56
 msgid "Email widths above 650px may not display correctly in some email clients"
 msgstr "宽度超过650px的邮件可能在某些邮件客户端中显示不正确"
 
@@ -3482,7 +3599,7 @@ msgstr "每小时邮件数"
 msgid "Emoji Suggestions"
 msgstr "表情符号建议"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:205
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:206
 msgid "Empty column. Add text, button, or image content."
 msgstr "空列。添加文本、按钮或图片内容。"
 
@@ -3604,11 +3721,11 @@ msgstr "输入密送邮箱地址"
 msgid "Enter broadcast ID to confirm"
 msgstr "输入群发邮件ID以确认"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:177
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:178
 msgid "Enter button link URL or {{ url }}"
 msgstr "输入按钮链接URL或{{ url }}"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:637
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:638
 msgid "Enter button text..."
 msgstr "输入按钮文本..."
 
@@ -3616,18 +3733,18 @@ msgstr "输入按钮文本..."
 msgid "Enter CC email addresses"
 msgstr "输入抄送邮箱地址"
 
-#: src/components/email_builder/blocks/MjBodyBlock.tsx:74
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:387
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:148
-#: src/components/email_builder/blocks/MjImageBlock.tsx:179
-#: src/components/email_builder/blocks/MjSocialBlock.tsx:91
+#: src/components/email_builder/blocks/MjBodyBlock.tsx:75
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:388
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:149
+#: src/components/email_builder/blocks/MjImageBlock.tsx:180
+#: src/components/email_builder/blocks/MjSocialBlock.tsx:92
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:433
-#: src/components/email_builder/blocks/MjSpacerBlock.tsx:92
-#: src/components/email_builder/blocks/MjTextBlock.tsx:151
+#: src/components/email_builder/blocks/MjSpacerBlock.tsx:93
+#: src/components/email_builder/blocks/MjTextBlock.tsx:152
 msgid "Enter CSS class name"
 msgstr "输入CSS类名"
 
-#: src/components/email_builder/blocks/MjRawBlock.tsx:247
+#: src/components/email_builder/blocks/MjRawBlock.tsx:248
 msgid "Enter custom HTML code. When placed in mj-head, use for CSS styles, meta tags, or head elements. When placed in mj-body, use for body-level HTML structures, tracking pixels, or template logic."
 msgstr "输入自定义HTML代码。放在mj-head中时，用于CSS样式、元标签或头部元素。放在mj-body中时，用于正文级HTML结构、追踪像素或模板逻辑。"
 
@@ -3636,11 +3753,11 @@ msgid "Enter duration"
 msgstr "输入持续时间"
 
 #: src/components/contacts/ContactUpsertDrawer.tsx:521
-#: src/components/settings/WorkspaceMembers.tsx:559
+#: src/components/settings/WorkspaceMembers.tsx:565
 msgid "Enter email address"
 msgstr "输入邮箱地址"
 
-#: src/components/email_builder/blocks/MjTitleBlock.tsx:41
+#: src/components/email_builder/blocks/MjTitleBlock.tsx:42
 msgid "Enter email title..."
 msgstr "输入邮件标题..."
 
@@ -3660,7 +3777,7 @@ msgstr "输入高度"
 msgid "Enter icon URL or select image"
 msgstr "输入图标URL或选择图片"
 
-#: src/components/email_builder/blocks/MjImageBlock.tsx:47
+#: src/components/email_builder/blocks/MjImageBlock.tsx:48
 msgid "Enter image URL"
 msgstr "输入图片URL"
 
@@ -3672,7 +3789,7 @@ msgstr "输入图片URL或从存储中选择"
 msgid "Enter JSON..."
 msgstr "输入JSON..."
 
-#: src/components/email_builder/blocks/MjImageBlock.tsx:60
+#: src/components/email_builder/blocks/MjImageBlock.tsx:61
 msgid "Enter link URL or {{ url }}"
 msgstr "输入链接URL或{{ url }}"
 
@@ -3696,7 +3813,7 @@ msgstr "输入徽标URL或选择图片"
 msgid "Enter number..."
 msgstr "输入数字..."
 
-#: src/components/email_builder/blocks/MjPreviewBlock.tsx:40
+#: src/components/email_builder/blocks/MjPreviewBlock.tsx:41
 msgid "Enter preview text that appears in email clients..."
 msgstr "输入在邮件客户端中显示的预览文本..."
 
@@ -3762,8 +3879,8 @@ msgstr "加载数据时出错"
 msgid "Error loading preview"
 msgstr "加载预览出错"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:226
-#: src/components/templates/CreateTemplateDrawer.tsx:381
+#: src/components/templates/CreateTemplateDrawer.tsx:240
+#: src/components/templates/CreateTemplateDrawer.tsx:395
 msgid "Error loading template: Invalid template data"
 msgstr "加载模板出错：无效的模板数据"
 
@@ -3956,7 +4073,7 @@ msgstr "完成设置失败"
 msgid "Failed to copy to clipboard"
 msgstr "复制到剪贴板失败"
 
-#: src/components/settings/WorkspaceMembers.tsx:300
+#: src/components/settings/WorkspaceMembers.tsx:306
 msgid "Failed to create API key"
 msgstr "创建API密钥失败"
 
@@ -3978,7 +4095,7 @@ msgstr "创建分类失败：{0}"
 #: src/components/file_manager/fileManager.tsx:372
 #: src/components/file_manager/fileManager.tsx:378
 msgid "Failed to create folder: "
-msgstr "Failed to create folder: "
+msgstr "创建文件夹失败："
 
 #: src/components/lists/ListDrawer.tsx:72
 msgid "Failed to create list: {error}"
@@ -3999,7 +4116,7 @@ msgid "Failed to create segment"
 msgstr "创建细分失败"
 
 #. placeholder {0}: error.message
-#: src/components/templates/CreateTemplateDrawer.tsx:281
+#: src/components/templates/CreateTemplateDrawer.tsx:295
 msgid "Failed to create template: {0}"
 msgstr "创建模板失败：{0}"
 
@@ -4026,13 +4143,13 @@ msgstr "删除联系人失败"
 
 #: src/components/file_manager/fileManager.tsx:294
 msgid "Failed to delete file: "
-msgstr "Failed to delete file: "
+msgstr "删除文件失败："
 
 #: src/components/settings/Integrations.tsx:961
 msgid "Failed to delete integration"
 msgstr "删除集成失败"
 
-#: src/components/settings/WorkspaceMembers.tsx:349
+#: src/components/settings/WorkspaceMembers.tsx:355
 msgid "Failed to delete invitation"
 msgstr "删除邀请失败"
 
@@ -4108,7 +4225,7 @@ msgstr "获取新联系人数据失败"
 
 #: src/components/file_manager/fileManager.tsx:238
 msgid "Failed to fetch objects: "
-msgstr "Failed to fetch objects: "
+msgstr "获取对象失败："
 
 #: src/pages/SetupWizard.tsx:55
 msgid "Failed to fetch setup status"
@@ -4126,7 +4243,7 @@ msgstr "导入MJML模板失败。请检查MJML语法。"
 msgid "Failed to import template. Please check the file format."
 msgstr "导入模板失败。请检查文件格式。"
 
-#: src/components/settings/WorkspaceMembers.tsx:266
+#: src/components/settings/WorkspaceMembers.tsx:272
 msgid "Failed to invite member"
 msgstr "邀请成员失败"
 
@@ -4194,7 +4311,7 @@ msgstr "注册Webhook失败"
 msgid "Failed to remove custom field label"
 msgstr "移除自定义字段标签失败"
 
-#: src/components/settings/WorkspaceMembers.tsx:330
+#: src/components/settings/WorkspaceMembers.tsx:336
 msgid "Failed to remove member"
 msgstr "移除成员失败"
 
@@ -4202,7 +4319,7 @@ msgstr "移除成员失败"
 msgid "Failed to render preview"
 msgstr "渲染预览失败"
 
-#: src/components/settings/WorkspaceMembers.tsx:385
+#: src/components/settings/WorkspaceMembers.tsx:391
 msgid "Failed to resend invitation"
 msgstr "重发邀请失败"
 
@@ -4245,7 +4362,7 @@ msgstr "保存LLM集成失败"
 msgid "Failed to save Supabase integration"
 msgstr "保存Supabase集成失败"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:460
+#: src/components/templates/CreateTemplateDrawer.tsx:474
 msgid "Failed to save template block"
 msgstr "保存模板块失败"
 
@@ -4367,7 +4484,7 @@ msgid "Failed to update status: {error}"
 msgstr "更新状态失败：{error}"
 
 #. placeholder {0}: error.message
-#: src/components/templates/CreateTemplateDrawer.tsx:281
+#: src/components/templates/CreateTemplateDrawer.tsx:295
 msgid "Failed to update template: {0}"
 msgstr "更新模板失败：{0}"
 
@@ -4566,11 +4683,15 @@ msgstr "文件夹名称"
 msgid "folder with all its content?"
 msgstr "文件夹及其所有内容？"
 
-#: src/components/email_builder/blocks/MjFontBlock.tsx:30
+#: src/components/email_builder/panels/TreePanel.tsx:285
+#~ msgid "Font"
+#~ msgstr "字体"
+
+#: src/components/email_builder/blocks/MjFontBlock.tsx:31
 msgid "Font Attributes"
 msgstr "字体属性"
 
-#: src/components/email_builder/blocks/MjFontBlock.tsx:57
+#: src/components/email_builder/blocks/MjFontBlock.tsx:58
 msgid "Font Configuration"
 msgstr "字体配置"
 
@@ -4578,6 +4699,10 @@ msgstr "字体配置"
 #: src/components/email_builder/ui/FontStyleInput.tsx:166
 msgid "Font Family"
 msgstr "字体系列"
+
+#: src/components/email_builder/blocks/MjFontBlock.tsx:95
+#~ msgid "Font Import"
+#~ msgstr "字体导入"
 
 #: src/components/email_builder/ui/ImportFontInput.tsx:125
 msgid "Font Name"
@@ -4591,9 +4716,9 @@ msgstr "字体设置"
 msgid "Font Size"
 msgstr "字体大小"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:237
-#: src/components/email_builder/blocks/MjSocialBlock.tsx:41
-#: src/components/email_builder/blocks/MjTextBlock.tsx:69
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:238
+#: src/components/email_builder/blocks/MjSocialBlock.tsx:42
+#: src/components/email_builder/blocks/MjTextBlock.tsx:70
 msgid "Font Styling"
 msgstr "字体样式"
 
@@ -4656,8 +4781,8 @@ msgstr "发件人名称（覆盖）"
 msgid "From:"
 msgstr "发件人："
 
-#: src/components/settings/WorkspaceMembers.tsx:112
-#: src/components/settings/WorkspaceMembers.tsx:139
+#: src/components/settings/WorkspaceMembers.tsx:118
+#: src/components/settings/WorkspaceMembers.tsx:145
 msgid "Full Access"
 msgstr "完全访问"
 
@@ -4668,12 +4793,12 @@ msgstr "完全访问"
 msgid "Full Name"
 msgstr "全名"
 
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:179
-#: src/components/email_builder/blocks/MjWrapperBlock.tsx:91
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:182
+#: src/components/email_builder/blocks/MjWrapperBlock.tsx:93
 msgid "Full Width"
 msgstr "全宽"
 
-#: src/components/email_builder/blocks/MjImageBlock.tsx:90
+#: src/components/email_builder/blocks/MjImageBlock.tsx:91
 msgid "Full width on mobile"
 msgstr "移动端全宽"
 
@@ -4711,7 +4836,7 @@ msgstr "生成的 SQL："
 
 #: src/components/broadcasts/GlobalFeedSettings.tsx:85
 msgid "Global Data Feed"
-msgstr "Global Data Feed"
+msgstr "全局数据源"
 
 #: src/components/broadcasts/DataFeedSettings.tsx:38
 #~ msgid "Global Feed"
@@ -4723,33 +4848,33 @@ msgstr "Global Data Feed"
 
 #: src/components/broadcasts/GlobalFeedSettings.tsx:134
 msgid "Global Feed Response"
-msgstr "Global Feed Response"
+msgstr "全局数据源响应"
 
 #: src/components/broadcasts/GlobalFeedSettings.tsx:98
 msgid "Global feed URL"
-msgstr "Global feed URL"
+msgstr "全局数据源网址"
 
 #: src/components/broadcasts/UpsertBroadcastDrawer.tsx:403
 msgid "Global feed URL is required when enabled"
-msgstr "Global feed URL is required when enabled"
+msgstr "启用时需要全局数据源网址"
 
 #: src/pages/AcceptInvitationPage.tsx:125
 #: src/pages/SetupWizard.tsx:314
 msgid "Go to Sign In"
-msgstr "Go to Sign In"
+msgstr "前往登录"
 
 #: src/components/segment/form_leaf.tsx:563
 #: src/components/segment/input.tsx:600
 msgid "Goal"
-msgstr "Goal"
+msgstr "目标"
 
 #: src/components/settings/WebhooksSettings.tsx:294
 msgid "Goal Types"
-msgstr "Goal Types"
+msgstr "目标类型"
 
 #: src/components/timeline/ContactTimeline.tsx:691
 msgid "Goal:"
-msgstr "Goal:"
+msgstr "目标："
 
 #: src/components/settings/Integrations.tsx:1580
 msgid "Google Workspace / Gmail"
@@ -4759,11 +4884,15 @@ msgstr "Google Workspace / Gmail"
 msgid "Groove"
 msgstr "Groove"
 
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:144
-msgid "Group (drag columns here)"
-msgstr "Group (drag columns here)"
+#: src/components/email_builder/panels/TreePanel.tsx:272
+#~ msgid "Group"
+#~ msgstr "组"
 
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:43
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:146
+msgid "Group (drag columns here)"
+msgstr "分组（将列拖到这里）"
+
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:45
 msgid "Group Attributes"
 msgstr "组属性"
 
@@ -4776,7 +4905,11 @@ msgstr "发生"
 msgid "Has Error"
 msgstr "有错误"
 
-#: src/components/email_builder/blocks/MjHeadBlock.tsx:15
+#: src/components/email_builder/panels/TreePanel.tsx:266
+#~ msgid "Head"
+#~ msgstr "头部"
+
+#: src/components/email_builder/blocks/MjHeadBlock.tsx:16
 msgid "Head Attributes"
 msgstr "头部属性"
 
@@ -4797,33 +4930,37 @@ msgid "Header value is required"
 msgstr "头部值是必填项"
 
 #: src/components/blog_editor/toolbars/components/CodeBlockToolbar.tsx:236
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:362
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:68
-#: src/components/email_builder/blocks/MjImageBlock.tsx:100
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:363
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:70
+#: src/components/email_builder/blocks/MjImageBlock.tsx:101
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:142
-#: src/components/email_builder/blocks/MjSpacerBlock.tsx:36
-#: src/components/email_builder/blocks/MjTextBlock.tsx:140
+#: src/components/email_builder/blocks/MjSpacerBlock.tsx:37
+#: src/components/email_builder/blocks/MjTextBlock.tsx:141
 #: src/components/email_builder/ui/HeightInput.tsx:92
 msgid "Height"
 msgstr "高度"
 
 #: src/components/email_builder/MjmlCodeEditor.tsx:701
-#: src/components/templates/CreateTemplateDrawer.tsx:136
+#: src/components/templates/CreateTemplateDrawer.tsx:137
 #: src/layouts/WorkspaceLayout.tsx:578
 msgid "Help"
 msgstr "帮助"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:131
+#: src/components/templates/CreateTemplateDrawer.tsx:132
 msgid "Help & Support"
-msgstr "Help & Support"
+msgstr "帮助与支持"
 
 #: src/pages/SetupWizard.tsx:533
 msgid "Help us improve Notifuse by sending anonymous usage statistics. No personal data or message content is collected."
-msgstr "Help us improve Notifuse by sending anonymous usage statistics. No personal data or message content is collected."
+msgstr "帮助我们通过发送匿名使用统计来改进Notifuse。不会收集任何个人信息或消息内容。"
 
 #: src/components/blog_editor/components/image/ImageNodeView.tsx:329
 msgid "Helps screen readers describe the image"
-msgstr "Helps screen readers describe the image"
+msgstr "帮助屏幕阅读器描述图片"
+
+#: src/components/email_builder/panels/TreePanel.tsx:278
+#~ msgid "Hero"
+#~ msgstr "主视觉"
 
 #: src/components/settings/WebhookCard.tsx:269
 msgid "Hide"
@@ -4831,11 +4968,11 @@ msgstr "隐藏"
 
 #: src/pages/BroadcastsPage.tsx:638
 msgid "Hide Details"
-msgstr "Hide Details"
+msgstr "隐藏详情"
 
 #: src/components/blog_editor/menus/block-actions/BlockActionsMenu.tsx:138
 msgid "Hold for drag"
-msgstr "Hold for drag"
+msgstr "拖动保持"
 
 #: src/components/blog/ThemeEditorDrawer.tsx:419
 #: src/components/blog/ThemePresetPreviewDrawer.tsx:62
@@ -4852,89 +4989,101 @@ msgstr "小时"
 
 #: src/components/email_builder/ui/AddBlockPopover.tsx:339
 msgid "Hover over a block to see details"
-msgstr "Hover over a block to see details"
+msgstr "悬停在区块上查看详情"
 
-#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:44
+#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:45
 msgid "How it works:"
-msgstr "How it works:"
+msgstr "工作原理："
 
 #: src/components/automations/config/DelayConfigForm.tsx:32
 msgid "How long to wait before proceeding to the next step"
-msgstr "How long to wait before proceeding to the next step"
+msgstr "在进入下一步之前等待多长时间"
 
-#: src/components/email_builder/blocks/MjFontBlock.tsx:38
+#: src/components/email_builder/blocks/MjFontBlock.tsx:39
 msgid "How to use:"
-msgstr "How to use:"
+msgstr "如何使用："
 
 #: src/components/email_builder/panels/Preview.tsx:372
 #: src/components/templates/ImportExportButton.tsx:422
 msgid "HTML"
 msgstr "HTML"
 
-#: src/components/email_builder/blocks/MjRawBlock.tsx:246
-msgid "HTML Content"
-msgstr "HTML Content"
+#: src/components/email_builder/panels/TreePanel.tsx:287
+#~ msgid "HTML Attributes"
+#~ msgstr "HTML属性"
 
-#: src/components/email_builder/blocks/MjRawBlock.tsx:265
+#: src/components/email_builder/blocks/MjRawBlock.tsx:247
+msgid "HTML Content"
+msgstr "HTML内容"
+
+#: src/components/email_builder/blocks/MjRawBlock.tsx:266
 msgid "HTML Content Editor"
-msgstr "HTML Content Editor"
+msgstr "HTML内容编辑器"
 
 #: src/components/templates/ImportExportButton.tsx:317
 msgid "HTML Export Failed"
-msgstr "HTML Export Failed"
+msgstr "HTML导出失败"
 
 #: src/components/templates/ImportExportButton.tsx:324
 msgid "HTML exported successfully"
-msgstr "HTML exported successfully"
+msgstr "HTML导出成功"
 
 #: src/components/templates/TemplatePreviewDrawer.tsx:205
 msgid "HTML Preview"
-msgstr "HTML Preview"
+msgstr "HTML预览"
 
 #. placeholder {0}: record.name
 #: src/components/templates/TemplatePreviewDrawer.tsx:211
 msgid "HTML Preview of {0}"
-msgstr "HTML Preview of {0}"
+msgstr "{0} 的HTML预览"
+
+#: src/pages/CreateWorkspacePage.tsx:169
+msgid "https://example.com"
+msgstr "https://example.com"
 
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:86
 msgid "https://example.com or {{ url }}"
-msgstr "https://example.com or {{ url }}"
+msgstr "https://example.com 或 {{ url }}"
 
 #: src/components/email_builder/ui/ImportFontInput.tsx:141
 msgid "https://fonts.googleapis.com/css?family=... or {{ font_url }}"
-msgstr "https://fonts.googleapis.com/css?family=... or {{ font_url }}"
+msgstr "https://fonts.googleapis.com/css?family=... 或 {{ font_url }}"
+
+#: src/pages/SetupWizard.tsx:363
+msgid "https://notifuse.example.com"
+msgstr "https://notifuse.example.com"
 
 #: src/components/segment/button_upsert.tsx:391
 msgid "i.e: Big spenders..."
-msgstr "i.e: Big spenders..."
+msgstr "例如：高消费用户..."
 
-#: src/components/templates/CreateTemplateDrawer.tsx:669
+#: src/components/templates/CreateTemplateDrawer.tsx:683
 msgid "i.e: Welcome Email"
 msgstr "例如：欢迎邮件"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:710
+#: src/components/templates/CreateTemplateDrawer.tsx:724
 msgid "i.e: welcome-email"
 msgstr "例如：welcome-email"
 
 #: src/components/settings/LogoInput.tsx:45
 msgid "Icon detected successfully"
-msgstr "Icon detected successfully"
+msgstr "图标检测成功"
 
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:372
 msgid "Icon Padding"
-msgstr "Icon Padding"
+msgstr "图标内边距"
 
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:120
 msgid "Icon Settings"
-msgstr "Icon Settings"
+msgstr "图标设置"
 
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:161
 msgid "Icon Styling"
-msgstr "Icon Styling"
+msgstr "图标样式"
 
 #: src/components/settings/BlogSettings.tsx:339
 msgid "Icon/Favicon URL"
-msgstr "Icon/Favicon URL"
+msgstr "图标/Favicon网址"
 
 #: src/components/automations/AutomationCard.tsx:293
 #: src/components/messages/MessageHistoryTable.tsx:211
@@ -4946,109 +5095,109 @@ msgstr "ID"
 
 #: src/pages/CreateWorkspacePage.tsx:143
 msgid "ID can only contain lowercase letters and numbers"
-msgstr "ID can only contain lowercase letters and numbers"
+msgstr "ID只能包含小写字母和数字"
 
 #: src/components/transactional/UpsertTransactionalNotificationDrawer.tsx:274
 msgid "ID can only contain lowercase letters, numbers, and underscores"
-msgstr "ID can only contain lowercase letters, numbers, and underscores"
+msgstr "ID只能包含小写字母、数字和下划线"
 
 #: src/pages/BroadcastsPage.tsx:1458
 #: src/pages/ListsPage.tsx:346
 msgid "ID doesn't match"
-msgstr "ID doesn't match"
+msgstr "ID不匹配"
 
 #: src/pages/TemplatesPage.tsx:164
 msgid "ID for API:"
-msgstr "ID for API:"
+msgstr "API的ID："
 
 #: src/pages/CreateWorkspacePage.tsx:150
 msgid "ID is automatically generated but can be modified if needed"
-msgstr "ID is automatically generated but can be modified if needed"
+msgstr "ID是自动生成的，但可以根据需要修改"
 
 #: src/components/lists/ListDrawer.tsx:199
 msgid "ID must be alphanumeric"
-msgstr "ID must be alphanumeric"
+msgstr "ID必须是字母或数字"
 
 #: src/components/lists/ListDrawer.tsx:200
 msgid "ID must be less than 32 characters"
-msgstr "ID must be less than 32 characters"
+msgstr "ID必须少于32个字符"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:691
+#: src/components/templates/CreateTemplateDrawer.tsx:705
 msgid "ID must contain only lowercase letters, numbers, underscores, and hyphens"
-msgstr "ID must contain only lowercase letters, numbers, underscores, and hyphens"
+msgstr "ID只能包含小写字母、数字、下划线和连字符"
 
 #: src/components/timeline/ContactTimeline.tsx:698
 #: src/pages/DashboardPage.tsx:87
 msgid "ID:"
-msgstr "ID:"
+msgstr "ID："
 
 #. placeholder {0}: entry.entity_id
 #. placeholder {0}: messageData.template_id
 #: src/components/timeline/ContactTimeline.tsx:510
 #: src/components/timeline/ContactTimeline.tsx:747
 msgid "ID: {0}"
-msgstr "ID: {0}"
+msgstr "ID：{0}"
 
 #: src/components/timeline/ContactTimeline.tsx:212
 msgid "ID: {listId}"
-msgstr "ID: {listId}"
+msgstr "ID：{listId}"
 
 #: src/components/timeline/ContactTimeline.tsx:464
 msgid "ID: {segmentId}"
-msgstr "ID: {segmentId}"
+msgstr "ID：{segmentId}"
 
 #: src/components/timeline/ContactTimeline.tsx:600
 msgid "ID: {webhookTemplateId}"
-msgstr "ID: {webhookTemplateId}"
+msgstr "ID：{webhookTemplateId}"
 
 #: src/components/transactional/UpsertTransactionalNotificationDrawer.tsx:333
 msgid "Identifies a specific product promotion or strategic campaign"
-msgstr "Identifies a specific product promotion or strategic campaign"
+msgstr "标识特定的产品促销或战略活动"
 
 #: src/components/transactional/UpsertTransactionalNotificationDrawer.tsx:341
 msgid "Identifies what specifically was clicked (e.g. header_link, body_link)"
-msgstr "Identifies what specifically was clicked (e.g. header_link, body_link)"
+msgstr "标识具体点击了什么（例如：header_link、body_link）"
 
 #: src/components/transactional/UpsertTransactionalNotificationDrawer.tsx:323
 msgid "Identifies what type of link was used (e.g. email, cpc, banner)"
-msgstr "Identifies what type of link was used (e.g. email, cpc, banner)"
+msgstr "标识使用了什么类型的链接（例如：email、cpc、banner）"
 
 #: src/components/transactional/UpsertTransactionalNotificationDrawer.tsx:315
 msgid "Identifies which site sent the traffic (e.g. google, newsletter)"
-msgstr "Identifies which site sent the traffic (e.g. google, newsletter)"
+msgstr "标识哪个网站发送了流量（例如：google、newsletter）"
 
-#: src/components/email_builder/blocks/MjImageBlock.tsx:91
+#: src/components/email_builder/blocks/MjImageBlock.tsx:92
 msgid "If \"true\", will be full width on mobile even if width is set"
 msgstr "If \"true\", will be full width on mobile even if width is set"
 
 #: src/components/contacts/ContactUpsertDrawer.tsx:508
 msgid "If a contact with this email already exists, the provided fields will be overwritten. Fields not included in the form will remain unchanged."
-msgstr "If a contact with this email already exists, the provided fields will be overwritten. Fields not included in the form will remain unchanged."
+msgstr "如果具有此邮箱的联系人已存在，所提供的字段将被覆盖。未包含在表单中的字段将保持不变。"
 
 #: src/components/broadcasts/SendOrScheduleModal.tsx:289
 msgid "If enabled, the broadcast will be sent according to each recipient's timezone"
-msgstr "If enabled, the broadcast will be sent according to each recipient's timezone"
+msgstr "如果启用，群发邮件将根据每个收件人的时区发送"
 
 #: src/components/transactional/ApiCommandModal.tsx:998
 msgid "If the contact email doesn't exist in your workspace, it will be automatically created."
-msgstr "If the contact email doesn't exist in your workspace, it will be automatically created."
+msgstr "如果联系人的邮箱不存在于您的工作区中，它将自动创建。"
 
 #: src/components/broadcasts/RecipientFeedSettings.tsx:116
 #~ msgid "If the feed request fails after retries, the broadcast will pause automatically. This ensures all recipients receive their personalized content."
 #~ msgstr "If the feed request fails after retries, the broadcast will pause automatically. This ensures all recipients receive their personalized content."
 
-#: src/components/email_builder/blocks/MjImageBlock.tsx:42
+#: src/components/email_builder/blocks/MjImageBlock.tsx:43
 #: src/components/email_builder/ui/BackgroundInput.tsx:258
 msgid "Image"
 msgstr "图片"
 
-#: src/components/email_builder/blocks/MjImageBlock.tsx:41
+#: src/components/email_builder/blocks/MjImageBlock.tsx:42
 msgid "Image Attributes"
-msgstr "Image Attributes"
+msgstr "图片属性"
 
 #: src/components/seo/MissingMetaTagsWarning.tsx:60
 msgid "Image URL when shared on social media (og:image)"
-msgstr "Image URL when shared on social media (og:image)"
+msgstr "在社交媒体上分享时的图片网址（og:image）"
 
 #: src/components/email_builder/MjmlCodeEditor.tsx:614
 #: src/components/templates/ImportExportButton.tsx:387
@@ -5059,42 +5208,42 @@ msgstr "导入"
 #: src/components/email_builder/MjmlCodeEditor.tsx:690
 #: src/components/templates/ImportExportButton.tsx:456
 msgid "Import / Export"
-msgstr "Import / Export"
+msgstr "导入/导出"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1127
+#: src/components/templates/CreateTemplateDrawer.tsx:1141
 msgid "Import & Export Templates"
-msgstr "Import & Export Templates"
+msgstr "导入和导出模板"
 
 #: src/components/file_manager/fileManager.tsx:476
 msgid "Import cancelled"
-msgstr "Import cancelled"
+msgstr "导入已取消"
 
 #: src/components/contacts/ContactsCsvUploadDrawer.tsx:782
 #: src/components/contacts/ContactsCsvUploadProvider.tsx:102
 msgid "Import Contacts from CSV"
-msgstr "Import Contacts from CSV"
+msgstr "从CSV导入联系人"
 
 #: src/components/lists/ImportContactsToListButton.tsx:39
 msgid "Import Contacts to List"
-msgstr "Import Contacts to List"
+msgstr "导入联系人到列表"
 
 #: src/components/email_builder/ui/ImportFontInput.tsx:219
 msgid "Import Custom Font"
-msgstr "Import Custom Font"
+msgstr "导入自定义字体"
 
-#: src/components/email_builder/blocks/MjFontBlock.tsx:79
+#: src/components/email_builder/blocks/MjFontBlock.tsx:80
 #: src/components/email_builder/ui/ImportFontInput.tsx:22
 #: src/components/email_builder/ui/ImportFontInput.tsx:176
 msgid "Import Font"
-msgstr "Import Font"
+msgstr "导入字体"
 
-#: src/components/email_builder/blocks/MjFontBlock.tsx:42
+#: src/components/email_builder/blocks/MjFontBlock.tsx:43
 msgid "Import fonts from hosted CSS files (like Google Fonts) to use in your email. The font will only take effect if you actually use it in text elements."
 msgstr "Import fonts from hosted CSS files (like Google Fonts) to use in your email. The font will only take effect if you actually use it in text elements."
 
 #: src/components/contacts/ImportContactsButton.tsx:42
 msgid "Import from CSV"
-msgstr "Import from CSV"
+msgstr "从CSV导入"
 
 #: src/components/email_builder/MjmlCodeEditor.tsx:618
 msgid "Import MJML"
@@ -5102,41 +5251,41 @@ msgstr "导入MJML"
 
 #: src/components/templates/ImportExportButton.tsx:404
 msgid "Import MJML markup"
-msgstr "Import MJML markup"
+msgstr "导入MJML标记"
 
 #: src/components/templates/ImportExportButton.tsx:189
 msgid "Import Validation Failed"
-msgstr "Import Validation Failed"
+msgstr "导入验证失败"
 
 #: src/components/transactional/ApiCommandModal.tsx:548
 msgid "Important Notes"
-msgstr "Important Notes"
+msgstr "重要说明"
 
 #. placeholder {0}: successCount.toLocaleString()
 #: src/components/contacts/ContactsCsvUploadDrawer.tsx:533
 #: src/components/contacts/ContactsCsvUploadDrawer.tsx:692
 msgid "Imported {0} contacts"
-msgstr "Imported {0} contacts"
+msgstr "已导入 {0} 个联系人"
 
 #. placeholder {0}: successCount.toLocaleString()
 #. placeholder {1}: failureCount.toLocaleString()
 #: src/components/contacts/ContactsCsvUploadDrawer.tsx:532
 #: src/components/contacts/ContactsCsvUploadDrawer.tsx:691
 msgid "Imported {0} contacts ({1} failed, see details below)"
-msgstr "Imported {0} contacts ({1} failed, see details below)"
+msgstr "已导入 {0} 个联系人（{1} 个失败，详见下文）"
 
 #: src/components/email_builder/ui/FontStyleInput.tsx:87
 msgid "Imported Fonts"
-msgstr "Imported Fonts"
+msgstr "已导入字体"
 
 #: src/components/file_manager/fileManager.tsx:1086
 msgid "Importing files..."
-msgstr "Importing files..."
+msgstr "正在导入文件..."
 
 #. placeholder {0}: broadcast.schedule.timezone
 #: src/pages/BroadcastsPage.tsx:961
 msgid "in {0}"
-msgstr "in {0}"
+msgstr "在 {0}"
 
 #: src/components/segment/form_leaf.tsx:378
 #: src/components/segment/form_leaf.tsx:687
@@ -5145,7 +5294,7 @@ msgstr "在日期范围内"
 
 #: src/pages/BroadcastsPage.tsx:960
 msgid "in recipients timezone"
-msgstr "in recipients timezone"
+msgstr "在收件人时区"
 
 #: src/components/segment/form_leaf.tsx:381
 #: src/components/segment/form_leaf.tsx:690
@@ -5156,13 +5305,13 @@ msgstr "在最近"
 
 #: src/components/transactional/ApiCommandModal.tsx:542
 msgid "in the payload."
-msgstr "in the payload."
+msgstr "在载荷中。"
 
 #: src/components/templates/PhonePreview.tsx:201
 msgid "Inbox"
 msgstr "收件箱"
 
-#: src/components/email_builder/blocks/MjPreviewBlock.tsx:55
+#: src/components/email_builder/blocks/MjPreviewBlock.tsx:56
 msgid "Include a clear call-to-action"
 msgstr "包含明确的行动号召"
 
@@ -5190,21 +5339,21 @@ msgstr "处理中"
 msgid "Info"
 msgstr "信息"
 
-#: src/components/email_builder/blocks/MjStyleBlock.tsx:110
+#: src/components/email_builder/blocks/MjStyleBlock.tsx:111
 msgid "Inline Styles"
-msgstr "Inline Styles"
+msgstr "内联样式"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:75
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:76
 msgid "Inner background color"
-msgstr "Inner background color"
+msgstr "内部背景色"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:114
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:115
 msgid "Inner border"
-msgstr "Inner border"
+msgstr "内部边框"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:135
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:136
 msgid "Inner border radius"
-msgstr "Inner border radius"
+msgstr "内部边框圆角"
 
 #: src/components/ai-assistant/AIAssistantChat.tsx:273
 msgid "Input"
@@ -5216,46 +5365,46 @@ msgstr "插入"
 
 #: src/components/email_builder/ui/tiptap/components/TiptapToolbar.tsx:598
 msgid "Insert Emoji"
-msgstr "Insert Emoji"
+msgstr "插入表情符号"
 
 #: src/components/blog_editor/toolbars/components/LinkPopover.tsx:139
 #: src/components/email_builder/ui/tiptap/components/TiptapToolbar.tsx:406
 #: src/components/email_builder/ui/tiptap/components/TiptapToolbar.tsx:414
 #: src/components/email_builder/ui/tiptap/components/TiptapToolbar.tsx:608
 msgid "Insert Link"
-msgstr "Insert Link"
+msgstr "插入链接"
 
 #: src/components/email_builder/ui/BorderInput.tsx:62
 msgid "Inset"
-msgstr "Inset"
+msgstr "嵌入"
 
 #: src/components/settings/Integrations.tsx:927
 msgid "Integration created successfully"
-msgstr "Integration created successfully"
+msgstr "集成创建成功"
 
 #: src/components/settings/Integrations.tsx:958
 msgid "Integration deleted successfully"
-msgstr "Integration deleted successfully"
+msgstr "集成删除成功"
 
 #: src/components/webhooks/InboundWebhookEventsTab.tsx:533
 msgid "Integration ID:"
-msgstr "Integration ID:"
+msgstr "集成ID："
 
 #: src/components/integrations/FirecrawlIntegration.tsx:76
 #: src/components/integrations/LLMIntegration.tsx:95
 #: src/components/integrations/SupabaseIntegration.tsx:130
 #: src/components/settings/Integrations.tsx:1456
 msgid "Integration Name"
-msgstr "Integration Name"
+msgstr "集成名称"
 
 #: src/components/settings/Integrations.tsx:695
 #: src/components/settings/Integrations.tsx:978
 msgid "Integration not found or not an email provider"
-msgstr "Integration not found or not an email provider"
+msgstr "未找到集成或不是邮件提供商"
 
 #: src/components/settings/Integrations.tsx:915
 msgid "Integration updated successfully"
-msgstr "Integration updated successfully"
+msgstr "集成更新成功"
 
 #: src/components/settings/Integrations.tsx:2124
 #: src/components/settings/SettingsSidebar.tsx:55
@@ -5265,93 +5414,97 @@ msgstr "集成"
 #: src/pages/SetupWizard.tsx:346
 #: src/pages/SetupWizard.tsx:484
 msgid "Invalid email format"
-msgstr "Invalid email format"
+msgstr "无效的邮箱格式"
 
 #: src/components/blog_editor/components/youtube/YoutubeNodeView.tsx:233
 msgid "Invalid format. Use: 90 or 1:30 or 1:00:30"
-msgstr "Invalid format. Use: 90 or 1:30 or 1:00:30"
+msgstr "无效的格式。使用：90 或 1:30 或 1:00:30"
 
 #: src/pages/AcceptInvitationPage.tsx:118
 msgid "Invalid Invitation"
-msgstr "Invalid Invitation"
+msgstr "无效的邀请"
 
 #: src/pages/AcceptInvitationPage.tsx:34
 msgid "Invalid invitation link: missing token"
-msgstr "Invalid invitation link: missing token"
+msgstr "无效的邀请链接：缺少令牌"
 
 #: src/components/contacts/InlineEditableField.tsx:94
 #: src/components/email_builder/MjmlCodeEditor.tsx:592
 msgid "Invalid JSON format"
-msgstr "Invalid JSON format"
+msgstr "无效的JSON格式"
 
 #: src/components/email_builder/panels/Preview.tsx:132
 msgid "Invalid JSON format. Please check your syntax."
-msgstr "Invalid JSON format. Please check your syntax."
+msgstr "无效的JSON格式。请检查语法。"
 
 #: src/components/contacts/ContactUpsertDrawer.tsx:301
 msgid "Invalid JSON in field {field}"
-msgstr "Invalid JSON in field {field}"
+msgstr "字段 {field} 中的JSON无效"
 
 #: src/pages/AcceptInvitationPage.tsx:53
 msgid "Invalid or expired invitation token"
-msgstr "Invalid or expired invitation token"
+msgstr "无效或过期的邀请令牌"
 
 #: src/components/templates/TemplatePreviewDrawer.tsx:113
 msgid "Invalid template structure data."
-msgstr "Invalid template structure data."
+msgstr "无效的模板结构数据。"
+
+#: src/components/email_builder/EmailAIAssistant.tsx:145
+msgid "Invalid tree structure"
+msgstr "无效的树结构"
 
 #: src/components/templates/ImportExportButton.tsx:97
 msgid "Invalid tree structure: children must be an array"
-msgstr "Invalid tree structure: children must be an array"
+msgstr "无效的树结构：children必须是数组"
 
 #: src/components/templates/ImportExportButton.tsx:82
 #: src/components/templates/ImportExportButton.tsx:87
 msgid "Invalid tree structure: missing id or type"
-msgstr "Invalid tree structure: missing id or type"
+msgstr "无效的树结构：缺少id或type"
 
 #: src/components/templates/ImportExportButton.tsx:71
 msgid "Invalid tree structure: not an object"
-msgstr "Invalid tree structure: not an object"
+msgstr "无效的树结构：不是对象"
 
 #: src/components/templates/ImportExportButton.tsx:92
 msgid "Invalid tree structure: root must be mjml type"
-msgstr "Invalid tree structure: root must be mjml type"
+msgstr "无效的树结构：根必须是mjml类型"
 
 #: src/pages/SetupWizard.tsx:359
 msgid "Invalid URL format"
-msgstr "Invalid URL format"
+msgstr "无效的网址格式"
 
 #: src/components/email_builder/ui/ImportFontInput.tsx:146
 #: src/components/email_builder/ui/StringPopoverInput.tsx:90
 msgid "Invalid URL format. Use a valid URL or liquid expression like {{ variable }}"
-msgstr "Invalid URL format. Use a valid URL or liquid expression like {{ variable }}"
+msgstr "无效的网址格式。使用有效网址或liquid表达式如 {{ variable }}"
 
 #: src/components/blog_editor/components/youtube/YoutubeNodeView.tsx:703
 msgid "Invalid YouTube URL"
-msgstr "Invalid YouTube URL"
+msgstr "无效的YouTube网址"
 
 #: src/pages/AcceptInvitationPage.tsx:77
 msgid "Invitation accepted successfully! Welcome to the workspace."
-msgstr "Invitation accepted successfully! Welcome to the workspace."
+msgstr "邀请接受成功！欢迎加入工作区。"
 
-#: src/components/settings/WorkspaceMembers.tsx:345
+#: src/components/settings/WorkspaceMembers.tsx:351
 msgid "Invitation deleted successfully"
-msgstr "Invitation deleted successfully"
+msgstr "邀请删除成功"
 
-#: src/components/settings/WorkspaceMembers.tsx:381
+#: src/components/settings/WorkspaceMembers.tsx:387
 msgid "Invitation resent to {email}"
-msgstr "Invitation resent to {email}"
+msgstr "邀请已重新发送给 {email}"
 
 #: src/components/settings/WorkspaceMembers.tsx:97
 msgid "Invitation sent"
 msgstr "邀请已发送"
 
-#: src/components/settings/WorkspaceMembers.tsx:259
+#: src/components/settings/WorkspaceMembers.tsx:265
 msgid "Invitation sent to {inviteEmail}"
-msgstr "Invitation sent to {inviteEmail}"
+msgstr "邀请已发送给 {inviteEmail}"
 
-#: src/components/settings/WorkspaceMembers.tsx:517
-#: src/components/settings/WorkspaceMembers.tsx:539
+#: src/components/settings/WorkspaceMembers.tsx:523
+#: src/components/settings/WorkspaceMembers.tsx:545
 msgid "Invite Member"
 msgstr "邀请成员"
 
@@ -5364,12 +5517,12 @@ msgstr "is"
 #: src/components/segment/form_leaf.tsx:159
 #: src/components/segment/input.tsx:554
 msgid "is in"
-msgstr "is in"
+msgstr "在...中"
 
 #: src/components/segment/form_leaf.tsx:160
 #: src/components/segment/input.tsx:554
 msgid "is not in"
-msgstr "is not in"
+msgstr "不在...中"
 
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:262
 #: src/components/email_builder/ui/FontStyleInput.tsx:124
@@ -5386,7 +5539,7 @@ msgstr "职位"
 
 #: src/components/timeline/ContactTimeline.tsx:478
 msgid "joined"
-msgstr "joined"
+msgstr "已加入"
 
 #: src/components/automations/config/TriggerConfigForm.tsx:81
 msgid "Joined"
@@ -5399,31 +5552,31 @@ msgstr "JSON"
 
 #: src/components/templates/ImportExportButton.tsx:376
 msgid "JSON exported successfully"
-msgstr "JSON exported successfully"
+msgstr "JSON导出成功"
 
 #: src/components/timeline/ContactTimeline.tsx:412
 msgid "JSON Object"
-msgstr "JSON Object"
+msgstr "JSON对象"
 
 #: src/components/transactional/ApiCommandModal.tsx:551
 msgid "JSON Payload Required:"
-msgstr "JSON Payload Required:"
+msgstr "需要JSON载荷："
 
 #: src/components/email_builder/ui/FontStyleInput.tsx:157
 msgid "Justify"
 msgstr "两端对齐"
 
-#: src/components/email_builder/blocks/MjPreviewBlock.tsx:52
+#: src/components/email_builder/blocks/MjPreviewBlock.tsx:53
 msgid "Keep it between 35-140 characters"
-msgstr "Keep it between 35-140 characters"
+msgstr "保持在35-140个字符之间"
 
-#: src/components/email_builder/blocks/MjTitleBlock.tsx:51
+#: src/components/email_builder/blocks/MjTitleBlock.tsx:52
 msgid "Keep it concise and descriptive"
-msgstr "Keep it concise and descriptive"
+msgstr "保持简洁和描述性"
 
 #: src/components/segment/input_json_path.tsx:88
 msgid "key or index"
-msgstr "key or index"
+msgstr "键或索引"
 
 #: src/components/seo/SEOSettingsForm.tsx:65
 #: src/components/seo/SEOSettingsForm.tsx:179
@@ -5432,7 +5585,7 @@ msgstr "关键词"
 
 #: src/components/settings/CustomFieldsConfiguration.tsx:265
 msgid "Label must be at most 100 characters"
-msgstr "Label must be at most 100 characters"
+msgstr "标签最多100个字符"
 
 #: src/components/analytics/NewContactsTable.tsx:166
 #: src/components/automations/config/TriggerConfigForm.tsx:113
@@ -5450,31 +5603,31 @@ msgstr "语言"
 
 #: src/components/settings/GeneralSettings.tsx:198
 msgid "Languages available for template translations in this workspace"
-msgstr "Languages available for template translations in this workspace"
+msgstr "此工作区中可用的模板翻译语言"
 
 #: src/components/file_manager/context.tsx:187
 msgid "Large File Warning"
-msgstr "Large File Warning"
+msgstr "大文件警告"
 
 #: src/components/file_manager/context.tsx:205
 msgid "Large images can significantly slow down email loading times for recipients, especially on mobile devices or slow connections."
-msgstr "Large images can significantly slow down email loading times for recipients, especially on mobile devices or slow connections."
+msgstr "大图片会显著减慢收件人的邮件加载时间，尤其是在移动设备或慢速连接上。"
 
 #: src/components/settings/WebhookCard.tsx:297
 msgid "Last 24 hours"
-msgstr "Last 24 hours"
+msgstr "最近24小时"
 
 #: src/components/settings/WebhookCard.tsx:297
 msgid "Last 7 days"
-msgstr "Last 7 days"
+msgstr "最近7天"
 
 #: src/components/blog/RecentThemesTable.tsx:165
 msgid "Last Edited"
-msgstr "Last Edited"
+msgstr "最后编辑"
 
 #: src/components/broadcasts/GlobalFeedSettings.tsx:153
 msgid "Last fetched:"
-msgstr "Last fetched:"
+msgstr "最后获取："
 
 #: src/components/file_manager/fileManager.tsx:882
 msgid "Last modified"
@@ -5492,7 +5645,7 @@ msgstr "姓"
 
 #: src/components/settings/WebhooksSettings.tsx:301
 msgid "Lead"
-msgstr "Lead"
+msgstr "潜在客户"
 
 #: src/components/settings/SMTPBridgeSettings.tsx:64
 msgid "Learn how to enable SMTP bridge"
@@ -5501,27 +5654,27 @@ msgstr "了解如何启用 SMTP 桥接"
 #: src/components/integrations/FirecrawlIntegration.tsx:86
 #: src/components/integrations/LLMIntegration.tsx:105
 msgid "Leave blank to keep the existing API key"
-msgstr "Leave blank to keep the existing API key"
+msgstr "留空以保持现有API密钥"
 
 #: src/components/integrations/FirecrawlIntegration.tsx:95
 msgid "Leave blank to use the default Firecrawl API (api.firecrawl.dev)"
-msgstr "Leave blank to use the default Firecrawl API (api.firecrawl.dev)"
+msgstr "留空以使用默认的Firecrawl API (api.firecrawl.dev)"
 
-#: src/components/email_builder/blocks/MjImageBlock.tsx:81
+#: src/components/email_builder/blocks/MjImageBlock.tsx:82
 msgid "Leave empty for full container width"
-msgstr "Leave empty for full container width"
+msgstr "留空以使用完整容器宽度"
 
 #: src/components/automations/config/TriggerConfigForm.tsx:314
 msgid "Leave empty to trigger on any field change"
-msgstr "Leave empty to trigger on any field change"
+msgstr "留空以在任何字段更改时触发"
 
 #: src/components/broadcasts/RecipientFeedSettings.tsx:168
 msgid "Leave empty to use a random contact from the broadcast audience."
-msgstr "Leave empty to use a random contact from the broadcast audience."
+msgstr "留空以从群发邮件受众中随机使用一个联系人。"
 
 #: src/components/timeline/ContactTimeline.tsx:478
 msgid "left"
-msgstr "left"
+msgstr "剩余"
 
 #: src/components/automations/config/TriggerConfigForm.tsx:82
 #: src/components/email_builder/ui/BorderInput.tsx:380
@@ -5530,22 +5683,22 @@ msgstr "left"
 msgid "Left"
 msgstr "左"
 
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:99
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:170
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:101
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:173
 msgid "Left to Right"
-msgstr "Left to Right"
+msgstr "从左到右"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1080
+#: src/components/templates/CreateTemplateDrawer.tsx:1094
 msgid "Let's take a quick tour to help you get started with building beautiful emails using MJML."
-msgstr "Let's take a quick tour to help you get started with building beautiful emails using MJML."
+msgstr "让我们快速浏览一下，帮助您开始使用MJML构建精美的邮件。"
 
 #: src/components/email_builder/ui/FontStyleInput.tsx:265
 msgid "Letter Spacing"
-msgstr "Letter Spacing"
+msgstr "字间距"
 
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:237
 msgid "Lighter"
-msgstr "Lighter"
+msgstr "更轻"
 
 #: src/components/blog/ThemePreview.tsx:91
 #: src/components/contacts/ContactsCsvUploadDrawer.tsx:910
@@ -5557,44 +5710,48 @@ msgstr "行"
 #. placeholder {2}: detail.message
 #: src/components/templates/TemplatePreviewDrawer.tsx:375
 msgid "Line {0} ({1}): {2}"
-msgstr "Line {0} ({1}): {2}"
+msgstr "第 {0} 行 ({1}): {2}"
 
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:299
 #: src/components/email_builder/ui/FontStyleInput.tsx:253
 msgid "Line Height"
-msgstr "Line Height"
+msgstr "行高"
 
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:281
 #: src/components/email_builder/ui/FontStyleInput.tsx:138
 msgid "Line Through"
-msgstr "Line Through"
+msgstr "删除线"
 
 #: src/components/blog_editor/toolbars/components/LinkPopover.tsx:131
-#: src/components/email_builder/blocks/MjImageBlock.tsx:56
+#: src/components/email_builder/blocks/MjImageBlock.tsx:57
 msgid "Link"
 msgstr "链接"
 
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:321
 msgid "Link Settings"
-msgstr "Link Settings"
+msgstr "链接设置"
 
 #: src/components/email_builder/ui/tiptap/components/TiptapToolbar.tsx:366
 msgid "Link Type"
-msgstr "Link Type"
+msgstr "链接类型"
 
 #: src/components/blog_editor/toolbars/components/LinkPopover.tsx:103
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:173
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:174
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:82
 msgid "Link URL"
 msgstr "链接URL"
 
-#: src/components/email_builder/blocks/MjLiquidBlock.tsx:29
-msgid "Liquid Block"
-msgstr "Liquid Block"
+#: src/components/email_builder/panels/TreePanel.tsx:281
+#~ msgid "Liquid"
+#~ msgstr "Liquid"
 
-#: src/components/email_builder/blocks/MjLiquidBlock.tsx:63
+#: src/components/email_builder/blocks/MjLiquidBlock.tsx:30
+msgid "Liquid Block"
+msgstr "Liquid区块"
+
+#: src/components/email_builder/blocks/MjLiquidBlock.tsx:64
 msgid "Liquid block - Click to add MJML + Liquid content"
-msgstr "Liquid block - Click to add MJML + Liquid content"
+msgstr "Liquid区块 - 点击添加MJML + Liquid内容"
 
 #: src/components/automations/AutomationCard.tsx:306
 #: src/components/automations/config/AddToListConfigForm.tsx:32
@@ -5620,7 +5777,7 @@ msgstr "List \"{0}\" deleted successfully"
 
 #: src/components/lists/ListDrawer.tsx:66
 msgid "List created successfully"
-msgstr "List created successfully"
+msgstr "列表创建成功"
 
 #: src/components/lists/ListDrawer.tsx:196
 #: src/components/messages/MessageHistoryTab.tsx:227
@@ -5630,7 +5787,7 @@ msgstr "列表ID"
 #. placeholder {0}: record.list_id
 #: src/components/contacts/ContactDetailsDrawer.tsx:975
 msgid "List ID: {0}"
-msgstr "List ID: {0}"
+msgstr "列表ID: {0}"
 
 #: src/components/automations/nodes/ListStatusBranchNode.tsx:38
 #: src/components/contacts/ExportContactsModal.tsx:80
@@ -5646,21 +5803,21 @@ msgstr "列表订阅"
 
 #: src/components/contacts/ContactDetailsDrawer.tsx:948
 msgid "List Subscriptions"
-msgstr "List Subscriptions"
+msgstr "列表订阅"
 
 #: src/components/automations/config/ListStatusBranchConfigForm.tsx:25
 msgid "List to Check"
-msgstr "List to Check"
+msgstr "要检查的列表"
 
 #: src/components/lists/ListDrawer.tsx:81
 msgid "List updated successfully"
-msgstr "List updated successfully"
+msgstr "列表更新成功"
 
 #: src/components/timeline/ContactTimeline.tsx:234
 #: src/components/timeline/ContactTimeline.tsx:247
 #: src/components/timeline/ContactTimeline.tsx:273
 msgid "List:"
-msgstr "List:"
+msgstr "列表："
 
 #: src/components/analytics/NewContactsTable.tsx:73
 #: src/layouts/WorkspaceLayout.tsx:246
@@ -5672,7 +5829,7 @@ msgstr "列表"
 
 #: src/pages/ListsPage.tsx:143
 msgid "Lists refreshed"
-msgstr "Lists refreshed"
+msgstr "列表已刷新"
 
 #: src/components/automations/AutomationCard.tsx:65
 #: src/components/blog/RecentThemesTable.tsx:128
@@ -5681,54 +5838,54 @@ msgstr "直播"
 
 #: src/components/settings/Integrations.tsx:817
 msgid "LLM integration saved successfully"
-msgstr "LLM integration saved successfully"
+msgstr "LLM集成保存成功"
 
 #: src/components/messages/MessageHistoryTable.tsx:445
 #: src/components/webhooks/InboundWebhookEventsTab.tsx:554
 #: src/components/webhooks/OutgoingWebhooksTab.tsx:506
 #: src/pages/ContactsPage.tsx:965
 msgid "Load More"
-msgstr "Load More"
+msgstr "加载更多"
 
 #: src/components/timeline/ContactTimeline.tsx:823
 msgid "Load More Events"
-msgstr "Load More Events"
+msgstr "加载更多事件"
 
 #: src/components/templates/ImportExportButton.tsx:394
 msgid "Load saved template"
-msgstr "Load saved template"
+msgstr "加载已保存模板"
 
 #: src/pages/AutomationsPage.tsx:177
 msgid "Loading automations..."
-msgstr "Loading automations..."
+msgstr "正在加载自动化规则..."
 
 #: src/components/messages/MessageHistoryTable.tsx:416
 msgid "Loading message history..."
-msgstr "Loading message history..."
+msgstr "正在加载消息历史..."
 
 #: src/pages/SetupWizard.tsx:274
 msgid "Loading setup..."
-msgstr "Loading setup..."
+msgstr "正在加载设置..."
 
 #: src/components/automations/AutomationFlowViewer.tsx:223
 msgid "Loading stats..."
-msgstr "Loading stats..."
+msgstr "正在加载统计..."
 
 #: src/components/blog/PostDrawer.tsx:740
 msgid "Loading template..."
-msgstr "Loading template..."
+msgstr "正在加载模板..."
 
 #: src/components/webhooks/OutgoingWebhooksTab.tsx:452
 msgid "Loading webhook deliveries..."
-msgstr "Loading webhook deliveries..."
+msgstr "正在加载Webhook投递..."
 
 #: src/components/webhooks/InboundWebhookEventsTab.tsx:512
 msgid "Loading webhook events..."
-msgstr "Loading webhook events..."
+msgstr "正在加载Webhook事件..."
 
 #: src/components/settings/Integrations.tsx:199
 msgid "Loading webhook status..."
-msgstr "Loading webhook status..."
+msgstr "正在加载Webhook状态..."
 
 #: src/components/blog_editor/NotifuseEditor.tsx:478
 #: src/components/messages/MessageHistoryTab.tsx:610
@@ -5752,12 +5909,12 @@ msgstr "徽标"
 
 #: src/components/settings/LogoInput.tsx:77
 msgid "Logo Preview"
-msgstr "Logo Preview"
+msgstr "Logo预览"
 
 #: src/components/settings/BlogSettings.tsx:323
 #: src/components/settings/LogoInput.tsx:25
 msgid "Logo URL"
-msgstr "Logo URL"
+msgstr "Logo网址"
 
 #: src/layouts/WorkspaceLayout.tsx:590
 msgid "Logout"
@@ -5774,29 +5931,29 @@ msgstr "循环"
 
 #: src/components/email_builder/ui/FontStyleInput.tsx:131
 msgid "lowercase"
-msgstr "lowercase"
+msgstr "小写"
 
 #: src/pages/SignInPage.tsx:71
 msgid "Magic code sent to your email"
-msgstr "Magic code sent to your email"
+msgstr "验证码已发送到您的邮箱"
 
 #: src/components/settings/BlogSettings.tsx:324
 msgid "Main logo for your blog. Recommended size: 200x50px or similar aspect ratio"
-msgstr "Main logo for your blog. Recommended size: 200x50px or similar aspect ratio"
+msgstr "您博客的主Logo。推荐尺寸：200x50px或类似宽高比"
 
-#: src/components/email_builder/blocks/MjTitleBlock.tsx:52
+#: src/components/email_builder/blocks/MjTitleBlock.tsx:53
 msgid "Make it relevant to your email content"
-msgstr "Make it relevant to your email content"
+msgstr "使其与您的邮件内容相关"
 
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:180
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:183
 msgid "Makes the section span the entire email viewport width, ignoring container constraints (typically 600px). Useful for full-bleed backgrounds and hero sections."
-msgstr "Makes the section span the entire email viewport width, ignoring container constraints (typically 600px). Useful for full-bleed backgrounds and hero sections."
+msgstr "使区块跨越整个邮件视口宽度，忽略容器限制（通常为600px）。适用于全出血背景和主视觉区域。"
 
-#: src/components/email_builder/blocks/MjWrapperBlock.tsx:92
+#: src/components/email_builder/blocks/MjWrapperBlock.tsx:94
 msgid "Makes the wrapper span the entire email viewport width, ignoring container constraints (typically 600px). Useful for full-bleed backgrounds and hero sections."
-msgstr "Makes the wrapper span the entire email viewport width, ignoring container constraints (typically 600px). Useful for full-bleed backgrounds and hero sections."
+msgstr "使包装器跨越整个邮件视口宽度，忽略容器限制（通常为600px）。适用于全出血背景和主视觉区域。"
 
-#: src/components/settings/WorkspaceMembers.tsx:508
+#: src/components/settings/WorkspaceMembers.tsx:514
 msgid "Manage your workspace members"
 msgstr "管理工作区成员"
 
@@ -5804,16 +5961,16 @@ msgstr "管理工作区成员"
 #. placeholder {1}: integration.type
 #: src/pages/TransactionalNotificationsPage.tsx:132
 msgid "Managed by {0} ({1} integration)"
-msgstr "Managed by {0} ({1} integration)"
+msgstr "由 {0} 管理 ({1} 集成)"
 
 #: src/components/contacts/ContactsCsvUploadDrawer.tsx:1042
 msgid "Map your CSV columns to contact fields. The"
-msgstr "Map your CSV columns to contact fields. The"
+msgstr "将您的CSV列映射到联系人字段。"
 
 #: src/components/analytics/NewContactsTable.tsx:110
 #: src/pages/ContactsPage.tsx:419
 msgid "Marked as spam"
-msgstr "Marked as spam"
+msgstr "标记为垃圾邮件"
 
 #: src/pages/TemplatesPage.tsx:78
 msgid "Marketing"
@@ -5821,11 +5978,11 @@ msgstr "市场营销"
 
 #: src/components/broadcasts/SendOrScheduleModal.tsx:176
 msgid "Marketing Email Provider Required"
-msgstr "Marketing Email Provider Required"
+msgstr "需要营销邮件提供商"
 
 #: src/components/settings/Integrations.tsx:358
 msgid "Marketing Emails"
-msgstr "Marketing Emails"
+msgstr "营销邮件"
 
 #: src/components/analytics/AnalyticsDashboard.tsx:176
 msgid "Marketing Provider"
@@ -5837,15 +5994,15 @@ msgstr "已匹配"
 
 #: src/pages/ContactsPage.tsx:489
 msgid "Matched on:"
-msgstr "Matched on:"
+msgstr "匹配于："
 
 #: src/components/segment/button_upsert.tsx:637
 msgid "Matching contacts:"
-msgstr "Matching contacts:"
+msgstr "匹配的联系人："
 
 #: src/components/templates/SendTemplateModal.tsx:394
 msgid "Max 3MB per file, 10MB total, 20 files maximum"
-msgstr "Max 3MB per file, 10MB total, 20 files maximum"
+msgstr "每个文件最大3MB，总共10MB，最多20个文件"
 
 #: src/components/broadcasts/RecipientFeedSettingsCard.tsx:123
 #~ msgid "Max Retries"
@@ -5853,11 +6010,15 @@ msgstr "Max 3MB per file, 10MB total, 20 files maximum"
 
 #: src/components/templates/SendTemplateModal.tsx:199
 msgid "Maximum 20 attachments allowed"
-msgstr "Maximum 20 attachments allowed"
+msgstr "最多允许20个附件"
 
-#: src/components/settings/WorkspaceMembers.tsx:326
+#: src/components/settings/WorkspaceMembers.tsx:103
+msgid "Member"
+msgstr "成员"
+
+#: src/components/settings/WorkspaceMembers.tsx:332
 msgid "Member removed successfully"
-msgstr "Member removed successfully"
+msgstr "成员移除成功"
 
 #: src/pages/BroadcastsPage.tsx:404
 msgid "Message"
@@ -5869,7 +6030,7 @@ msgstr "消息历史"
 
 #: src/components/contacts/DeleteContactModal.tsx:52
 msgid "Message history and webhook events will be anonymized (email addresses redacted) but retained for analytics."
-msgstr "Message history and webhook events will be anonymized (email addresses redacted) but retained for analytics."
+msgstr "消息历史和Webhook事件将被匿名化（邮箱地址被编辑）但保留用于分析。"
 
 #: src/components/messages/MessageHistoryTab.tsx:225
 #: src/components/messages/MessageHistoryTable.tsx:127
@@ -5882,7 +6043,7 @@ msgstr "消息ID"
 #: src/components/settings/Integrations.tsx:1760
 #: src/components/settings/Integrations.tsx:1995
 msgid "Message Stream"
-msgstr "Message Stream"
+msgstr "消息流"
 
 #: src/components/contacts/ContactDetailsDrawer.tsx:1071
 msgid "Messages"
@@ -5892,24 +6053,24 @@ msgstr "消息"
 #: src/components/seo/SEOSettingsForm.tsx:50
 #: src/components/seo/SEOSettingsForm.tsx:164
 msgid "Meta Description"
-msgstr "Meta Description"
+msgstr "Meta描述"
 
 #: src/components/seo/MissingMetaTagsWarning.tsx:26
 #: src/components/seo/SEOSettingsForm.tsx:36
 #: src/components/seo/SEOSettingsForm.tsx:150
 #: src/components/settings/BlogSettings.tsx:221
 msgid "Meta Title"
-msgstr "Meta Title"
+msgstr "Meta标题"
 
 #: src/components/settings/Integrations.tsx:1578
 msgid "Microsoft 365 / Office 365"
 msgstr "Microsoft 365 / Office 365"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:61
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:61
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:62
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:63
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:316
 msgid "Middle"
-msgstr "Middle"
+msgstr "中间"
 
 #: src/components/blog/PostDrawer.tsx:814
 msgid "min"
@@ -5921,7 +6082,7 @@ msgstr "小地图"
 
 #: src/components/blog_editor/components/youtube/YoutubeNodeView.tsx:475
 msgid "Minimize YouTube branding"
-msgstr "Minimize YouTube branding"
+msgstr "最小化YouTube品牌标识"
 
 #: src/components/automations/config/DelayConfigForm.tsx:15
 msgid "Minutes"
@@ -5929,11 +6090,11 @@ msgstr "分钟"
 
 #: src/components/seo/MissingMetaTagsWarning.tsx:92
 msgid "Missing Tags"
-msgstr "Missing Tags"
+msgstr "缺少标签"
 
 #: src/components/templates/TemplatePreviewDrawer.tsx:74
 msgid "Missing workspace ID or template data."
-msgstr "Missing workspace ID or template data."
+msgstr "缺少工作区ID或模板数据。"
 
 #: src/components/email_builder/panels/Preview.tsx:354
 #: src/components/templates/ImportExportButton.tsx:403
@@ -5941,78 +6102,78 @@ msgstr "Missing workspace ID or template data."
 msgid "MJML"
 msgstr "MJML"
 
-#: src/components/email_builder/blocks/MjLiquidBlock.tsx:32
+#: src/components/email_builder/blocks/MjLiquidBlock.tsx:33
 msgid "MJML + Liquid Content"
-msgstr "MJML + Liquid Content"
+msgstr "MJML + Liquid内容"
 
-#: src/components/email_builder/blocks/MjLiquidBlock.tsx:50
+#: src/components/email_builder/blocks/MjLiquidBlock.tsx:51
 msgid "MJML + Liquid Editor"
-msgstr "MJML + Liquid Editor"
+msgstr "MJML + Liquid编辑器"
 
 #: src/components/email_builder/panels/Preview.tsx:88
 msgid "MJML compilation completed successfully with no warnings or errors."
-msgstr "MJML compilation completed successfully with no warnings or errors."
+msgstr "MJML编译成功，没有警告或错误。"
 
 #. placeholder {0}: mjmlError.message
 #: src/components/templates/TemplatePreviewDrawer.tsx:367
 msgid "MJML Compilation Error: {0}"
-msgstr "MJML Compilation Error: {0}"
+msgstr "MJML编译错误：{0}"
 
 #: src/components/email_builder/panels/Preview.tsx:98
 msgid "MJML Compilation Warnings"
-msgstr "MJML Compilation Warnings"
+msgstr "MJML编译警告"
 
 #: src/components/email_builder/MjmlCodeEditor.tsx:647
 msgid "MJML Documentation"
-msgstr "MJML Documentation"
+msgstr "MJML文档"
 
 #: src/components/templates/ImportExportButton.tsx:346
 msgid "MJML Export Failed"
-msgstr "MJML Export Failed"
+msgstr "MJML导出失败"
 
 #: src/components/templates/ImportExportButton.tsx:353
 msgid "MJML exported successfully"
-msgstr "MJML exported successfully"
+msgstr "MJML导出成功"
 
 #: src/components/email_builder/MjmlCodeEditor.tsx:548
 msgid "MJML file imported"
-msgstr "MJML file imported"
+msgstr "MJML文件已导入"
 
 #: src/components/templates/ImportExportButton.tsx:236
 msgid "MJML Import Error"
-msgstr "MJML Import Error"
+msgstr "MJML导入错误"
 
 #: src/components/templates/ImportExportButton.tsx:212
 msgid "MJML Import Validation Failed"
-msgstr "MJML Import Validation Failed"
+msgstr "MJML导入验证失败"
 
 #: src/components/templates/TemplatePreviewDrawer.tsx:221
 msgid "MJML Source"
-msgstr "MJML Source"
+msgstr "MJML源码"
 
 #: src/components/templates/ImportExportButton.tsx:229
 msgid "MJML Syntax Error"
-msgstr "MJML Syntax Error"
+msgstr "MJML语法错误"
 
 #: src/components/templates/ImportExportButton.tsx:219
 msgid "MJML template imported and converted successfully"
-msgstr "MJML template imported and converted successfully"
+msgstr "MJML模板导入并转换成功"
 
 #: src/components/templates/ImportExportButton.tsx:234
 msgid "MJML Validation Failed"
-msgstr "MJML Validation Failed"
+msgstr "MJML验证失败"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1112
+#: src/components/templates/CreateTemplateDrawer.tsx:1126
 msgid "Mobile & Desktop Preview"
-msgstr "Mobile & Desktop Preview"
+msgstr "移动端和桌面端预览"
 
-#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:29
+#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:30
 msgid "Mobile Breakpoint"
-msgstr "Mobile Breakpoint"
+msgstr "移动端断点"
 
 #: src/components/email_builder/panels/Preview.tsx:437
 msgid "Mobile view (400px)"
-msgstr "Mobile view (400px)"
+msgstr "移动端视图 (400px)"
 
 #: src/components/integrations/LLMIntegration.tsx:116
 #: src/components/settings/Integrations.tsx:1364
@@ -6040,11 +6201,11 @@ msgstr "我的博客"
 msgid "My Webhook"
 msgstr "我的 Webhook"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:179
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:118
-#: src/components/email_builder/blocks/MjRawBlock.tsx:276
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:229
-#: src/components/email_builder/blocks/MjWrapperBlock.tsx:147
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:180
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:120
+#: src/components/email_builder/blocks/MjRawBlock.tsx:277
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:232
+#: src/components/email_builder/blocks/MjWrapperBlock.tsx:149
 msgid "my-custom-class"
 msgstr "my-custom-class"
 
@@ -6052,7 +6213,7 @@ msgstr "my-custom-class"
 #: src/pages/BroadcastsPage.tsx:750
 #: src/pages/BroadcastsPage.tsx:785
 msgid "N/A"
-msgstr "N/A"
+msgstr "不适用"
 
 #: src/components/analytics/NewContactsTable.tsx:158
 #: src/components/automations/UpsertAutomationDrawer.tsx:167
@@ -6079,9 +6240,13 @@ msgstr "Name must be less than 255 characters"
 msgid "Name:"
 msgstr "Name:"
 
+#: src/components/email_builder/panels/TreePanel.tsx:279
+#~ msgid "Navbar"
+#~ msgstr "导航栏"
+
 #: src/components/blog/BlogSidebar.tsx:108
 msgid "New Category"
-msgstr "New Category"
+msgstr "新建分类"
 
 #: src/components/analytics/AnalyticsDashboard.tsx:141
 msgid "New Contacts"
@@ -6128,14 +6293,14 @@ msgstr "新建工作区"
 #: src/components/broadcasts/UpsertBroadcastDrawer.tsx:333
 #: src/components/broadcasts/UpsertBroadcastDrawer.tsx:343
 #: src/components/broadcasts/UpsertBroadcastDrawer.tsx:354
-#: src/components/templates/CreateTemplateDrawer.tsx:505
-#: src/components/templates/CreateTemplateDrawer.tsx:526
+#: src/components/templates/CreateTemplateDrawer.tsx:519
+#: src/components/templates/CreateTemplateDrawer.tsx:540
 msgid "Next"
 msgstr "下一步"
 
 #: src/pages/BroadcastsPage.tsx:367
 msgid "Next Run"
-msgstr "Next Run"
+msgstr "下次运行"
 
 #: src/components/automations/nodes/FilterNode.tsx:83
 #: src/components/blog/AuthorsTable.tsx:107
@@ -6164,13 +6329,14 @@ msgstr "Next Run"
 #: src/components/settings/Integrations.tsx:1186
 #: src/components/settings/Integrations.tsx:1345
 #: src/components/settings/Integrations.tsx:1403
+#: src/components/settings/Integrations.tsx:1894
 #: src/components/settings/WebhookCard.tsx:193
 #: src/components/settings/WebhookCard.tsx:237
 #: src/components/settings/WebhookCard.tsx:279
-#: src/components/settings/WorkspaceMembers.tsx:193
-#: src/components/settings/WorkspaceMembers.tsx:213
-#: src/components/settings/WorkspaceMembers.tsx:425
-#: src/components/settings/WorkspaceMembers.tsx:433
+#: src/components/settings/WorkspaceMembers.tsx:199
+#: src/components/settings/WorkspaceMembers.tsx:219
+#: src/components/settings/WorkspaceMembers.tsx:431
+#: src/components/settings/WorkspaceMembers.tsx:439
 #: src/components/transactional/UpsertTransactionalNotificationDrawer.tsx:148
 msgid "No"
 msgstr "否"
@@ -6180,7 +6346,7 @@ msgstr "否"
 msgid "No {0} content to preview"
 msgstr "No {0} content to preview"
 
-#: src/components/settings/WorkspaceMembers.tsx:133
+#: src/components/settings/WorkspaceMembers.tsx:139
 msgid "No Access"
 msgstr "No Access"
 
@@ -6190,11 +6356,11 @@ msgstr "No automations yet"
 
 #: src/pages/BroadcastsPage.tsx:1369
 msgid "No broadcasts found"
-msgstr "No broadcasts found"
+msgstr "未找到群发邮件"
 
 #: src/pages/BlogPage.tsx:138
 msgid "No categories yet"
-msgstr "No categories yet"
+msgstr "暂无分类"
 
 #: src/components/templates/TemplateSelectorInput.tsx:234
 msgid "No category"
@@ -6206,7 +6372,7 @@ msgstr "No conditions"
 
 #: src/pages/ContactsPage.tsx:956
 msgid "No contacts found. Add some contacts to get started."
-msgstr "No contacts found. Add some contacts to get started."
+msgstr "未找到联系人。添加一些联系人以开始。"
 
 #: src/components/contacts/ExportContactsModal.tsx:181
 msgid "No contacts match the current filters"
@@ -6288,7 +6454,7 @@ msgstr "No list"
 msgid "No lists found"
 msgstr "未找到列表"
 
-#: src/components/settings/WorkspaceMembers.tsx:533
+#: src/components/settings/WorkspaceMembers.tsx:539
 msgid "No members found"
 msgstr "未找到成员"
 
@@ -6356,11 +6522,11 @@ msgstr "No saved blocks yet"
 msgid "No senders configured"
 msgstr "No senders configured"
 
-#: src/components/email_builder/blocks/MjAttributesBlock.tsx:15
+#: src/components/email_builder/blocks/MjAttributesBlock.tsx:16
 msgid "No settings available for the attributes container."
 msgstr "No settings available for the attributes container."
 
-#: src/components/email_builder/blocks/MjHeadBlock.tsx:17
+#: src/components/email_builder/blocks/MjHeadBlock.tsx:18
 msgid "No settings available for the head element."
 msgstr "No settings available for the head element."
 
@@ -6376,7 +6542,7 @@ msgstr "未找到模板"
 #. placeholder {0}: category.replace('_', ' ')
 #: src/components/templates/TemplateSelectorInput.tsx:243
 msgid "No templates found for {0} category"
-msgstr "No templates found for {0} category"
+msgstr "未找到 {0} 类别的模板"
 
 #: src/pages/TemplatesPage.tsx:422
 msgid "No templates found for category \"{selectedCategory}\""
@@ -6423,12 +6589,12 @@ msgstr "节点"
 msgid "Non-Active"
 msgstr "Non-Active"
 
-#: src/components/email_builder/blocks/MjBodyBlock.tsx:66
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:214
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:79
-#: src/components/email_builder/blocks/MjSocialBlock.tsx:37
+#: src/components/email_builder/blocks/MjBodyBlock.tsx:67
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:215
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:80
+#: src/components/email_builder/blocks/MjSocialBlock.tsx:38
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:278
-#: src/components/email_builder/blocks/MjTextBlock.tsx:61
+#: src/components/email_builder/blocks/MjTextBlock.tsx:62
 #: src/components/email_builder/ui/BorderInput.tsx:55
 #: src/components/email_builder/ui/ColorPickerWithPresets.tsx:31
 #: src/components/email_builder/ui/FontStyleInput.tsx:129
@@ -6504,7 +6670,15 @@ msgstr "Notification name"
 msgid "Notification updated successfully"
 msgstr "Notification updated successfully"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:845
+#: src/pages/SetupWizard.tsx:487
+msgid "notifications@example.com"
+msgstr "notifications@example.com"
+
+#: src/pages/SetupWizard.tsx:492
+msgid "Notifuse"
+msgstr "OmniCore"
+
+#: src/components/templates/CreateTemplateDrawer.tsx:859
 #: src/components/templates/TemplateTranslationsTab.tsx:274
 msgid "Now"
 msgstr "现在"
@@ -6577,7 +6751,7 @@ msgstr "每个联系人一次"
 msgid "Only lowercase alphanumeric characters, underscore, and dash are allowed."
 msgstr "Only lowercase alphanumeric characters, underscore, and dash are allowed."
 
-#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:47
+#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:48
 msgid "Only one breakpoint per email template is allowed"
 msgstr "Only one breakpoint per email template is allowed"
 
@@ -6697,14 +6871,18 @@ msgstr "覆盖此测试邮件的默认发件人名称"
 msgid "Override the workspace default email provider for this node"
 msgstr "Override the workspace default email provider for this node"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:144
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:107
-#: src/components/email_builder/blocks/MjImageBlock.tsx:108
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:125
-#: src/components/email_builder/blocks/MjSocialBlock.tsx:75
-#: src/components/email_builder/blocks/MjSpacerBlock.tsx:58
-#: src/components/email_builder/blocks/MjTextBlock.tsx:110
-#: src/components/email_builder/blocks/MjWrapperBlock.tsx:104
+#: src/components/settings/WorkspaceMembers.tsx:99
+msgid "Owner"
+msgstr "所有者"
+
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:145
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:108
+#: src/components/email_builder/blocks/MjImageBlock.tsx:109
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:128
+#: src/components/email_builder/blocks/MjSocialBlock.tsx:76
+#: src/components/email_builder/blocks/MjSpacerBlock.tsx:59
+#: src/components/email_builder/blocks/MjTextBlock.tsx:111
+#: src/components/email_builder/blocks/MjWrapperBlock.tsx:106
 msgid "Padding"
 msgstr "内边距"
 
@@ -6743,7 +6921,7 @@ msgstr "Pause automation?"
 
 #: src/pages/BroadcastsPage.tsx:508
 msgid "Pause Broadcast"
-msgstr "Pause Broadcast"
+msgstr "暂停群发邮件"
 
 #: src/pages/BroadcastsPage.tsx:512
 msgid "Pause broadcast?"
@@ -6767,7 +6945,7 @@ msgstr "Payload:"
 #: src/components/automations/config/TriggerConfigForm.tsx:73
 #: src/components/contacts/ContactDetailsDrawer.tsx:582
 #: src/components/lists/ListStats.tsx:90
-#: src/components/settings/WorkspaceMembers.tsx:115
+#: src/components/settings/WorkspaceMembers.tsx:121
 #: src/components/webhooks/OutgoingWebhooksTab.tsx:79
 #: src/components/webhooks/OutgoingWebhooksTab.tsx:236
 #: src/pages/BroadcastsPage.tsx:338
@@ -6782,7 +6960,7 @@ msgstr "Pending confirmation"
 
 #: src/components/broadcasts/RecipientFeedSettings.tsx:88
 msgid "Per-Recipient Data Feed"
-msgstr "Per-Recipient Data Feed"
+msgstr "按收件人数据源"
 
 #: src/components/broadcasts/DataFeedSettings.tsx:53
 #~ msgid "Per-Recipient Feed"
@@ -6790,7 +6968,7 @@ msgstr "Per-Recipient Data Feed"
 
 #: src/components/broadcasts/RecipientFeedSettings.tsx:107
 msgid "Per-recipient feed URL"
-msgstr "Per-recipient feed URL"
+msgstr "按收件人数据源网址"
 
 #: src/components/broadcasts/UpsertBroadcastDrawer.tsx:408
 msgid "Per-recipient feed URL is required when enabled"
@@ -6804,13 +6982,13 @@ msgstr "Per-recipient feed URL is required when enabled"
 msgid "Periodically check for new Notifuse versions and security updates. A popup will list new versions available."
 msgstr "Periodically check for new Notifuse versions and security updates. A popup will list new versions available."
 
-#: src/components/settings/WorkspaceMembers.tsx:129
-#: src/components/settings/WorkspaceMembers.tsx:144
+#: src/components/settings/WorkspaceMembers.tsx:135
+#: src/components/settings/WorkspaceMembers.tsx:150
 msgid "Permission Details"
 msgstr "Permission Details"
 
-#: src/components/settings/WorkspaceMembers.tsx:108
-#: src/components/settings/WorkspaceMembers.tsx:565
+#: src/components/settings/WorkspaceMembers.tsx:114
+#: src/components/settings/WorkspaceMembers.tsx:571
 msgid "Permissions"
 msgstr "权限"
 
@@ -6818,7 +6996,7 @@ msgstr "权限"
 msgid "Permissions updated successfully"
 msgstr "Permissions updated successfully"
 
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:217
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:220
 msgid "Personalization Not Available for Web"
 msgstr "Personalization Not Available for Web"
 
@@ -6942,7 +7120,7 @@ msgstr "Please enter a valid image URL"
 #: src/components/settings/WebhooksSettings.tsx:235
 #: src/pages/CreateWorkspacePage.tsx:163
 msgid "Please enter a valid URL"
-msgstr "Please enter a valid URL"
+msgstr "请输入有效的网址"
 
 #: src/components/blog_editor/components/youtube/YoutubeNodeView.tsx:160
 msgid "Please enter a valid YouTube URL"
@@ -6960,8 +7138,8 @@ msgstr "Please enter a workspace name"
 msgid "Please enter an API identifier"
 msgstr "Please enter an API identifier"
 
-#: src/components/settings/WorkspaceMembers.tsx:275
-#: src/components/settings/WorkspaceMembers.tsx:608
+#: src/components/settings/WorkspaceMembers.tsx:281
+#: src/components/settings/WorkspaceMembers.tsx:614
 msgid "Please enter an API key name"
 msgstr "Please enter an API key name"
 
@@ -6970,8 +7148,8 @@ msgstr "Please enter an API key name"
 msgid "Please enter an automation name"
 msgstr "Please enter an automation name"
 
-#: src/components/settings/WorkspaceMembers.tsx:246
-#: src/components/settings/WorkspaceMembers.tsx:556
+#: src/components/settings/WorkspaceMembers.tsx:252
+#: src/components/settings/WorkspaceMembers.tsx:562
 msgid "Please enter an email address"
 msgstr "Please enter an email address"
 
@@ -6993,6 +7171,10 @@ msgstr "Please enter workspace name"
 #: src/components/integrations/LLMIntegration.tsx:109
 msgid "Please enter your API key"
 msgstr "Please enter your API key"
+
+#: src/components/settings/Integrations.tsx:2041
+msgid "Please fill in all required fields before testing"
+msgstr "请在测试前填写所有必填字段"
 
 #: src/pages/SignInPage.tsx:165
 msgid "Please input the magic code!"
@@ -7031,7 +7213,7 @@ msgstr "Please select a JSON file"
 #: src/components/contacts/ContactDetailsDrawer.tsx:1130
 #: src/components/segment/form_leaf.tsx:168
 msgid "Please select a list"
-msgstr "Please select a list"
+msgstr "请选择列表"
 
 #: src/components/contacts/BulkUpdateDrawer.tsx:388
 msgid "Please select a list for unsubscribe operation"
@@ -7053,7 +7235,7 @@ msgstr "Please select a status"
 
 #: src/components/templates/TemplateSelector.tsx:35
 msgid "Please select a template"
-msgstr "Please select a template"
+msgstr "请选择模板"
 
 #: src/components/lists/ListDrawer.tsx:252
 msgid "Please select a template for double opt-in"
@@ -7188,6 +7370,7 @@ msgstr "preview"
 #: src/components/blog/ThemePresetPreviewDrawer.tsx:37
 #: src/components/blog/ThemeSelectionModal.tsx:89
 #: src/components/common/ImageURLInput.tsx:52
+#: src/components/email_builder/EmailBuilder.tsx:826
 #: src/components/segment/button_upsert.tsx:550
 #: src/components/segment/button_upsert.tsx:589
 msgid "Preview"
@@ -7209,7 +7392,7 @@ msgstr "预览邮件"
 msgid "Preview message"
 msgstr "Preview message"
 
-#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:36
+#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:37
 msgid "Preview Mode Required"
 msgstr "Preview Mode Required"
 
@@ -7224,17 +7407,17 @@ msgstr "Preview template"
 #: src/pages/BroadcastsPage.tsx:839
 #: src/pages/TemplatesPage.tsx:330
 msgid "Preview Template"
-msgstr "Preview Template"
+msgstr "预览模板"
 
 #: src/components/templates/TemplateTranslationsTab.tsx:226
 msgid "Preview text"
 msgstr "预览文本"
 
-#: src/components/email_builder/blocks/MjPreviewBlock.tsx:31
+#: src/components/email_builder/blocks/MjPreviewBlock.tsx:32
 msgid "Preview Text Settings"
 msgstr "Preview Text Settings"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:844
+#: src/components/templates/CreateTemplateDrawer.tsx:858
 #: src/components/templates/TemplateTranslationsTab.tsx:273
 msgid "Preview text will appear here..."
 msgstr "预览文本将显示在此处..."
@@ -7247,21 +7430,21 @@ msgstr "Preview this theme in a new tab"
 msgid "Preview will appear here after compilation"
 msgstr "Preview will appear here after compilation"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1105
+#: src/components/templates/CreateTemplateDrawer.tsx:1119
 msgid "Preview Your Email"
 msgstr "Preview Your Email"
 
 #: src/components/broadcasts/UpsertBroadcastDrawer.tsx:340
 #: src/components/broadcasts/UpsertBroadcastDrawer.tsx:351
 #: src/components/broadcasts/UpsertBroadcastDrawer.tsx:362
-#: src/components/templates/CreateTemplateDrawer.tsx:510
-#: src/components/templates/CreateTemplateDrawer.tsx:531
+#: src/components/templates/CreateTemplateDrawer.tsx:524
+#: src/components/templates/CreateTemplateDrawer.tsx:545
 msgid "Previous"
 msgstr "上一步"
 
 #: src/components/contacts/ContactsCsvUploadDrawer.tsx:293
 msgid "Previous upload progress restored"
-msgstr "Previous upload progress restored"
+msgstr "已恢复上次上传进度"
 
 #: src/pages/ListsPage.tsx:277
 msgid "Private"
@@ -7344,7 +7527,7 @@ msgstr "Publish Now"
 
 #: src/components/blog/PublishModal.tsx:101
 msgid "Publish Post"
-msgstr "Publish Post"
+msgstr "发布文章"
 
 #: src/components/blog/RecentThemesTable.tsx:88
 msgid "Publish Theme"
@@ -7376,21 +7559,29 @@ msgstr "Rate Limit for Marketing"
 msgid "Rate limit for marketing emails (emails per minute)"
 msgstr "Rate limit for marketing emails (emails per minute)"
 
+#: src/components/email_builder/panels/TreePanel.tsx:280
+#~ msgid "Raw"
+#~ msgstr "原始"
+
 #: src/components/timeline/ContactTimeline.tsx:807
 msgid "Raw Entry Data"
 msgstr "Raw Entry Data"
 
-#: src/components/email_builder/blocks/MjRawBlock.tsx:242
+#: src/components/email_builder/blocks/MjRawBlock.tsx:322
+#~ msgid "Raw HTML"
+#~ msgstr "原始HTML"
+
+#: src/components/email_builder/blocks/MjRawBlock.tsx:243
 msgid "Raw HTML Block"
 msgstr "Raw HTML Block"
 
-#: src/components/email_builder/blocks/MjRawBlock.tsx:291
+#: src/components/email_builder/blocks/MjRawBlock.tsx:292
 msgid "Raw HTML block - Click to add custom HTML content"
 msgstr "Raw HTML block - Click to add custom HTML content"
 
 #: src/components/timeline/ContactTimeline.tsx:353
 msgid "Raw JSON"
-msgstr "Raw JSON"
+msgstr "原始JSON"
 
 #: src/components/webhooks/InboundWebhookEventsTab.tsx:541
 msgid "Raw Payload:"
@@ -7401,8 +7592,8 @@ msgid "Re-register"
 msgstr "Re-register"
 
 #: src/components/settings/EditPermissionsModal.tsx:86
-#: src/components/settings/WorkspaceMembers.tsx:425
-#: src/components/settings/WorkspaceMembers.tsx:479
+#: src/components/settings/WorkspaceMembers.tsx:431
+#: src/components/settings/WorkspaceMembers.tsx:485
 msgid "Read"
 msgstr "读取"
 
@@ -7416,7 +7607,7 @@ msgstr "Reading Time"
 
 #: src/components/templates/ImportExportButton.tsx:423
 msgid "Ready to send"
-msgstr "Ready to send"
+msgstr "准备发送"
 
 #: src/components/contacts/SegmentsFilter.tsx:53
 msgid "Ready to use"
@@ -7481,7 +7672,7 @@ msgstr "Recommended: 150-160 characters"
 #: src/components/seo/SEOSettingsForm.tsx:37
 #: src/components/seo/SEOSettingsForm.tsx:151
 msgid "Recommended: 50-60 characters"
-msgstr "Recommended: 50-60 characters"
+msgstr "推荐：50-60个字符"
 
 #: src/components/blog_editor/components/EditorHeader.tsx:69
 #: src/components/blog/PostDrawer.tsx:603
@@ -7513,6 +7704,15 @@ msgstr "Refresh Broadcast"
 #: src/components/file_manager/fileManager.tsx:672
 msgid "Refresh the list"
 msgstr "Refresh the list"
+
+#: src/components/settings/Integrations.tsx:1670
+#: src/components/settings/Integrations.tsx:1679
+msgid "Refresh Token"
+msgstr "刷新令牌"
+
+#: src/components/settings/Integrations.tsx:1674
+msgid "Refresh Token is required for Google"
+msgstr "Google需要刷新令牌"
 
 #: src/components/contacts/ContactDetailsDrawer.tsx:679
 msgid "Refreshing contact data..."
@@ -7571,10 +7771,10 @@ msgstr "从列表移除"
 
 #: src/components/email_builder/ui/tiptap/components/TiptapToolbar.tsx:402
 msgid "Remove Link"
-msgstr "Remove Link"
+msgstr "移除链接"
 
-#: src/components/settings/WorkspaceMembers.tsx:189
-#: src/components/settings/WorkspaceMembers.tsx:196
+#: src/components/settings/WorkspaceMembers.tsx:195
+#: src/components/settings/WorkspaceMembers.tsx:202
 msgid "Remove member"
 msgstr "移除成员"
 
@@ -7618,7 +7818,7 @@ msgstr "Repeat X"
 msgid "Repeat Y"
 msgstr "Repeat Y"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:816
+#: src/components/templates/CreateTemplateDrawer.tsx:830
 #: src/components/templates/TemplatePreviewDrawer.tsx:288
 msgid "Reply to"
 msgstr "回复至"
@@ -7629,7 +7829,7 @@ msgstr "Reply To:"
 
 #: src/components/templates/SendTemplateModal.tsx:378
 msgid "Reply-To"
-msgstr "Reply-To"
+msgstr "回复至"
 
 #: src/layouts/WorkspaceLayout.tsx:565
 msgid "Report An Issue"
@@ -7639,7 +7839,7 @@ msgstr "Report An Issue"
 msgid "Required Fields"
 msgstr "Required Fields"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:75
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:76
 msgid "Requires a padding"
 msgstr "Requires a padding"
 
@@ -7647,9 +7847,9 @@ msgstr "Requires a padding"
 msgid "Resend code"
 msgstr "Resend code"
 
-#: src/components/settings/WorkspaceMembers.tsx:224
+#: src/components/settings/WorkspaceMembers.tsx:230
 msgid "Resend invitation"
-msgstr "Resend invitation"
+msgstr "重新发送邀请"
 
 #: src/components/templates/TemplateTranslationsTab.tsx:253
 #: src/components/templates/TemplateTranslationsTab.tsx:256
@@ -7670,7 +7870,7 @@ msgid "Reset translation"
 msgstr "重置翻译"
 
 #: src/components/settings/EditPermissionsModal.tsx:80
-#: src/components/settings/WorkspaceMembers.tsx:473
+#: src/components/settings/WorkspaceMembers.tsx:479
 msgid "Resource"
 msgstr "资源"
 
@@ -7712,7 +7912,7 @@ msgstr "继续"
 
 #: src/pages/BroadcastsPage.tsx:530
 msgid "Resume Broadcast"
-msgstr "Resume Broadcast"
+msgstr "恢复群发邮件"
 
 #: src/pages/BroadcastsPage.tsx:534
 msgid "Resume broadcast?"
@@ -7720,11 +7920,11 @@ msgstr "Resume broadcast?"
 
 #: src/components/contacts/BulkUpdateDrawer.tsx:397
 msgid "Resume Previous Operation"
-msgstr "Resume Previous Operation"
+msgstr "恢复上次操作"
 
 #: src/components/contacts/ContactsCsvUploadDrawer.tsx:373
 msgid "Resume Previous Upload"
-msgstr "Resume Previous Upload"
+msgstr "恢复上次上传"
 
 #: src/components/contacts/ContactsCsvUploadDrawer.tsx:797
 msgid "Resume Upload"
@@ -7744,10 +7944,10 @@ msgstr "Ridge"
 msgid "Right"
 msgstr "右"
 
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:105
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:173
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:107
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:176
 msgid "Right to Left"
-msgstr "Right to Left"
+msgstr "从右到左"
 
 #: src/components/settings/WorkspaceMembers.tsx:85
 msgid "Role"
@@ -7839,8 +8039,8 @@ msgstr "Sandbox Mode"
 #: src/components/settings/Integrations.tsx:2319
 #: src/components/settings/Integrations.tsx:2366
 #: src/components/settings/WebhooksSettings.tsx:215
-#: src/components/templates/CreateTemplateDrawer.tsx:521
-#: src/components/templates/CreateTemplateDrawer.tsx:542
+#: src/components/templates/CreateTemplateDrawer.tsx:535
+#: src/components/templates/CreateTemplateDrawer.tsx:556
 #: src/components/transactional/UpsertTransactionalNotificationDrawer.tsx:182
 msgid "Save"
 msgstr "保存"
@@ -7859,7 +8059,7 @@ msgid "Save Block"
 msgstr "Save Block"
 
 #: src/components/automations/UpsertAutomationDrawer.tsx:158
-#: src/components/email_builder/blocks/MjStyleBlock.tsx:158
+#: src/components/email_builder/blocks/MjStyleBlock.tsx:159
 #: src/components/email_builder/ui/CodeDrawerInput.tsx:142
 #: src/components/email_builder/ui/CodeDrawerInput.tsx:182
 #: src/components/settings/BlogSettings.tsx:402
@@ -7927,18 +8127,18 @@ msgstr "Scheduled today"
 msgid "Scrapes a URL and returns its content as markdown"
 msgstr "Scrapes a URL and returns its content as markdown"
 
-#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:55
+#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:56
 msgid "Screen width below which mobile layout is activated. Common values: 480px, 600px, 768px"
 msgstr "Screen width below which mobile layout is activated. Common values: 480px, 600px, 768px"
 
 #: src/components/seo/SEOSettingsForm.tsx:73
 #: src/components/seo/SEOSettingsForm.tsx:187
 msgid "Search Engine Indexing"
-msgstr "Search Engine Indexing"
+msgstr "搜索引擎索引"
 
 #: src/components/templates/TemplateSelectorInput.tsx:169
 msgid "Search templates..."
-msgstr "Search templates..."
+msgstr "搜索模板..."
 
 #: src/components/integrations/FirecrawlIntegration.tsx:108
 msgid "Searches the web and returns relevant URLs"
@@ -7966,9 +8166,13 @@ msgstr "密钥"
 msgid "Secret:"
 msgstr "Secret:"
 
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:77
+#: src/components/email_builder/panels/TreePanel.tsx:268
+#~ msgid "Section"
+#~ msgstr "区块"
+
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:80
 msgid "Section Attributes"
-msgstr "Section Attributes"
+msgstr "区块属性"
 
 #: src/components/transactional/ApiCommandModal.tsx:528
 msgid "Security"
@@ -8112,7 +8316,7 @@ msgstr "选择 AWS 区域"
 msgid "Select Block to Update"
 msgstr "选择要更新的区块"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:721
+#: src/components/templates/CreateTemplateDrawer.tsx:735
 msgid "Select category"
 msgstr "选择分类"
 
@@ -8176,7 +8380,7 @@ msgstr "Select Image"
 #: src/components/seo/SEOSettingsForm.tsx:80
 #: src/components/seo/SEOSettingsForm.tsx:194
 msgid "Select indexing option"
-msgstr "Select indexing option"
+msgstr "选择索引选项"
 
 #: src/components/contacts/ContactUpsertDrawer.tsx:464
 msgid "Select language"
@@ -8235,7 +8439,7 @@ msgstr "选择模板"
 
 #: src/components/templates/TemplateSelectorInput.tsx:159
 msgid "Select Template"
-msgstr "Select Template"
+msgstr "选择模板"
 
 #: src/components/automations/config/EmailConfigForm.tsx:68
 msgid "Select the email template to send"
@@ -8287,7 +8491,7 @@ msgstr "Select which segment this trigger applies to"
 
 #: src/pages/BroadcastsPage.tsx:873
 msgid "Select Winner"
-msgstr "Select Winner"
+msgstr "选择获胜者"
 
 #: src/layouts/WorkspaceLayout.tsx:502
 #: src/pages/DashboardPage.tsx:30
@@ -8329,7 +8533,7 @@ msgstr "Send a transactional notification using Python:"
 msgid "Send a transactional notification using TypeScript/JavaScript:"
 msgstr "Send a transactional notification using TypeScript/JavaScript:"
 
-#: src/components/settings/WorkspaceMembers.tsx:548
+#: src/components/settings/WorkspaceMembers.tsx:554
 msgid "Send Invitation"
 msgstr "Send Invitation"
 
@@ -8339,7 +8543,7 @@ msgstr "发送验证码"
 
 #: src/components/broadcasts/SendOrScheduleModal.tsx:308
 msgid "Send Now"
-msgstr "Send Now"
+msgstr "立即发送"
 
 #: src/pages/BroadcastsPage.tsx:600
 msgid "Send or Schedule"
@@ -8352,7 +8556,7 @@ msgstr "Send or Schedule Broadcast"
 #: src/components/settings/WebhookCard.tsx:214
 #: src/components/settings/WebhookCard.tsx:355
 msgid "Send Test"
-msgstr "Send Test"
+msgstr "发送测试"
 
 #: src/components/settings/Integrations.tsx:2225
 #: src/components/templates/SendTemplateModal.tsx:263
@@ -8360,7 +8564,7 @@ msgstr "Send Test"
 #: src/pages/BroadcastsPage.tsx:823
 #: src/pages/TemplatesPage.tsx:320
 msgid "Send Test Email"
-msgstr "Send Test Email"
+msgstr "发送测试邮件"
 
 #: src/components/broadcasts/RecipientFeedSettingsCard.tsx:181
 #~ msgid "Send the email without the feed data if the request fails"
@@ -8370,13 +8574,13 @@ msgstr "Send Test Email"
 msgid "Send transactional notifications using SMTP bridge. Perfect for integrating with existing email systems or applications that support SMTP."
 msgstr "Send transactional notifications using SMTP bridge. Perfect for integrating with existing email systems or applications that support SMTP."
 
-#: src/components/templates/CreateTemplateDrawer.tsx:772
+#: src/components/templates/CreateTemplateDrawer.tsx:786
 #: src/components/templates/SendTemplateModal.tsx:303
 #: src/pages/TemplatesPage.tsx:181
 msgid "Sender"
 msgstr "发件人"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:842
+#: src/components/templates/CreateTemplateDrawer.tsx:856
 #: src/components/templates/TemplateTranslationsTab.tsx:271
 msgid "Sender Name"
 msgstr "发件人名称"
@@ -8420,15 +8624,15 @@ msgstr "SEO description for search results (recommended: 150-160 characters)"
 
 #: src/components/seo/SEOSettingsForm.tsx:21
 msgid "SEO title for search engines"
-msgstr "SEO title for search engines"
+msgstr "搜索引擎的SEO标题"
 
 #: src/components/seo/MissingMetaTagsWarning.tsx:27
 msgid "SEO title for search engines (recommended: 50-60 characters)"
-msgstr "SEO title for search engines (recommended: 50-60 characters)"
+msgstr "搜索引擎的SEO标题（推荐：50-60个字符）"
 
 #: src/components/email_builder/ui/BorderInput.tsx:352
 msgid "Separate sides"
-msgstr "Separate sides"
+msgstr "分离边"
 
 #: src/pages/SetupWizard.tsx:187
 msgid "Server is restarting with new configuration..."
@@ -8466,7 +8670,7 @@ msgstr "Set as marketing email provider?"
 msgid "Set as transactional email provider?"
 msgstr "Set as transactional email provider?"
 
-#: src/components/email_builder/blocks/MjBodyBlock.tsx:75
+#: src/components/email_builder/blocks/MjBodyBlock.tsx:76
 msgid "Set class"
 msgstr "Set class"
 
@@ -8478,17 +8682,17 @@ msgstr "Set content"
 msgid "Set friendly display names for contact custom fields."
 msgstr "Set friendly display names for contact custom fields."
 
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:73
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:75
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:304
 msgid "Set height"
 msgstr "Set height"
 
-#: src/components/email_builder/blocks/MjRawBlock.tsx:264
+#: src/components/email_builder/blocks/MjRawBlock.tsx:265
 msgid "Set HTML Content"
 msgstr "Set HTML Content"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:178
-#: src/components/email_builder/blocks/MjImageBlock.tsx:61
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:179
+#: src/components/email_builder/blocks/MjImageBlock.tsx:62
 msgid "Set link"
 msgstr "Set link"
 
@@ -8496,7 +8700,7 @@ msgstr "Set link"
 msgid "Set link URL"
 msgstr "Set link URL"
 
-#: src/components/email_builder/blocks/MjLiquidBlock.tsx:49
+#: src/components/email_builder/blocks/MjLiquidBlock.tsx:50
 msgid "Set Liquid Content"
 msgstr "Set Liquid Content"
 
@@ -8514,23 +8718,23 @@ msgstr "Set Publication Date"
 msgid "Set value"
 msgstr "Set value"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:180
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:119
-#: src/components/email_builder/blocks/MjRawBlock.tsx:277
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:230
-#: src/components/email_builder/blocks/MjWrapperBlock.tsx:148
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:181
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:121
+#: src/components/email_builder/blocks/MjRawBlock.tsx:278
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:233
+#: src/components/email_builder/blocks/MjWrapperBlock.tsx:150
 msgid "Set Value"
-msgstr "Set Value"
+msgstr "设置值"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:47
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:48
 msgid "Set Width"
 msgstr "Set Width"
 
-#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:46
+#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:47
 msgid "Sets the responsive breakpoint for the entire email"
 msgstr "Sets the responsive breakpoint for the entire email"
 
-#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:31
+#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:32
 msgid "Sets the screen width below which the email will switch to mobile layout. Most email clients use 480px as the standard mobile breakpoint."
 msgstr "Sets the screen width below which the email will switch to mobile layout. Most email clients use 480px as the standard mobile breakpoint."
 
@@ -8581,7 +8785,7 @@ msgid "Signup"
 msgstr "注册"
 
 #: src/components/analytics/NewContactsTable.tsx:184
-#: src/components/settings/WorkspaceMembers.tsx:155
+#: src/components/settings/WorkspaceMembers.tsx:161
 msgid "Since"
 msgstr "自"
 
@@ -8663,7 +8867,7 @@ msgstr "SMTP domain"
 #: src/components/settings/Integrations.tsx:1943
 #: src/pages/SetupWizard.tsx:430
 msgid "SMTP Host"
-msgstr "SMTP Host"
+msgstr "SMTP主机"
 
 #: src/pages/SetupWizard.tsx:432
 msgid "SMTP host is required"
@@ -8672,7 +8876,7 @@ msgstr "SMTP host is required"
 #: src/components/settings/Integrations.tsx:1701
 #: src/pages/SetupWizard.tsx:471
 msgid "SMTP Password"
-msgstr "SMTP Password"
+msgstr "SMTP密码"
 
 #: src/components/settings/SMTPBridgeSettings.tsx:37
 msgid "SMTP port"
@@ -8681,7 +8885,7 @@ msgstr "SMTP端口"
 #: src/components/settings/Integrations.tsx:1532
 #: src/pages/SetupWizard.tsx:439
 msgid "SMTP Port"
-msgstr "SMTP Port"
+msgstr "SMTP端口"
 
 #: src/pages/SetupWizard.tsx:441
 msgid "SMTP port is required"
@@ -8706,9 +8910,21 @@ msgstr "SMTP User"
 #: src/components/settings/Integrations.tsx:1696
 #: src/pages/SetupWizard.tsx:466
 msgid "SMTP Username"
-msgstr "SMTP Username"
+msgstr "SMTP用户名"
 
-#: src/components/email_builder/blocks/MjSocialBlock.tsx:32
+#: src/pages/SetupWizard.tsx:434
+msgid "smtp.example.com"
+msgstr "smtp.example.com"
+
+#: src/components/settings/Integrations.tsx:1528
+msgid "smtp.yourdomain.com"
+msgstr "smtp.yourdomain.com"
+
+#: src/components/email_builder/panels/TreePanel.tsx:274
+#~ msgid "Social"
+#~ msgstr "社交"
+
+#: src/components/email_builder/blocks/MjSocialBlock.tsx:33
 msgid "Social Attributes"
 msgstr "Social Attributes"
 
@@ -8727,24 +8943,24 @@ msgstr "Social Network"
 #: src/components/seo/SEOSettingsForm.tsx:107
 #: src/components/seo/SEOSettingsForm.tsx:217
 msgid "Social Share"
-msgstr "Social Share"
+msgstr "社交分享"
 
 #: src/components/seo/SEOSettingsForm.tsx:123
 #: src/components/seo/SEOSettingsForm.tsx:233
 msgid "Social Share Description"
-msgstr "Social Share Description"
+msgstr "社交分享描述"
 
 #: src/components/seo/SEOSettingsForm.tsx:132
 #: src/components/seo/SEOSettingsForm.tsx:242
 msgid "Social Share Image URL"
-msgstr "Social Share Image URL"
+msgstr "社交分享图片网址"
 
 #: src/components/seo/SEOSettingsForm.tsx:113
 #: src/components/seo/SEOSettingsForm.tsx:223
 msgid "Social Share Title"
-msgstr "Social Share Title"
+msgstr "社交分享标题"
 
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:61
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:62
 #: src/components/email_builder/ui/BorderInput.tsx:56
 msgid "Solid"
 msgstr "Solid"
@@ -8762,7 +8978,11 @@ msgstr "source {0} not found"
 msgid "Space"
 msgstr "空格"
 
-#: src/components/email_builder/blocks/MjSpacerBlock.tsx:35
+#: src/components/email_builder/panels/TreePanel.tsx:271
+#~ msgid "Spacer"
+#~ msgstr "间隔"
+
+#: src/components/email_builder/blocks/MjSpacerBlock.tsx:36
 msgid "Spacer Attributes"
 msgstr "Spacer Attributes"
 
@@ -8778,7 +8998,7 @@ msgstr "拆分"
 msgid "SQL Arguments:"
 msgstr "SQL Arguments:"
 
-#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:49
+#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:50
 msgid "Standard value is 480px for most email clients"
 msgstr "Standard value is 480px for most email clients"
 
@@ -8863,15 +9083,15 @@ msgstr "Storage settings (Read-only mode)"
 
 #: src/components/email_builder/ui/tiptap/components/TiptapToolbar.tsx:557
 msgid "Strikethrough"
-msgstr "Strikethrough"
+msgstr "删除线"
 
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:53
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:54
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:253
 #: src/components/email_builder/ui/FontStyleInput.tsx:210
 msgid "Style"
 msgstr "样式"
 
-#: src/components/email_builder/blocks/MjStyleBlock.tsx:108
+#: src/components/email_builder/blocks/MjStyleBlock.tsx:109
 msgid "Style Attributes"
 msgstr "样式属性"
 
@@ -8882,15 +9102,15 @@ msgstr "样式属性"
 msgid "Subject"
 msgstr "主题"
 
-#: src/components/email_builder/blocks/MjPreviewBlock.tsx:33
-#: src/components/templates/CreateTemplateDrawer.tsx:795
+#: src/components/email_builder/blocks/MjPreviewBlock.tsx:34
+#: src/components/templates/CreateTemplateDrawer.tsx:809
 #: src/components/templates/TemplatePreviewDrawer.tsx:309
 #: src/components/templates/TemplateTranslationsTab.tsx:220
 msgid "Subject preview"
 msgstr "主题预览"
 
 #. placeholder {0}: workspace.settings.default_language
-#: src/components/templates/CreateTemplateDrawer.tsx:795
+#: src/components/templates/CreateTemplateDrawer.tsx:809
 msgid "Subject preview ({0})"
 msgstr "主题预览 ({0})"
 
@@ -8954,7 +9174,7 @@ msgstr "Subscription list"
 #: src/components/automations/config/AddToListConfigForm.tsx:49
 #: src/components/contacts/ContactDetailsDrawer.tsx:1103
 msgid "Subscription Status"
-msgstr "Subscription Status"
+msgstr "订阅状态"
 
 #: src/components/contacts/ContactDetailsDrawer.tsx:263
 msgid "Subscription status updated successfully"
@@ -8966,7 +9186,7 @@ msgstr "成功"
 
 #: src/components/settings/WebhookCard.tsx:315
 msgid "Success Rate"
-msgstr "Success Rate"
+msgstr "成功率"
 
 #: src/components/contacts/BulkUpdateDrawer.tsx:694
 msgid "Successful"
@@ -8996,25 +9216,25 @@ msgstr "Supported Languages"
 msgid "Supports reply_to, cc, bcc, and attachments"
 msgstr "Supports reply_to, cc, bcc, and attachments"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1107
+#: src/components/templates/CreateTemplateDrawer.tsx:1121
 msgid "Switch to Preview mode to see how your email will look to recipients. This shows the final rendered version with all styling applied."
 msgstr "Switch to Preview mode to see how your email will look to recipients. This shows the final rendered version with all styling applied."
 
-#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:38
+#: src/components/email_builder/blocks/MjBreakpointBlock.tsx:39
 msgid "Switch to Preview mode to see the breakpoint effects. The edit mode shows the raw structure, but only preview mode compiles the MJML template and renders the responsive behavior properly."
 msgstr "Switch to Preview mode to see the breakpoint effects. The edit mode shows the raw structure, but only preview mode compiles the MJML template and renders the responsive behavior properly."
 
 #: src/components/email_builder/ui/FontStyleInput.tsx:102
 msgid "System Fonts"
-msgstr "System Fonts"
+msgstr "系统字体"
 
 #: src/components/blog/PostDrawer.tsx:670
 msgid "Table of Contents"
 msgstr "Table of Contents"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:121
+#: src/components/templates/CreateTemplateDrawer.tsx:122
 msgid "Take a Tour"
-msgstr "Take a Tour"
+msgstr "开始导览"
 
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:325
 msgid "Target"
@@ -9029,7 +9249,7 @@ msgid "Task type:"
 msgstr "Task type:"
 
 #: src/components/settings/SettingsSidebar.tsx:34
-#: src/components/settings/WorkspaceMembers.tsx:508
+#: src/components/settings/WorkspaceMembers.tsx:514
 msgid "Team"
 msgstr "团队"
 
@@ -9053,39 +9273,39 @@ msgid "Template {0}"
 msgstr "Template {0}"
 
 #. placeholder {0}: existingBlock?.name || nameOrId
-#: src/components/templates/CreateTemplateDrawer.tsx:446
+#: src/components/templates/CreateTemplateDrawer.tsx:460
 msgid "Template block \"{0}\" deleted successfully"
 msgstr "Template block \"{0}\" deleted successfully"
 
 #. placeholder {0}: existingBlock.name
-#: src/components/templates/CreateTemplateDrawer.tsx:438
+#: src/components/templates/CreateTemplateDrawer.tsx:452
 msgid "Template block \"{0}\" updated successfully"
 msgstr "Template block \"{0}\" updated successfully"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:424
+#: src/components/templates/CreateTemplateDrawer.tsx:438
 msgid "Template block \"{nameOrId}\" saved successfully"
 msgstr "Template block \"{nameOrId}\" saved successfully"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:429
+#: src/components/templates/CreateTemplateDrawer.tsx:443
 msgid "Template block not found"
 msgstr "Template block not found"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:275
+#: src/components/templates/CreateTemplateDrawer.tsx:289
 msgid "Template created successfully"
-msgstr "Template created successfully"
+msgstr "模板创建成功"
 
 #: src/components/email_builder/panels/Preview.tsx:336
 #: src/components/templates/TemplatePreviewDrawer.tsx:230
 msgid "Template Data"
 msgstr "模板数据"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1119
+#: src/components/templates/CreateTemplateDrawer.tsx:1133
 msgid "Template Data & Liquid Templating"
 msgstr "Template Data & Liquid Templating"
 
 #: src/pages/TemplatesPage.tsx:117
 msgid "Template deleted successfully"
-msgstr "Template deleted successfully"
+msgstr "模板删除成功"
 
 #: src/components/blog/ThemePreview.tsx:87
 msgid "Template Error"
@@ -9095,19 +9315,19 @@ msgstr "Template Error"
 msgid "Template ID"
 msgstr "模板ID"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:683
+#: src/components/templates/CreateTemplateDrawer.tsx:697
 msgid "Template ID (utm_content)"
-msgstr "Template ID (utm_content)"
+msgstr "模板ID (utm_content)"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:698
+#: src/components/templates/CreateTemplateDrawer.tsx:712
 msgid "Template ID already exists"
-msgstr "Template ID already exists"
+msgstr "模板ID已存在"
 
 #: src/components/templates/ImportExportButton.tsx:181
 msgid "Template imported successfully"
 msgstr "Template imported successfully"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:667
+#: src/components/templates/CreateTemplateDrawer.tsx:681
 msgid "Template name"
 msgstr "模板名称"
 
@@ -9119,9 +9339,9 @@ msgstr "Template set"
 msgid "Template structure data is missing or invalid."
 msgstr "Template structure data is missing or invalid."
 
-#: src/components/templates/CreateTemplateDrawer.tsx:275
+#: src/components/templates/CreateTemplateDrawer.tsx:289
 msgid "Template updated successfully"
-msgstr "Template updated successfully"
+msgstr "模板更新成功"
 
 #: src/components/transactional/ApiCommandModal.tsx:560
 msgid "Template Variables:"
@@ -9141,8 +9361,8 @@ msgstr "模板"
 msgid "Templates using this sender will need to be updated to use a different sender."
 msgstr "Templates using this sender will need to be updated to use a different sender."
 
-#: src/components/templates/CreateTemplateDrawer.tsx:791
-#: src/components/templates/CreateTemplateDrawer.tsx:809
+#: src/components/templates/CreateTemplateDrawer.tsx:805
+#: src/components/templates/CreateTemplateDrawer.tsx:823
 msgid "Templating markup allowed"
 msgstr "允许模板标记"
 
@@ -9155,7 +9375,7 @@ msgstr "测试"
 
 #: src/pages/SetupWizard.tsx:511
 msgid "Test Connection"
-msgstr "Test Connection"
+msgstr "测试连接"
 
 #: src/components/email_builder/MjmlCodeEditor.tsx:673
 msgid "Test Data"
@@ -9180,7 +9400,7 @@ msgstr "Test Email Provider"
 #: src/components/settings/Integrations.tsx:998
 #: src/components/templates/SendTemplateModal.tsx:137
 msgid "Test email sent successfully"
-msgstr "Test email sent successfully"
+msgstr "测试邮件发送成功"
 
 #: src/components/broadcasts/RecipientFeedSettings.tsx:182
 msgid "Test Failed"
@@ -9195,7 +9415,7 @@ msgstr "Test failed: {0}"
 #~ msgid "Test Feed Configuration"
 #~ msgstr "Test Feed Configuration"
 
-#: src/components/email_builder/blocks/MjFontBlock.tsx:49
+#: src/components/email_builder/blocks/MjFontBlock.tsx:50
 msgid "Test in different email clients as support varies"
 msgstr "Test in different email clients as support varies"
 
@@ -9209,7 +9429,7 @@ msgstr "Test Recipient Feed"
 
 #: src/components/broadcasts/UpsertBroadcastDrawer.tsx:689
 msgid "Test sample size (%)"
-msgstr "Test sample size (%)"
+msgstr "测试样本大小 (%)"
 
 #: src/components/broadcasts/RecipientFeedSettings.tsx:147
 #~ msgid "Test the feed configuration with a specific contact or leave empty to use a random contact from the broadcast audience."
@@ -9237,21 +9457,21 @@ msgstr "Testing feed..."
 msgid "text"
 msgstr "text"
 
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:198
-#: src/components/email_builder/blocks/MjTextBlock.tsx:45
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:199
+#: src/components/email_builder/blocks/MjTextBlock.tsx:46
 msgid "Text"
 msgstr "文本"
 
 #: src/components/email_builder/ui/FontStyleInput.tsx:225
 msgid "Text Align"
-msgstr "Text Align"
+msgstr "文本对齐"
 
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:156
-#: src/components/email_builder/blocks/MjWrapperBlock.tsx:135
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:159
+#: src/components/email_builder/blocks/MjWrapperBlock.tsx:137
 msgid "Text Alignment"
-msgstr "Text Alignment"
+msgstr "文本对齐"
 
-#: src/components/email_builder/blocks/MjTextBlock.tsx:40
+#: src/components/email_builder/blocks/MjTextBlock.tsx:41
 msgid "Text Attributes"
 msgstr "文本属性"
 
@@ -9260,16 +9480,16 @@ msgstr "文本属性"
 #: src/components/blog_editor/toolbars/components/ColorPicker.tsx:261
 #: src/components/email_builder/ui/tiptap/components/TiptapToolbar.tsx:576
 msgid "Text Color"
-msgstr "Text Color"
+msgstr "文本颜色"
 
 #: src/components/email_builder/ui/FontStyleInput.tsx:280
 msgid "Text Decoration"
-msgstr "Text Decoration"
+msgstr "文本装饰"
 
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:92
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:163
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:94
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:166
 msgid "Text Direction"
-msgstr "Text Direction"
+msgstr "文本方向"
 
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:385
 msgid "Text Padding"
@@ -9281,7 +9501,7 @@ msgstr "Text Settings"
 
 #: src/components/email_builder/ui/FontStyleInput.tsx:238
 msgid "Text Transform"
-msgstr "Text Transform"
+msgstr "文本转换"
 
 #: src/components/transactional/ApiCommandModal.tsx:554
 msgid "The"
@@ -9402,15 +9622,15 @@ msgstr "Theme published successfully"
 
 #: src/components/blog/ThemeEditorDrawer.tsx:248
 msgid "Theme updated successfully"
-msgstr "Theme updated successfully"
+msgstr "主题更新成功"
 
 #: src/components/blog/RecentThemesTable.tsx:242
 msgid "Theme Versions"
-msgstr "Theme Versions"
+msgstr "主题版本"
 
 #: src/components/broadcasts/UpsertBroadcastDrawer.tsx:611
 msgid "These parameters are automatically added to the URL of the broadcast. They are used by web analytics tools to analyze the performance of your campaign."
-msgstr "These parameters are automatically added to the URL of the broadcast. They are used by web analytics tools to analyze the performance of your campaign."
+msgstr "这些参数会自动添加到群发邮件的URL中。它们被网络分析工具用于分析您的营销活动效果。"
 
 #: src/components/automations/AutomationCard.tsx:153
 #: src/components/blog/DeletePostModal.tsx:36
@@ -9426,41 +9646,41 @@ msgstr "此操作无法撤销。"
 
 #: src/pages/BroadcastsPage.tsx:1435
 msgid "This action cannot be undone. To confirm, please enter the broadcast ID:"
-msgstr "This action cannot be undone. To confirm, please enter the broadcast ID:"
+msgstr "此操作无法撤销。要确认，请输入群发邮件ID："
 
 #: src/pages/ListsPage.tsx:336
 msgid "This action cannot be undone. To confirm, please enter the list ID:"
-msgstr "This action cannot be undone. To confirm, please enter the list ID:"
+msgstr "此操作无法撤销。要确认，请输入列表ID："
 
 #. placeholder {0}: csvData.emails.length
 #: src/components/contacts/BulkUpdateDrawer.tsx:622
 msgid "This action will permanently delete {0} contact(s)"
-msgstr "This action will permanently delete {0} contact(s)"
+msgstr "此操作将永久删除 {0} 个联系人"
 
 #. placeholder {0}: csvData.emails.length
 #: src/components/contacts/BulkUpdateDrawer.tsx:623
 msgid "This action will unsubscribe {0} contact(s)"
-msgstr "This action will unsubscribe {0} contact(s)"
+msgstr "此操作将退订 {0} 个联系人"
 
-#: src/components/email_builder/blocks/MjTitleBlock.tsx:35
+#: src/components/email_builder/blocks/MjTitleBlock.tsx:36
 msgid "This appears in browser tabs when viewing the email in a web browser and in some email clients. It's typically the same as or related to your email subject line."
-msgstr "This appears in browser tabs when viewing the email in a web browser and in some email clients. It's typically the same as or related to your email subject line."
+msgstr "这在网页浏览器中查看邮件时显示在浏览器标签页中，也在某些邮件客户端中显示。通常与您的邮件主题行相同或相关。"
 
 #: src/pages/TransactionalNotificationsPage.tsx:144
 msgid "This cannot be undone."
-msgstr "This cannot be undone."
+msgstr "此操作无法撤销。"
 
 #: src/components/contacts/ContactDetailsDrawer.tsx:1029
 msgid "This contact is not subscribed to any lists"
-msgstr "This contact is not subscribed to any lists"
+msgstr "此联系人未订阅任何列表"
 
 #: src/pages/SetupWizard.tsx:348
 msgid "This email will be used for the root administrator account"
-msgstr "This email will be used for the root administrator account"
+msgstr "此邮箱将用于根管理员账户"
 
 #: src/components/broadcasts/RecipientFeedSettings.tsx:99
 msgid "This feature makes an HTTP request for each recipient before sending their email. This can significantly slow down broadcast processing. If the feed request fails after retries, the broadcast will pause automatically."
-msgstr "This feature makes an HTTP request for each recipient before sending their email. This can significantly slow down broadcast processing. If the feed request fails after retries, the broadcast will pause automatically."
+msgstr "此功能在发送邮件前为每个收件人发起HTTP请求。这会显著减慢群发邮件处理速度。如果数据源请求在重试后失败，群发邮件将自动暂停。"
 
 #: src/components/broadcasts/RecipientFeedSettings.tsx:93
 #~ msgid "This feature makes an HTTP request for each recipient before sending their email. This can significantly slow down broadcast processing. Use with caution for large broadcasts."
@@ -9482,15 +9702,15 @@ msgstr "This ID will be used when triggering the notification via API"
 msgid "This invitation link is invalid or has expired."
 msgstr "This invitation link is invalid or has expired."
 
-#: src/components/templates/CreateTemplateDrawer.tsx:684
+#: src/components/templates/CreateTemplateDrawer.tsx:698
 msgid "This is the ID that will be used as the utm_content parameter in the links URL to track the template"
 msgstr "This is the ID that will be used as the utm_content parameter in the links URL to track the template"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1086
+#: src/components/templates/CreateTemplateDrawer.tsx:1100
 msgid "This is your content structure tree. You can drag and drop blocks to reorganize your email layout. Click the + buttons to add new blocks, or drag blocks from one section to another."
-msgstr "This is your content structure tree. You can drag and drop blocks to reorganize your email layout. Click the + buttons to add new blocks, or drag blocks from one section to another."
+msgstr "这是您的内容结构树。您可以拖放区块来重新组织邮件布局。点击 + 按钮添加新区块，或将区块从一个区域拖到另一个区域。"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1093
+#: src/components/templates/CreateTemplateDrawer.tsx:1107
 msgid "This is your visual email editor. Click on any element in your email to select it. Selected elements will be highlighted with a blue border and show editing options."
 msgstr "This is your visual email editor. Click on any element in your email to select it. Selected elements will be highlighted with a blue border and show editing options."
 
@@ -9502,11 +9722,11 @@ msgstr "This notification is managed by an integration and cannot be renamed"
 msgid "This notification is managed by an integration and the template cannot be changed"
 msgstr "This notification is managed by an integration and the template cannot be changed"
 
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:218
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:221
 msgid "This section contains Liquid template tags for personalization. Web publications don't have access to contact data, so these tags will not render properly. Consider marking this section as 'Email Only' or remove personalization tags."
 msgstr "This section contains Liquid template tags for personalization. Web publications don't have access to contact data, so these tags will not render properly. Consider marking this section as 'Email Only' or remove personalization tags."
 
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:255
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:258
 msgid "This section is empty. Add columns or groups to display content."
 msgstr "This section is empty. Add columns or groups to display content."
 
@@ -9522,11 +9742,11 @@ msgstr "This template is already used in another variation"
 msgid "This template is managed by an integration and cannot be deleted"
 msgstr "This template is managed by an integration and cannot be deleted"
 
-#: src/components/email_builder/blocks/MjPreviewBlock.tsx:34
+#: src/components/email_builder/blocks/MjPreviewBlock.tsx:35
 msgid "This text appears in the email client's preview pane, typically after the subject line. Keep it concise and compelling (100-140 characters recommended)."
 msgstr "This text appears in the email client's preview pane, typically after the subject line. Keep it concise and compelling (100-140 characters recommended)."
 
-#: src/components/settings/WorkspaceMembers.tsx:633
+#: src/components/settings/WorkspaceMembers.tsx:639
 msgid "This token will only be displayed once. Please save it in a secure location. It cannot be retrieved again."
 msgstr "This token will only be displayed once. Please save it in a secure location. It cannot be retrieved again."
 
@@ -9559,7 +9779,7 @@ msgstr "This will send a real test email to the address provided."
 msgid "This will set the value to NULL. Are you sure?"
 msgstr "This will set the value to NULL. Are you sure?"
 
-#: src/components/email_builder/blocks/MjWrapperBlock.tsx:173
+#: src/components/email_builder/blocks/MjWrapperBlock.tsx:175
 msgid "This wrapper has no sections. Add a section to display content."
 msgstr "This wrapper has no sections. Add a section to display content."
 
@@ -9616,7 +9836,7 @@ msgstr "Timezone used for dates"
 msgid "Timezone:"
 msgstr "时区："
 
-#: src/components/email_builder/blocks/MjPreviewBlock.tsx:49
+#: src/components/email_builder/blocks/MjPreviewBlock.tsx:50
 msgid "Tips for effective preview text:"
 msgstr "Tips for effective preview text:"
 
@@ -9627,7 +9847,7 @@ msgstr "Tips for fixing these errors:"
 #: src/components/blog/PostDrawer.tsx:727
 #: src/components/blog/PostsTable.tsx:193
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:358
-#: src/components/email_builder/blocks/MjTitleBlock.tsx:34
+#: src/components/email_builder/blocks/MjTitleBlock.tsx:35
 #: src/components/settings/BlogSettings.tsx:217
 msgid "Title"
 msgstr "标题"
@@ -9678,11 +9898,11 @@ msgstr "to prevent duplicate sends"
 msgid "To use the {0}, you need to configure the Anthropic integration in your workspace settings."
 msgstr "To use the {0}, you need to configure the Anthropic integration in your workspace settings."
 
-#: src/components/email_builder/blocks/MjmlBlock.tsx:15
+#: src/components/email_builder/blocks/MjmlBlock.tsx:16
 msgid "TODO"
 msgstr "TODO"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1114
+#: src/components/templates/CreateTemplateDrawer.tsx:1128
 msgid "Toggle between mobile and desktop views to see how your email appears on different devices. Mobile view shows a 400px width while desktop shows the full width."
 msgstr "Toggle between mobile and desktop views to see how your email appears on different devices. Mobile view shows a 400px width while desktop shows the full width."
 
@@ -9700,8 +9920,8 @@ msgstr "工具"
 msgid "Tooltip text"
 msgstr "Tooltip text"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:58
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:60
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:59
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:62
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:315
 #: src/components/email_builder/ui/BorderInput.tsx:365
 #: src/components/email_builder/ui/PaddingInput.tsx:157
@@ -9776,8 +9996,8 @@ msgstr "事务性通知"
 msgid "Transactional Provider"
 msgstr "事务性提供商"
 
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:103
-#: src/components/email_builder/blocks/MjSpacerBlock.tsx:54
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:104
+#: src/components/email_builder/blocks/MjSpacerBlock.tsx:55
 msgid "Transparent"
 msgstr "透明"
 
@@ -9897,7 +10117,7 @@ msgstr "Unknown Segment"
 
 #: src/components/contacts/SegmentsFilter.tsx:89
 msgid "Unknown status"
-msgstr "Unknown status"
+msgstr "未知状态"
 
 #: src/components/blog/PostsTable.tsx:321
 msgid "Unpublish"
@@ -9905,7 +10125,7 @@ msgstr "取消发布"
 
 #: src/components/blog/PostsTable.tsx:315
 msgid "Unpublish post"
-msgstr "Unpublish post"
+msgstr "取消发布文章"
 
 #: src/components/automations/UpsertAutomationDrawer.tsx:132
 #: src/components/blog/PostDrawer.tsx:485
@@ -9978,15 +10198,15 @@ msgstr "更新"
 #: src/components/contacts/ContactUpsertDrawer.tsx:487
 #: src/components/contacts/ContactUpsertDrawer.tsx:492
 msgid "Update Contact"
-msgstr "Update Contact"
+msgstr "更新联系人"
 
 #: src/components/email_builder/ui/BlockToolbar.tsx:227
 msgid "Update existing block"
-msgstr "Update existing block"
+msgstr "更新现有区块"
 
 #: src/components/email_builder/ui/tiptap/components/TiptapToolbar.tsx:406
 msgid "Update Link"
-msgstr "Update Link"
+msgstr "更新链接"
 
 #: src/components/segment/button_upsert.tsx:339
 msgid "Update segment"
@@ -9994,7 +10214,7 @@ msgstr "更新细分"
 
 #: src/components/contacts/ContactDetailsDrawer.tsx:1111
 msgid "Update Status"
-msgstr "Update Status"
+msgstr "更新状态"
 
 #: src/components/timeline/ContactTimeline.tsx:373
 #: src/components/timeline/ContactTimeline.tsx:675
@@ -10048,7 +10268,7 @@ msgstr "大写"
 #: src/components/email_builder/ui/tiptap/components/TiptapToolbar.tsx:337
 #: src/components/email_builder/ui/tiptap/components/TiptapToolbar.tsx:381
 msgid "URL"
-msgstr "URL"
+msgstr "网址"
 
 #: src/components/file_manager/fileManager.tsx:907
 msgid "URL copied to clipboard."
@@ -10073,7 +10293,7 @@ msgstr "URL友好标识符（仅小写、连字符）"
 
 #: src/components/settings/WebhookCard.tsx:256
 msgid "URL:"
-msgstr "URL:"
+msgstr "网址："
 
 #: src/components/transactional/ApiCommandModal.tsx:557
 #: src/components/transactional/ApiCommandModal.tsx:560
@@ -10106,7 +10326,7 @@ msgstr "使用路径样式URL（存储桶在路径中而非子域名）"
 msgid "Use recipient timezone"
 msgstr "使用收件人时区"
 
-#: src/components/email_builder/blocks/MjFontBlock.tsx:45
+#: src/components/email_builder/blocks/MjFontBlock.tsx:46
 msgid "Use the font name in text elements:"
 msgstr "在文本元素中使用字体名称："
 
@@ -10114,11 +10334,11 @@ msgstr "在文本元素中使用字体名称："
 msgid "Use the save button in the block toolbar to save blocks"
 msgstr "使用区块工具栏中的保存按钮来保存区块"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1121
+#: src/components/templates/CreateTemplateDrawer.tsx:1135
 msgid "Use the Template Data tab to define dynamic content for your emails. Add variables like {{ name }} or {{ company }} in your email content, then define their values here. The Liquid templating engine supports conditionals, loops, and filters for powerful personalization."
 msgstr "使用模板数据选项卡为您的邮件定义动态内容。在邮件内容中添加诸如 {{ name }} 或 {{ company }} 的变量，然后在此处定义它们的值。Liquid模板引擎支持条件、循环和过滤器以实现强大的个性化。"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1129
+#: src/components/templates/CreateTemplateDrawer.tsx:1143
 msgid "Use this button to import saved email templates or export your finished emails. You can import JSON/MJML templates or export as HTML, MJML, or JSON for future use."
 msgstr "使用此按钮导入已保存的邮件模板或导出您完成的邮件。您可以导入JSON/MJML模板或导出为HTML、MJML或JSON以供将来使用。"
 
@@ -10163,6 +10383,14 @@ msgstr "用户创建Hook密钥"
 #: src/components/settings/Integrations.tsx:1292
 msgid "User Metadata Field"
 msgstr "用户元数据字段"
+
+#: src/pages/SetupWizard.tsx:467
+msgid "user@example.com"
+msgstr "user@example.com"
+
+#: src/components/settings/Integrations.tsx:1592
+msgid "user@yourdomain.com"
+msgstr "user@yourdomain.com"
 
 #: src/components/transactional/ApiCommandModal.tsx:531
 msgid "Username"
@@ -10239,12 +10467,12 @@ msgstr "版本说明（可选）"
 msgid "Version:"
 msgstr "版本："
 
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:54
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:56
 #: src/components/email_builder/blocks/MjSocialElementBlock.tsx:308
 msgid "Vertical Align"
 msgstr "垂直对齐"
 
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:51
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:52
 msgid "Vertical Alignment"
 msgstr "垂直对齐"
 
@@ -10273,16 +10501,16 @@ msgstr "查看原始JSON"
 msgid "View SMTP Bridge documentation and setup guide"
 msgstr "查看SMTP桥接文档和设置指南"
 
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:193
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:196
 #: src/pages/ListsPage.tsx:270
 msgid "Visibility"
 msgstr "可见性"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:764
+#: src/components/templates/CreateTemplateDrawer.tsx:778
 msgid "Visual"
 msgstr "可视化"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1091
+#: src/components/templates/CreateTemplateDrawer.tsx:1105
 msgid "Visual Email Editor"
 msgstr "可视化邮件编辑器"
 
@@ -10306,7 +10534,7 @@ msgstr "我们将自动检测并使用您网站的favicon"
 msgid "Web Analytics"
 msgstr "网页分析"
 
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:207
+#: src/components/email_builder/blocks/MjSectionBlock.tsx:210
 msgid "Web Only"
 msgstr "仅网页"
 
@@ -10352,7 +10580,7 @@ msgstr "Webhook订阅已更新"
 
 #: src/components/automations/config/WebhookConfigForm.tsx:31
 msgid "Webhook URL"
-msgstr "Webhook URL"
+msgstr "Webhook网址"
 
 #: src/components/settings/Integrations.tsx:198
 #: src/components/settings/Integrations.tsx:206
@@ -10385,7 +10613,7 @@ msgstr "粗细"
 msgid "Welcome"
 msgstr "欢迎"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1078
+#: src/components/templates/CreateTemplateDrawer.tsx:1092
 msgid "Welcome to Email Builder!"
 msgstr "欢迎使用邮件编辑器！"
 
@@ -10401,7 +10629,7 @@ msgstr "启用后，邮件中的链接将被追踪打开和点击"
 msgid "When enabled, subscribers must confirm their subscription via email before being added to the list"
 msgstr "启用后，订阅者必须通过邮件确认订阅后才能被添加到列表"
 
-#: src/components/email_builder/blocks/MjStyleBlock.tsx:111
+#: src/components/email_builder/blocks/MjStyleBlock.tsx:112
 msgid "When enabled, these styles will be added as inline style attributes to every matching HTML element in the email. This is important for maximum email client compatibility since many email clients strip out non-inline styles."
 msgstr "启用后，这些样式将作为内联样式属性添加到邮件中每个匹配的HTML元素。这对于最大程度的邮件客户端兼容性很重要，因为许多邮件客户端会剥离非内联样式。"
 
@@ -10409,16 +10637,16 @@ msgstr "启用后，这些样式将作为内联样式属性添加到邮件中每
 msgid "When enabled, user creation will be rejected if a disposable email address is detected"
 msgstr "启用后，如果检测到一次性邮件地址，用户创建将被拒绝"
 
-#: src/components/templates/CreateTemplateDrawer.tsx:1100
+#: src/components/templates/CreateTemplateDrawer.tsx:1114
 msgid "When you select a block, its settings appear here. Modify colors, text, spacing, alignment, and other properties to customize your email design."
 msgstr "当您选择一个区块时，其设置会显示在这里。修改颜色、文本、间距、对齐和其他属性以自定义您的邮件设计。"
 
-#: src/components/email_builder/blocks/MjBodyBlock.tsx:44
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:344
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:42
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:70
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:46
-#: src/components/email_builder/blocks/MjImageBlock.tsx:81
+#: src/components/email_builder/blocks/MjBodyBlock.tsx:45
+#: src/components/email_builder/blocks/MjButtonBlock.tsx:345
+#: src/components/email_builder/blocks/MjColumnBlock.tsx:43
+#: src/components/email_builder/blocks/MjDividerBlock.tsx:71
+#: src/components/email_builder/blocks/MjGroupBlock.tsx:48
+#: src/components/email_builder/blocks/MjImageBlock.tsx:82
 msgid "Width"
 msgstr "宽度"
 
@@ -10511,17 +10739,25 @@ msgstr "工作区设置更新成功"
 msgid "Workspace:"
 msgstr "工作区："
 
-#: src/components/email_builder/blocks/MjWrapperBlock.tsx:44
+#: src/pages/CreateWorkspacePage.tsx:148
+msgid "workspaceid"
+msgstr "工作区ID"
+
+#: src/components/email_builder/panels/TreePanel.tsx:270
+#~ msgid "Wrapper"
+#~ msgstr "包装器"
+
+#: src/components/email_builder/blocks/MjWrapperBlock.tsx:46
 msgid "Wrapper Attributes"
 msgstr "包装器属性"
 
 #: src/components/settings/EditPermissionsModal.tsx:99
-#: src/components/settings/WorkspaceMembers.tsx:433
-#: src/components/settings/WorkspaceMembers.tsx:492
+#: src/components/settings/WorkspaceMembers.tsx:439
+#: src/components/settings/WorkspaceMembers.tsx:498
 msgid "Write"
 msgstr "写入"
 
-#: src/components/email_builder/blocks/MjLiquidBlock.tsx:33
+#: src/components/email_builder/blocks/MjLiquidBlock.tsx:34
 msgid "Write MJML markup with Liquid template tags. This content is injected directly into the email and processed by the Liquid engine before MJML compilation. Use for-loops, conditionals, and variables to generate dynamic structural content."
 msgstr "使用Liquid模板标签编写MJML标记。此内容直接注入邮件中，并在MJML编译前由Liquid引擎处理。使用for循环、条件语句和变量来生成动态结构内容。"
 
@@ -10552,11 +10788,12 @@ msgstr "使用Liquid模板标签编写MJML标记。此内容直接注入邮件�
 #: src/components/settings/Integrations.tsx:1185
 #: src/components/settings/Integrations.tsx:1344
 #: src/components/settings/Integrations.tsx:1402
+#: src/components/settings/Integrations.tsx:1893
 #: src/components/settings/WebhookCard.tsx:192
 #: src/components/settings/WebhookCard.tsx:236
 #: src/components/settings/WebhookCard.tsx:278
-#: src/components/settings/WorkspaceMembers.tsx:192
-#: src/components/settings/WorkspaceMembers.tsx:212
+#: src/components/settings/WorkspaceMembers.tsx:198
+#: src/components/settings/WorkspaceMembers.tsx:218
 #: src/components/transactional/UpsertTransactionalNotificationDrawer.tsx:147
 msgid "Yes"
 msgstr "是"
@@ -10698,96 +10935,3 @@ msgstr "您的工作区API密钥"
 #: src/components/file_manager/fileManager.tsx:784
 msgid "Zip"
 msgstr "压缩包"
-
-
-#: src/components/email_builder/blocks/MjBodyBlock.tsx:91
-msgid "Body"
-msgstr "正文"
-
-#: src/components/email_builder/blocks/MjHeadBlock.tsx:34
-msgid "Head"
-msgstr "头部"
-
-#: src/components/email_builder/blocks/MjSectionBlock.tsx:287
-msgid "Section"
-msgstr "区块"
-
-#: src/components/email_builder/blocks/MjColumnBlock.tsx:235
-msgid "Column"
-msgstr "列"
-
-#: src/components/email_builder/blocks/MjWrapperBlock.tsx:214
-msgid "Wrapper"
-msgstr "包装器"
-
-#: src/components/email_builder/blocks/MjGroupBlock.tsx:160
-msgid "Group"
-msgstr "组"
-
-#: src/components/email_builder/blocks/MjTextBlock.tsx:279
-msgid "Text"
-msgstr "文本"
-
-#: src/components/email_builder/blocks/MjButtonBlock.tsx:419
-msgid "Button"
-msgstr "按钮"
-
-#: src/components/email_builder/blocks/MjImageBlock.tsx:195
-msgid "Image"
-msgstr "图片"
-
-#: src/components/email_builder/blocks/MjDividerBlock.tsx:179
-msgid "Divider"
-msgstr "分隔线"
-
-#: src/components/email_builder/blocks/MjSpacerBlock.tsx:130
-msgid "Spacer"
-msgstr "间隔"
-
-#: src/components/email_builder/blocks/MjSocialBlock.tsx:126
-msgid "Social"
-msgstr "社交"
-
-#: src/components/email_builder/blocks/MjRawBlock.tsx:322
-msgid "Raw HTML"
-msgstr "原始HTML"
-
-#: src/components/email_builder/blocks/MjAttributesBlock.tsx:32
-msgid "Default attributes"
-msgstr "默认属性"
-
-#: src/components/email_builder/blocks/MjTitleBlock.tsx:70
-msgid "Email Title"
-msgstr "邮件标题"
-
-#: src/components/email_builder/blocks/MjPreviewBlock.tsx:71
-msgid "Subject preview"
-msgstr "主题预览"
-
-#: src/components/email_builder/blocks/MjStyleBlock.tsx:187
-msgid "Custom CSS"
-msgstr "自定义CSS"
-
-#: src/components/email_builder/blocks/MjFontBlock.tsx:95
-msgid "Font Import"
-msgstr "字体导入"
-
-#: src/components/email_builder/blocks/MjLiquidBlock.tsx:89
-msgid "Liquid"
-msgstr "Liquid"
-
-#: src/components/email_builder/blocks/MjmlBlock.tsx:27
-msgid "Email"
-msgstr "邮件"
-
-#: src/components/email_builder/EmailBuilder.tsx:823
-msgid "Edit"
-msgstr "编辑"
-
-#: src/components/email_builder/EmailBuilder.tsx:827
-msgid "Preview"
-msgstr "预览"
-
-#: src/components/email_builder/EmailBuilder.tsx:871
-msgid "Content structure"
-msgstr "内容结构"

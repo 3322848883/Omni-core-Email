@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { InputNumber } from 'antd'
 import type { MJMLComponentType, MJSpacerAttributes, MergedBlockAttributes } from '../types'
 import {
@@ -127,11 +128,11 @@ export class MjSpacerBlock extends BaseEmailBlock {
   }
 
   getLabel(): string {
-    return 'Spacer'
+    return i18n.locale === 'zh' ? '间隔' : 'Spacer'
   }
 
   getDescription(): React.ReactNode {
-    return 'Vertical spacing component to add space between content elements'
+    return i18n.locale === 'zh' ? '垂直间距组件，用于在内容元素之间添加空间' : 'Vertical spacing component to add space between content elements'
   }
 
   getCategory(): 'content' | 'layout' {

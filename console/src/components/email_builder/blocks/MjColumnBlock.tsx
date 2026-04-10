@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { Radio, Tooltip } from 'antd'
 import type { MJMLComponentType, MJColumnAttributes, MergedBlockAttributes } from '../types'
 import {
@@ -236,7 +237,7 @@ export class MjColumnBlock extends BaseEmailBlock {
   }
 
   getDescription(): React.ReactNode {
-    return 'Vertical container within sections for organizing content in columns'
+    return i18n.locale === 'zh' ? '区块内的垂直容器，用于按列组织内容' : 'Vertical container within sections for organizing content in columns'
   }
 
   getCategory(): 'content' | 'layout' {

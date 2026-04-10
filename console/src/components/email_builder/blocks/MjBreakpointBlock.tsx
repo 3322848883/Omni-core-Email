@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { InputNumber } from 'antd'
 import type { MJMLComponentType, MJBreakpointAttributes, MergedBlockAttributes } from '../types'
 import { BaseEmailBlock, type OnUpdateAttributesFunction } from './BaseEmailBlock'

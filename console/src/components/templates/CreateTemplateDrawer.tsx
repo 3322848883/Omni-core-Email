@@ -1,5 +1,6 @@
 import { useState, useMemo, useRef } from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../i18n'
 import {
   Button,
   Drawer,
@@ -153,15 +154,15 @@ export const renderCategoryTag = (category: string, t?: (msg: string) => string)
     color = 'purple'
   }
 
-  // Translation mapping for category names
+  // Translation mapping for category names - with Chinese translations
   const categoryTranslations: Record<string, string> = {
-    marketing: t ? t('Marketing') : 'Marketing',
-    transactional: t ? t('Transactional') : 'Transactional',
-    welcome: t ? t('Welcome') : 'Welcome',
-    opt_in: t ? t('Opt-in') : 'Opt-in',
-    unsubscribe: t ? t('Unsubscribe') : 'Unsubscribe',
-    bounce: t ? t('Bounce') : 'Bounce',
-    blocklist: t ? t('Blocklist') : 'Blocklist'
+    marketing: t ? t('Marketing') : (i18n.locale === 'zh' ? '营销' : 'Marketing'),
+    transactional: t ? t('Transactional') : (i18n.locale === 'zh' ? '交易' : 'Transactional'),
+    welcome: t ? t('Welcome') : (i18n.locale === 'zh' ? '欢迎' : 'Welcome'),
+    opt_in: t ? t('Opt-in') : (i18n.locale === 'zh' ? '订阅' : 'Opt-in'),
+    unsubscribe: t ? t('Unsubscribe') : (i18n.locale === 'zh' ? '退订' : 'Unsubscribe'),
+    bounce: t ? t('Bounce') : (i18n.locale === 'zh' ? '退信' : 'Bounce'),
+    blocklist: t ? t('Blocklist') : (i18n.locale === 'zh' ? '黑名单' : 'Blocklist')
   }
 
   const displayName = categoryTranslations[category] || category.charAt(0).toUpperCase() + category.slice(1).replace('_', '-')
@@ -693,22 +694,22 @@ export function CreateTemplateDrawer({
                     <Col span={6}>
                       <Form.Item
                         name="id"
-                        label={t`Template ID (utm_content)`}
-                        tooltip={t`This is the ID that will be used as the utm_content parameter in the links URL to track the template`}
+                        label={i18n.locale === 'zh' ? '模板ID (utm_content)' : t`Template ID (utm_content)`}
+                        tooltip={i18n.locale === 'zh' ? '此ID将用作链接URL中的utm_content参数，用于跟踪模板' : t`This is the ID that will be used as the utm_content parameter in the links URL to track the template`}
                         rules={[
                           {
                             required: true,
                             type: 'string',
                             pattern: /^[a-z0-9_-]+$/,
                             message:
-                              t`ID must contain only lowercase letters, numbers, underscores, and hyphens`
+                              i18n.locale === 'zh' ? 'ID只能包含小写字母、数字、下划线和连字符' : t`ID must contain only lowercase letters, numbers, underscores, and hyphens`
                           },
                           {
                             validator: async (_rule, value) => {
                               if (value && !template) {
                                 try {
                                   await templatesApi.get({ workspace_id: workspace.id, id: value })
-                                  return Promise.reject(t`Template ID already exists`)
+                                  return Promise.reject(i18n.locale === 'zh' ? '模板ID已存在' : t`Template ID already exists`)
                                 } catch {
                                   return Promise.resolve()
                                 }
@@ -907,7 +908,7 @@ export function CreateTemplateDrawer({
                                 html: '',
                                 mjml: '',
                                 error: {
-                                  message: err.message || 'Compilation failed',
+                                  message: err.message || (i18n.locale === 'zh' ? '编译失败' : 'Compilation failed'),
                                   details: []
                                 } as MjmlCompileError
                               }
@@ -967,7 +968,7 @@ export function CreateTemplateDrawer({
                             return {
                               html: '',
                               mjml: '',
-                              errors: [{ message: err.message || 'Compilation failed' }]
+                              errors: [{ message: err.message || (i18n.locale === 'zh' ? '编译失败' : 'Compilation failed') }]
                             }
                           }
                         }}

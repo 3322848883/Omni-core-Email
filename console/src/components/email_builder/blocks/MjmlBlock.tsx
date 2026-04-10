@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import type { MJMLComponentType } from '../types'
@@ -12,7 +13,7 @@ import PanelLayout from '../panels/PanelLayout'
 const MjmlSettingsPanel: React.FC = () => {
   const { t } = useLingui()
 
-  return <PanelLayout title={t`Email Attributes`}>{t`TODO`}</PanelLayout>
+  return <PanelLayout title={i18n.locale === 'zh' ? '邮件属性' : t`Email Attributes`}>{i18n.locale === 'zh' ? '暂无设置选项' : t`TODO`}</PanelLayout>
 }
 
 /**
@@ -28,7 +29,7 @@ export class MjmlBlock extends BaseEmailBlock {
   }
 
   getDescription(): React.ReactNode {
-    return 'Root container for the entire email document'
+    return i18n.locale === 'zh' ? '整个电子邮件文档的根容器' : 'Root container for the entire email document'
   }
 
   getCategory(): 'content' | 'layout' {

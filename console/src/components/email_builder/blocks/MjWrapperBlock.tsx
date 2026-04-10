@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { Switch } from 'antd'
 import type { MJMLComponentType, MJWrapperAttributes, MergedBlockAttributes } from '../types'
 import {
@@ -31,6 +32,7 @@ const MjWrapperSettingsPanel: React.FC<MjWrapperSettingsPanelProps> = ({
   onUpdate
 }) => {
   const { t } = useLingui()
+  const isZh = i18n.locale === 'zh'
 
   const handleAttributeChange = (key: string, value: unknown) => {
     onUpdate({ [key]: value })
@@ -132,7 +134,7 @@ const MjWrapperSettingsPanel: React.FC<MjWrapperSettingsPanelProps> = ({
         </InputLayout>
 
         {/* Text Alignment */}
-        <InputLayout label={t`Text Alignment`}>
+        <InputLayout label={isZh ? '文本对齐' : t`Text Alignment`}>
           <AlignSelector
             value={currentAttributes.textAlign || blockDefaults.textAlign || 'left'}
             onChange={(value) => handleAttributeChange('textAlign', value)}
@@ -140,12 +142,12 @@ const MjWrapperSettingsPanel: React.FC<MjWrapperSettingsPanelProps> = ({
         </InputLayout>
 
         {/* CSS Class */}
-        <InputLayout label={t`CSS Class`} help={t`Custom CSS class for styling`}>
+        <InputLayout label={isZh ? 'CSS类' : t`CSS Class`} help={isZh ? '用于样式的自定义CSS类' : t`Custom CSS class for styling`}>
           <StringPopoverInput
             value={currentAttributes.cssClass || ''}
             onChange={(value) => handleAttributeChange('cssClass', value)}
-            placeholder={t`my-custom-class`}
-            buttonText={t`Set Value`}
+            placeholder={isZh ? 'my-custom-class' : t`my-custom-class`}
+            buttonText={isZh ? '设置值' : t`Set Value`}
           />
         </InputLayout>
       </div>
@@ -215,7 +217,7 @@ export class MjWrapperBlock extends BaseEmailBlock {
   }
 
   getDescription(): React.ReactNode {
-    return 'Container that wraps sections and provides styling context'
+    return i18n.locale === 'zh' ? '包装区块的容器，提供样式上下文' : 'Container that wraps sections and provides styling context'
   }
 
   getCategory(): 'content' | 'layout' {

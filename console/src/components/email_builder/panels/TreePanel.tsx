@@ -259,9 +259,36 @@ const TreeNodeTitle: React.FC<{
   const isDraggable = DRAGGABLE_NODES.includes(block.type) && !isInsideMjAttributes
   const preventAddBlocks = shouldPreventAddBlocks(emailTree, block.id)
 
-  // Get translated label
+  // Get translated label using explicit translations
   const label = blockClass.getLabel(indexToPass)
-  const translatedLabel = t`${label}`
+  // Map of block labels to their translations - hardcoded Chinese translations
+  const labelTranslations: Record<string, string> = {
+    'Head': '头部',
+    'Body': '正文',
+    'Section': '区块',
+    'Column': '列',
+    'Wrapper': '包装器',
+    'Spacer': '间隔',
+    'Group': '组',
+    'Divider': '分隔线',
+    'Social': '社交',
+    'Image': '图片',
+    'Text': '文本',
+    'Button': '按钮',
+    'Hero': '英雄区',
+    'Navbar': '导航栏',
+    'Raw': '原始HTML',
+    'Liquid': 'Liquid模板',
+    'Title': '标题',
+    'Preview': '预览文本',
+    'Attributes': '属性',
+    'Font': '字体',
+    'Breakpoint': '断点',
+    'HTML Attributes': 'HTML属性',
+    'Style': '样式',
+    'Default attributes': '默认属性',
+  }
+  const translatedLabel = labelTranslations[label] || label
 
   return (
     <span>

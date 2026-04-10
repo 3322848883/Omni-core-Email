@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLock, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Select, Radio, Tooltip } from 'antd'
@@ -30,6 +31,7 @@ const MjGroupSettingsPanel: React.FC<MjGroupSettingsPanelProps> = ({
   onUpdate
 }) => {
   const { t } = useLingui()
+  const isZh = i18n.locale === 'zh'
 
   const handleAttributeChange = (key: string, value: unknown) => {
     onUpdate({ [key]: value })
@@ -89,20 +91,20 @@ const MjGroupSettingsPanel: React.FC<MjGroupSettingsPanelProps> = ({
         />
 
         {/* Direction Settings */}
-        <InputLayout label={t`Text Direction`}>
+        <InputLayout label={isZh ? '文本方向' : t`Text Direction`}>
           <Radio.Group
             size="small"
             value={currentAttributes.direction || blockDefaults.direction || 'ltr'}
             onChange={(e) => handleAttributeChange('direction', e.target.value)}
           >
             <Radio.Button value="ltr">
-              <Tooltip title={t`Left to Right`}>
+              <Tooltip title={isZh ? '从左到右' : t`Left to Right`}>
                 <FontAwesomeIcon icon={faArrowRight} style={{ marginRight: 4 }} />
                 LTR
               </Tooltip>
             </Radio.Button>
             <Radio.Button value="rtl">
-              <Tooltip title={t`Right to Left`}>
+              <Tooltip title={isZh ? '从右到左' : t`Right to Left`}>
                 <FontAwesomeIcon icon={faArrowLeft} style={{ marginRight: 4 }} />
                 RTL
               </Tooltip>
@@ -161,9 +163,10 @@ export class MjGroupBlock extends BaseEmailBlock {
   }
 
   getDescription(): React.ReactNode {
+    const isZh = i18n.locale === 'zh'
     return (
       <div>
-        <div style={{ marginBottom: 8 }}>Prevent columns from stacking on mobile devices</div>
+        <div style={{ marginBottom: 8 }}>{isZh ? '防止列在移动设备上堆叠' : 'Prevent columns from stacking on mobile devices'}</div>
         <div style={{ opacity: 0.7 }}>
           <div
             style={{

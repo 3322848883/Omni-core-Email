@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { InputNumber, Row, Col } from 'antd'
 import type { MJMLComponentType, EmailBlock, MJButtonAttributes, MergedBlockAttributes } from '../types'
 import {
@@ -416,11 +417,11 @@ export class MjButtonBlock extends BaseEmailBlock {
   }
 
   getLabel(): string {
-    return 'Button'
+    return i18n.locale === 'zh' ? '按钮' : 'Button'
   }
 
   getDescription(): React.ReactNode {
-    return 'Interactive call-to-action buttons with customizable styling'
+    return i18n.locale === 'zh' ? '具有可自定义样式的交互式号召性用语按钮' : 'Interactive call-to-action buttons with customizable styling'
   }
 
   getCategory(): 'content' | 'layout' {

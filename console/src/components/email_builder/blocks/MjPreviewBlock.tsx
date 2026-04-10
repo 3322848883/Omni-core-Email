@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { Input } from 'antd'
 import type { MJMLComponentType } from '../types'
 import { BaseEmailBlock, type OnUpdateAttributesFunction } from './BaseEmailBlock'
@@ -68,11 +69,11 @@ export class MjPreviewBlock extends BaseEmailBlock {
   }
 
   getLabel(): string {
-    return 'Subject preview'
+    return i18n.locale === 'zh' ? '预览文本' : 'Subject preview'
   }
 
   getDescription(): React.ReactNode {
-    return 'Sets the subject preview text that appears in email clients'
+    return i18n.locale === 'zh' ? '设置出现在邮件客户端中的预览文本' : 'Sets the subject preview text that appears in email clients'
   }
 
   getCategory(): 'content' | 'layout' {

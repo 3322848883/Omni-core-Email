@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import type { MJMLComponentType, MJSocialAttributes } from '../types'
 import { BaseEmailBlock, type OnUpdateAttributesFunction, type PreviewProps } from './BaseEmailBlock'
 import { MJML_COMPONENT_DEFAULTS } from '../mjml-defaults'
@@ -123,11 +124,11 @@ export class MjSocialBlock extends BaseEmailBlock {
   }
 
   getLabel(): string {
-    return 'Social'
+    return i18n.locale === 'zh' ? '社交' : 'Social'
   }
 
   getDescription(): React.ReactNode {
-    return 'Social media icons and links for connecting with your audience'
+    return i18n.locale === 'zh' ? '用于与观众联系社交媒体图标和链接' : 'Social media icons and links for connecting with your audience'
   }
 
   getCategory(): 'content' | 'layout' {

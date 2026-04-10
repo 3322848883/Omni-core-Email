@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { Switch, Drawer, Button } from 'antd'
 import { Editor } from '@monaco-editor/react'
 import type { MJMLComponentType, MJStyleAttributes, MergedBlockAttributes, EmailBlock } from '../types'

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { Select, InputNumber, Row, Col } from 'antd'
 import type { MJMLComponentType, MJDividerAttributes, MergedBlockAttributes } from '../types'
 import {
@@ -176,11 +177,11 @@ export class MjDividerBlock extends BaseEmailBlock {
   }
 
   getLabel(): string {
-    return 'Divider'
+    return i18n.locale === 'zh' ? '分隔线' : 'Divider'
   }
 
   getDescription(): React.ReactNode {
-    return 'Horizontal divider line to separate content sections'
+    return i18n.locale === 'zh' ? '用于分隔内容区块的水平分隔线' : 'Horizontal divider line to separate content sections'
   }
 
   getCategory(): 'content' | 'layout' {

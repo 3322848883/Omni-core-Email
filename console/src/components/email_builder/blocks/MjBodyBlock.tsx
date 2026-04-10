@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { Alert } from 'antd'
 import type { MJMLComponentType, MJBodyAttributes, MergedBlockAttributes } from '../types'
 import {

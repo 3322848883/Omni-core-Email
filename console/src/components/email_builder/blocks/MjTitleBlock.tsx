@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { Input } from 'antd'
 import type { MJMLComponentType } from '../types'
 import {
@@ -67,11 +68,11 @@ export class MjTitleBlock extends BaseEmailBlock {
   }
 
   getLabel(): string {
-    return 'Email Title'
+    return i18n.locale === 'zh' ? '邮件标题' : 'Email Title'
   }
 
   getDescription(): React.ReactNode {
-    return 'Sets the email title that appears in the browser tab and some email clients'
+    return i18n.locale === 'zh' ? '设置出现在浏览器标签页和某些邮件客户端中的邮件标题' : 'Sets the email title that appears in the browser tab and some email clients'
   }
 
   getCategory(): 'content' | 'layout' {

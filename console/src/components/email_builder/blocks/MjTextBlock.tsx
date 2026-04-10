@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLingui } from '@lingui/react/macro'
+import { i18n } from '../../../i18n'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFont } from '@fortawesome/free-solid-svg-icons'
 import { Col, Row } from 'antd'
@@ -276,51 +277,11 @@ export class MjTextBlock extends BaseEmailBlock {
   }
 
   getLabel(): string {
-    return 'Text'
+    return i18n.locale === 'zh' ? '文本' : 'Text'
   }
 
   getDescription(): React.ReactNode {
-    return (
-      <div>
-        <div style={{ marginBottom: 8 }}>Add paragraphs, headings, and formatted text content</div>
-        <div style={{ opacity: 0.7 }}>
-          <div
-            style={{
-              width: 60,
-              height: 30,
-              border: '2px solid #722ed1',
-              borderRadius: 4,
-              backgroundColor: '#f9f0ff',
-              padding: 4
-            }}
-          >
-            <div
-              style={{ height: 3, backgroundColor: '#722ed1', marginBottom: 2, borderRadius: 1 }}
-            />
-            <div
-              style={{
-                height: 2,
-                backgroundColor: '#d3adf7',
-                marginBottom: 1,
-                borderRadius: 1,
-                width: '80%'
-              }}
-            />
-            <div style={{ height: 2, backgroundColor: '#d3adf7', borderRadius: 1, width: '60%' }} />
-            <FontAwesomeIcon
-              icon={faFont}
-              style={{
-                position: 'absolute',
-                marginTop: -25,
-                marginLeft: 40,
-                fontSize: 10,
-                color: '#722ed1'
-              }}
-            />
-          </div>
-        </div>
-      </div>
-    )
+    return i18n.locale === 'zh' ? '添加段落、标题和格式化的文本内容' : 'Add paragraphs, headings, and formatted text content'
   }
 
   getCategory(): 'content' | 'layout' {
