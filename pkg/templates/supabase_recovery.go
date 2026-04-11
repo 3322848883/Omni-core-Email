@@ -250,7 +250,7 @@ func CreateSupabaseRecoveryEmailStructure() (notifuse_mjml.EmailBlock, error) {
                           "paddingLeft": "0px",
                           "rel": "noopener noreferrer",
                           "sizes": "",
-                          "src": "https://storage.googleapis.com/readonlydemo/supabase-notifuse.png",
+                          "src": "https://mail.omnicore.xin/console/logo.png",
                           "srcset": "",
                           "target": "_blank",
                           "title": "",
